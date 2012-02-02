@@ -72,20 +72,43 @@ def smooth_susan(img, thresh=27.0, nmax=9.0):
     
     return area
 
-def step_edge_dir(usan_points_x, usan_points_y, usan, usan_sum, usan_x, usan_y):    
-    centre_x = (usan_points_x*usan).sum() / usan_sum
-    centre_y = (usan_points_y*usan).sum() / usan_sum
-    
+
+def step_edge_dir(centre_x, centre_y, usan_points_x, usan_points_y, usan, usan_sum, usan_x, usan_y):    
+
     edge_angle = np.tan((centre_y - usan_y) / (centre_x - usan_x)) + (np.pi / 2)
     
     if edge_angle == np.nan:
         edge_angle = 0
         
-    edge_y = usan_sum*np.cos(edge_angle)
-    edge_x = usan_sum*np.sin(edge_angle)
+    edge_y = np.cos(edge_angle)
+    edge_x = np.sin(edge_angle)
+    
+    return edge_angle, edge_x, edge_y
+    
+def band_edge_dir(usan_points_x, usan_points_y, usan, usan_sum, usan_x, usan_y):
+    x_val = (np.power((usan_points_x - usan_x), 2) * usan).sum()
+    y_val = (np.power((usan_points_y - usan_y), 2) * usan).sum()
+    both_val = (((usan_points_x - usan_x) * (usan_points_y - usan_y)) * usan).sum()
+    edge_angle = np.absolute(y_val / x_val)
+    if both_val < 0:
+        edge_angle = -edge_angle
+        
+    edge_y = np.cos(edge_angle)
+    edge_x = np.sin(edge_angle)
     
     return edge_angle, edge_x, edge_y
 
+def find_edge_dir(usan_points_x, usan_points_y, usan, usan_sum, usan_x, usan_y, r):
+    centre_x = (usan_points_x*usan).sum() / usan_sum
+    centre_y = (usan_points_y*usan).sum() / usan_sum
+    
+    nuc_dist = np.sqrt((centre_x - usan_x)**2 + (centre_y - usan_y)**2)
+    
+    if usan_sum < (2*r) and nuc_dist > 1:
+        return band_edge_dir(usan_points_x, usan_points_y, usan, usan_sum, usan_x, usan_y)
+    else:
+        return step_edge_dir(centre_x, centre_y, usan_points_x, usan_points_y, usan, usan_sum, usan_x, usan_y)
+    
 def smooth_susan_circle(img, thresh=27.0, r=3.4):
     area = np.zeros_like(img)
     directions_x = np.zeros_like(img)
@@ -105,7 +128,7 @@ def smooth_susan_circle(img, thresh=27.0, r=3.4):
             else:
                 area[x, y] = 0
             
-            edge_angle, edge_x, edge_y = step_edge_dir(points_x, points_y, usan, a, x, y)
+            edge_angle, edge_x, edge_y = find_edge_dir(points_x, points_y, usan, a, x, y, r)
             
             angles[x, y] = edge_angle            
             directions_x[x, y] = edge_x
@@ -114,7 +137,7 @@ def smooth_susan_circle(img, thresh=27.0, r=3.4):
     return area, directions_x, directions_y, angles
 
 if __name__ == '__main__':
-    imgin = Image.open("/home/mh23g08/susanedge/susanedge/test_data/small_simple.png")
+    imgin = Image.open("/home/mh23g08/susanedge/susanedge/test_data/fish_image_small.jpg")
     imgin = imgin.convert("L") # convert to greyscale (luminance)
     
     img = np.asarray(imgin)
