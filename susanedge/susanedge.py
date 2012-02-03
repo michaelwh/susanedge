@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import Image
 import scipy.ndimage
 import numpy as np
+import sys
+from optparse import OptionParser
 
 
 
@@ -137,19 +139,25 @@ def smooth_susan_circle(img, thresh=27.0, r=3.4):
     return area, directions_x, directions_y, angles
 
 if __name__ == '__main__':
-    imgin = Image.open("/home/mh23g08/susanedge/susanedge/test_data/fish_image_small.jpg")
+    parser = OptionParser()
+    parser.add_option("-n", "--no-dir", help="don't plot direction on the image", action="store_true", default=False)
+    (options, args) = parser.parse_args()
+
+    #imgin = Image.open("/home/mh23g08/susanedge/susanedge/test_data/fish_image_small.jpg")
+    imgin = Image.open(args[0])
+	
     imgin = imgin.convert("L") # convert to greyscale (luminance)
     
     img = np.asarray(imgin)
     img = img.astype(np.float32) # convert to a floating point
     
-    area_img, directions_x, directions_y, angles = smooth_susan_circle(img)   
-    
+    area_img, directions_x, directions_y, angles = smooth_susan_circle(img, thresh=10.0)   
+    #area_img = smooth_susan(img, thresh=10.0)
     
     #angles_n =  (angles + angles.min()) * (255.0/angles.max())
     
     plt.set_cmap(plt.cm.gray)
-    
-    plt.quiver(directions_x, directions_y, color='r')
+    if not options.no_dir:
+        plt.quiver(directions_x, directions_y, color='r')
     plt.imshow(area_img)
     plt.show()
