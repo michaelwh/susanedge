@@ -1,0 +1,2975 @@
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+         18495891 function calls (18492594 primitive calls) in 134.009 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.010    0.010  134.015  134.015 susanedge.py:1(<module>)
+        1    0.000    0.000  133.220  133.220 susanedge.py:141(run_prog)
+        1    7.995    7.995  113.110  113.110 susanedge.py:114(smooth_susan_circle)
+   130321   45.981    0.000   92.759    0.001 susanedge.py:15(points_in_circle)
+ 14478927   22.347    0.000   22.347    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000   19.818   19.818 pyplot.py:123(show)
+        1    0.000    0.000   19.818   19.818 backend_bases.py:69(__call__)
+        1    0.000    0.000   19.572   19.572 backend_tkagg.py:68(mainloop)
+        1    0.000    0.000   19.572   19.572 Tkinter.py:323(mainloop)
+        1    4.420    4.420   19.572   19.572 {built-in method mainloop}
+  480/467    0.005    0.000   15.371    0.033 Tkinter.py:1405(__call__)
+    75/68   14.458    0.193   14.658    0.216 {built-in method call}
+        1    0.011    0.011   14.604   14.604 backend_tkagg.py:745(save_figure)
+        1    0.000    0.000   14.374   14.374 tkFileDialog.py:127(asksaveasfilename)
+        1    0.000    0.000   14.374   14.374 tkCommonDialog.py:34(show)
+  2085860   13.855    0.000   13.855    0.000 susanedge.py:12(intceil)
+   130321    6.193    0.000   11.314    0.000 susanedge.py:103(find_edge_dir)
+   394640    1.555    0.000   10.644    0.000 numeric.py:167(asarray)
+   396744    9.149    0.000    9.149    0.000 {numpy.core.multiarray.array}
+   130315    3.733    0.000    3.735    0.000 susanedge.py:78(step_edge_dir)
+   390981    2.200    0.000    2.200    0.000 {method 'sum' of 'numpy.ndarray' objects}
+      463    0.007    0.000    0.439    0.001 backend_tkagg.py:267(motion_notify_event)
+      463    0.005    0.000    0.426    0.001 backend_bases.py:1658(motion_notify_event)
+        1    0.003    0.003    0.410    0.410 pyplot.py:15(<module>)
+        1    0.009    0.009    0.387    0.387 figure.py:13(<module>)
+      463    0.003    0.000    0.376    0.001 backend_bases.py:1312(__init__)
+      464    0.013    0.000    0.375    0.001 backend_bases.py:1204(__init__)
+        1    0.009    0.009    0.358    0.358 axes.py:1(<module>)
+        1    0.008    0.008    0.334    0.334 __init__.py:99(<module>)
+      464    0.003    0.000    0.329    0.001 axes.py:1616(in_axes)
+      464    0.013    0.000    0.327    0.001 patches.py:550(contains)
+        2    0.000    0.000    0.301    0.151 backend_agg.py:394(draw)
+    168/2    0.002    0.000    0.298    0.149 artist.py:53(draw_wrapper)
+        2    0.000    0.000    0.298    0.149 figure.py:815(draw)
+        2    0.000    0.000    0.295    0.147 axes.py:1866(draw)
+        1    0.002    0.002    0.283    0.283 rcsetup.py:14(<module>)
+        1    0.006    0.006    0.268    0.268 axis.py:3(<module>)
+152708/152024    0.255    0.000    0.257    0.000 {len}
+        1    0.000    0.000    0.246    0.246 backend_tkagg.py:429(show)
+        1    0.000    0.000    0.245    0.245 Tkinter.py:909(update)
+        4    0.000    0.000    0.229    0.057 axis.py:1029(draw)
+        1    0.000    0.000    0.219    0.219 backend_tkagg.py:219(resize)
+        1    0.001    0.001    0.213    0.213 backend_bases.py:1892(print_figure)
+        1    0.000    0.000    0.210    0.210 backend_tkagg.py:238(draw)
+        1    0.001    0.001    0.192    0.192 backend_agg.py:444(print_png)
+        1    0.000    0.000    0.192    0.192 pyplot.py:2359(imshow)
+        2    0.000    0.000    0.184    0.092 pyplot.py:683(gca)
+        2    0.000    0.000    0.184    0.092 figure.py:1030(gca)
+        1    0.000    0.000    0.184    0.184 figure.py:710(add_subplot)
+        1    0.000    0.000    0.184    0.184 axes.py:8327(__init__)
+        1    0.000    0.000    0.183    0.183 axes.py:359(__init__)
+      175    0.002    0.000    0.183    0.001 re.py:228(_compile)
+       58    0.000    0.000    0.182    0.003 re.py:188(compile)
+       59    0.001    0.000    0.180    0.003 sre_compile.py:495(compile)
+      742    0.006    0.000    0.178    0.000 transforms.py:1445(inverted)
+        1    0.003    0.003    0.177    0.177 colors.py:50(<module>)
+    48/40    0.002    0.000    0.176    0.004 axis.py:62(__init__)
+        1    0.007    0.007    0.167    0.167 __init__.py:106(<module>)
+        1    0.000    0.000    0.131    0.131 axes.py:821(cla)
+      511    0.006    0.000    0.131    0.000 patches.py:162(get_transform)
+    16/12    0.001    0.000    0.122    0.010 axis.py:697(cla)
+    16/12    0.000    0.000    0.120    0.010 axis.py:732(reset_ticks)
+      144    0.012    0.000    0.119    0.001 lines.py:128(__init__)
+      467    0.007    0.000    0.118    0.000 linalg.py:404(inv)
+       32    0.001    0.000    0.112    0.004 axis.py:219(draw)
+       59    0.001    0.000    0.104    0.002 sre_parse.py:663(parse)
+        1    0.002    0.002    0.104    0.104 fontconfig_pattern.py:7(<module>)
+   209/59    0.005    0.000    0.102    0.002 sre_parse.py:301(_parse_sub)
+   318/64    0.026    0.000    0.101    0.002 sre_parse.py:379(_parse)
+        1    0.002    0.002    0.098    0.098 patches.py:3(<module>)
+      467    0.017    0.000    0.096    0.000 linalg.py:244(solve)
+        1    0.001    0.001    0.092    0.092 add_newdocs.py:9(<module>)
+        1    0.005    0.005    0.091    0.091 pyparsing.py:59(<module>)
+      503    0.002    0.000    0.090    0.000 patches.py:546(get_patch_transform)
+    24/20    0.000    0.000    0.089    0.004 axis.py:1803(_get_tick)
+        6    0.002    0.000    0.088    0.015 patches.py:1521(_pprint_styles)
+    24/20    0.000    0.000    0.088    0.004 axis.py:1543(_get_tick)
+      503    0.013    0.000    0.088    0.000 patches.py:533(_update_patch_transform)
+      684    0.010    0.000    0.087    0.000 markers.py:114(_recache)
+        1    0.000    0.000    0.085    0.085 pyplot.py:1718(set_cmap)
+        1    0.000    0.000    0.085    0.085 pyplot.py:202(gci)
+        3    0.000    0.000    0.085    0.028 pyplot.py:362(gcf)
+        1    0.000    0.000    0.085    0.085 pyplot.py:246(figure)
+        1    0.000    0.000    0.085    0.085 backend_tkagg.py:73(new_figure_manager)
+        1    0.000    0.000    0.084    0.084 patches.py:1615(BoxStyle)
+        4    0.008    0.002    0.082    0.021 __init__.py:1(<module>)
+        6    0.000    0.000    0.082    0.014 axis.py:1183(get_major_ticks)
+        1    0.002    0.002    0.080    0.080 inspect.py:25(<module>)
+      478    0.030    0.000    0.080    0.000 Tkinter.py:1114(_substitute)
+       59    0.001    0.000    0.074    0.001 sre_compile.py:480(_code)
+       64    0.007    0.000    0.073    0.001 lines.py:463(draw)
+        1    0.001    0.001    0.070    0.070 tokenize.py:23(<module>)
+        4    0.015    0.004    0.068    0.017 __init__.py:2(<module>)
+        1    0.067    0.067    0.067    0.067 {built-in method write_png}
+       11    0.000    0.000    0.066    0.006 artist.py:1212(kwdoc)
+       28    0.000    0.000    0.066    0.002 {map}
+        1    0.000    0.000    0.065    0.065 Tkinter.py:1665(__init__)
+        1    0.002    0.002    0.065    0.065 font_manager.py:21(<module>)
+        1    0.064    0.064    0.064    0.064 {_tkinter.create}
+        4    0.000    0.000    0.063    0.016 axis.py:977(_get_tick_bboxes)
+       32    0.001    0.000    0.062    0.002 text.py:713(get_window_extent)
+        4    0.000    0.000    0.061    0.015 spines.py:153(cla)
+   602/59    0.018    0.000    0.059    0.001 sre_compile.py:32(_compile)
+        1    0.000    0.000    0.058    0.058 font_manager.py:928(pickle_load)
+        1    0.052    0.052    0.058    0.058 {cPickle.load}
+       64    0.006    0.000    0.057    0.001 text.py:264(_get_layout)
+        1    0.001    0.001    0.054    0.054 type_check.py:3(<module>)
+        2    0.000    0.000    0.054    0.027 axis.py:830(set_clip_path)
+        2    0.000    0.000    0.054    0.027 image.py:337(draw)
+      951    0.023    0.000    0.052    0.000 path.py:83(__init__)
+      342    0.004    0.000    0.051    0.000 markers.py:141(set_marker)
+        2    0.000    0.000    0.051    0.025 image.py:557(make_image)
+      538    0.003    0.000    0.050    0.000 transforms.py:737(from_bounds)
+        1    0.000    0.000    0.049    0.049 axes.py:500(_init_axis)
+      545    0.006    0.000    0.048    0.000 transforms.py:747(from_extents)
+      198    0.001    0.000    0.048    0.000 markers.py:109(__init__)
+        4    0.001    0.000    0.048    0.012 axis.py:918(_update_ticks)
+        1    0.002    0.002    0.048    0.048 text.py:3(<module>)
+      682    0.005    0.000    0.046    0.000 transforms.py:1993(get_matrix)
+        1    0.004    0.004    0.045    0.045 __init__.py:15(<module>)
+      514    0.005    0.000    0.045    0.000 cbook.py:245(process)
+      342    0.001    0.000    0.045    0.000 markers.py:132(set_fillstyle)
+       44    0.000    0.000    0.045    0.001 axis.py:869(iter_ticks)
+        2    0.039    0.020    0.039    0.020 {built-in method resize}
+      463    0.003    0.000    0.039    0.000 cbook.py:172(__call__)
+      610    0.004    0.000    0.039    0.000 transforms.py:1045(__add__)
+1142/1139    0.007    0.000    0.038    0.000 transforms.py:2096(get_matrix)
+     2977    0.011    0.000    0.037    0.000 sre_parse.py:201(get)
+       11    0.003    0.000    0.036    0.003 artist.py:929(pprint_setters)
+      463    0.005    0.000    0.036    0.000 backend_bases.py:2469(mouse_move)
+     2677    0.012    0.000    0.035    0.000 transforms.py:1321(__init__)
+       42    0.003    0.000    0.034    0.001 text.py:514(draw)
+      610    0.007    0.000    0.034    0.000 transforms.py:2004(composite_transform_factory)
+      331    0.004    0.000    0.034    0.000 transforms.py:1615(scale)
+        1    0.001    0.001    0.034    0.034 scale.py:1(<module>)
+      625    0.009    0.000    0.033    0.000 transforms.py:702(__init__)
+     3660    0.019    0.000    0.033    0.000 transforms.py:80(__init__)
+      373    0.012    0.000    0.033    0.000 transforms.py:99(invalidate)
+  200/160    0.002    0.000    0.032    0.000 spines.py:372(get_spine_transform)
+        1    0.003    0.003    0.032    0.032 ticker.py:124(<module>)
+     3560    0.021    0.000    0.032    0.000 sre_parse.py:182(__next)
+  208/160    0.000    0.000    0.031    0.000 spines.py:136(_ensure_position_is_set)
+        8    0.000    0.000    0.030    0.004 spines.py:325(set_position)
+        1    0.005    0.005    0.030    0.030 backend_bases.py:29(<module>)
+        4    0.000    0.000    0.030    0.008 spines.py:142(register_axis)
+    24/22    0.000    0.000    0.029    0.001 axis.py:520(_get_tick2line)
+       11    0.000    0.000    0.029    0.003 artist.py:788(__init__)
+    24/22    0.000    0.000    0.029    0.001 axis.py:384(_get_tick2line)
+        1    0.002    0.002    0.029    0.029 decimal.py:116(<module>)
+    24/22    0.000    0.000    0.029    0.001 axis.py:504(_get_tick1line)
+       11    0.013    0.001    0.029    0.003 artist.py:805(get_aliases)
+    24/22    0.000    0.000    0.029    0.001 axis.py:369(_get_tick1line)
+       64    0.002    0.000    0.028    0.000 backend_agg.py:159(get_text_width_height_descent)
+        1    0.000    0.000    0.028    0.028 tkagg.py:4(blit)
+     5258    0.027    0.000    0.027    0.000 Tkinter.py:1120(getint_event)
+      144    0.001    0.000    0.026    0.000 lines.py:739(set_marker)
+       14    0.000    0.000    0.026    0.002 pyparsing.py:1705(__init__)
+        1    0.000    0.000    0.025    0.025 Tkinter.py:1724(destroy)
+        1    0.003    0.003    0.025    0.025 saxutils.py:4(<module>)
+      112    0.007    0.000    0.025    0.000 lines.py:386(recache)
+      144    0.001    0.000    0.024    0.000 lines.py:305(set_fillstyle)
+      463    0.003    0.000    0.024    0.000 backend_tkagg.py:667(set_message)
+    11479    0.023    0.000    0.023    0.000 {isinstance}
+       96    0.002    0.000    0.023    0.000 backend_agg.py:210(_get_agg_font)
+      216    0.003    0.000    0.023    0.000 sre_compile.py:178(_compile_charset)
+       24    0.001    0.000    0.023    0.001 axis.py:535(_get_gridline)
+       18    0.000    0.000    0.023    0.001 axis.py:1148(_copy_tick_props)
+      203    0.002    0.000    0.023    0.000 transforms.py:1119(transform_point)
+       24    0.001    0.000    0.022    0.001 axis.py:400(_get_gridline)
+      4/3    0.002    0.001    0.022    0.007 {__import__}
+        1    0.001    0.001    0.022    0.022 collections.py:10(<module>)
+     11/3    0.000    0.000    0.022    0.007 Tkinter.py:1977(destroy)
+       64    0.000    0.000    0.021    0.000 transforms.py:2234(get_transformed_points_and_affine)
+      464    0.002    0.000    0.021    0.000 Tkinter.py:198(set)
+     1401    0.009    0.000    0.021    0.000 linalg.py:66(_makearray)
+        1    0.003    0.003    0.021    0.021 __init__.py:137(<module>)
+      467    0.008    0.000    0.021    0.000 linalg.py:99(_commonType)
+        3    0.003    0.001    0.021    0.007 __init__.py:6(<module>)
+       54    0.001    0.000    0.021    0.000 lines.py:899(update_from)
+       64    0.001    0.000    0.020    0.000 transforms.py:2224(_revalidate)
+        3    0.000    0.000    0.020    0.007 figure.py:294(_set_dpi)
+       11    0.010    0.001    0.020    0.002 artist.py:857(_get_setters_and_targets)
+      828    0.005    0.000    0.020    0.000 transforms.py:1459(__init__)
+      464    0.019    0.000    0.019    0.000 {built-in method globalsetvar}
+        9    0.000    0.000    0.019    0.002 pyparsing.py:1582(__init__)
+  415/351    0.003    0.000    0.019    0.000 transforms.py:1912(transform)
+      505    0.005    0.000    0.018    0.000 transforms.py:1965(__init__)
+      479    0.005    0.000    0.018    0.000 Tkinter.py:1066(nametowidget)
+      216    0.010    0.000    0.018    0.000 sre_compile.py:207(_optimize_charset)
+        1    0.001    0.001    0.018    0.018 lines.py:4(<module>)
+  208/200    0.004    0.000    0.018    0.000 transforms.py:1732(transform)
+        2    0.000    0.000    0.018    0.009 axis.py:603(__init__)
+        1    0.002    0.002    0.017    0.017 filters.py:31(<module>)
+1038/1036    0.008    0.000    0.017    0.000 transforms.py:1415(transform)
+       32    0.001    0.000    0.017    0.001 backend_agg.py:135(draw_text)
+  220/100    0.001    0.000    0.017    0.000 axes.py:565(get_xaxis_transform)
+  220/100    0.001    0.000    0.017    0.000 axes.py:636(get_yaxis_transform)
+     8851    0.016    0.000    0.016    0.000 {getattr}
+        1    0.004    0.004    0.016    0.016 urllib.py:23(<module>)
+        1    0.000    0.000    0.016    0.016 backend_tkagg.py:436(destroy)
+        1    0.000    0.000    0.016    0.016 _pylab_helpers.py:46(destroy)
+        1    0.016    0.016    0.016    0.016 {gc.collect}
+     1468    0.010    0.000    0.016    0.000 transforms.py:126(set_children)
+  428/265    0.001    0.000    0.016    0.000 {hash}
+      505    0.005    0.000    0.016    0.000 transforms.py:2079(__init__)
+       59    0.002    0.000    0.015    0.000 sre_compile.py:361(_compile_info)
+        1    0.001    0.001    0.015    0.015 _internal.py:4(<module>)
+      262    0.011    0.000    0.015    0.000 function_base.py:3178(add_newdoc)
+      163    0.003    0.000    0.015    0.000 font_manager.py:687(__hash__)
+        1    0.003    0.003    0.015    0.015 tempfile.py:18(<module>)
+     2422    0.010    0.000    0.015    0.000 sre_parse.py:130(__getitem__)
+      468    0.003    0.000    0.014    0.000 transforms.py:1422(transform_point)
+     5318    0.014    0.000    0.014    0.000 __init__.py:655(__getitem__)
+     1506    0.014    0.000    0.014    0.000 {built-in method affine_transform}
+        1    0.002    0.002    0.014    0.014 __init__.py:74(<module>)
+        1    0.002    0.002    0.014    0.014 __init__.py:45(<module>)
+     3684    0.014    0.000    0.014    0.000 weakref.py:243(__init__)
+        1    0.005    0.005    0.013    0.013 dates.py:109(<module>)
+      136    0.001    0.000    0.013    0.000 transforms.py:1761(transform_non_affine)
+     7571    0.013    0.000    0.013    0.000 {method 'startswith' of 'str' objects}
+      130    0.009    0.000    0.013    0.000 {method 'sub' of '_sre.SRE_Pattern' objects}
+        1    0.000    0.000    0.013    0.013 __init__.py:14(pylab_setup)
+       11    0.008    0.001    0.012    0.001 collections.py:237(namedtuple)
+       35    0.001    0.000    0.012    0.000 artist.py:467(set_clip_path)
+        1    0.000    0.000    0.012    0.012 Image.py:1943(open)
+        1    0.003    0.003    0.012    0.012 random.py:40(<module>)
+      394    0.005    0.000    0.012    0.000 artist.py:830(get_valid_values)
+       72    0.001    0.000    0.012    0.000 transforms.py:1155(transform_path_non_affine)
+        1    0.007    0.007    0.012    0.012 backend_tkagg.py:3(<module>)
+        1    0.008    0.008    0.012    0.012 Image.py:290(preinit)
+        1    0.000    0.000    0.012    0.012 backend_tkagg.py:379(__init__)
+       25    0.000    0.000    0.012    0.000 doccer.py:113(decorate)
+       25    0.003    0.000    0.011    0.000 doccer.py:10(docformat)
+      467    0.005    0.000    0.011    0.000 linalg.py:139(_fastCopyAndTranspose)
+        1    0.000    0.000    0.011    0.011 backend_tkagg.py:656(__init__)
+        1    0.000    0.000    0.011    0.011 backend_bases.py:2393(__init__)
+      479    0.005    0.000    0.011    0.000 Tkinter.py:1105(_root)
+       16    0.000    0.000    0.011    0.001 axis.py:162(set_clip_path)
+      768    0.008    0.000    0.011    0.000 numeric.py:1830(identity)
+        1    0.000    0.000    0.011    0.011 backend_tkagg.py:700(_init_toolbar)
+        1    0.002    0.002    0.011    0.011 artist.py:1(<module>)
+     1214    0.007    0.000    0.011    0.000 weakref.py:350(keys)
+       48    0.000    0.000    0.011    0.000 lines.py:638(get_path)
+  823/292    0.008    0.000    0.011    0.000 sre_parse.py:140(getwidth)
+        9    0.000    0.000    0.011    0.001 Tkinter.py:3239(__init__)
+        9    0.000    0.000    0.011    0.001 Tkinter.py:3180(__init__)
+        7    0.000    0.000    0.011    0.002 backend_tkagg.py:691(_Button)
+       96    0.010    0.000    0.010    0.000 {built-in method set_text}
+        2    0.000    0.000    0.010    0.005 image.py:139(_get_unsampled_image)
+  486/485    0.006    0.000    0.010    0.000 transforms.py:359(_get_bounds)
+        1    0.003    0.003    0.010    0.010 __init__.py:38(<module>)
+        3    0.000    0.000    0.010    0.003 transforms.py:1545(clear)
+        1    0.002    0.002    0.010    0.010 index_tricks.py:1(<module>)
+        1    0.000    0.000    0.010    0.010 pyparsing.py:3323(makeHTMLTags)
+        1    0.000    0.000    0.010    0.010 pyparsing.py:3295(_makeTags)
+        2    0.000    0.000    0.010    0.005 pyparsing.py:3215(srange)
+        6    0.000    0.000    0.010    0.002 string.py:148(substitute)
+        1    0.000    0.000    0.010    0.010 cm.py:184(to_rgba)
+     2157    0.005    0.000    0.009    0.000 sre_parse.py:195(match)
+     1603    0.006    0.000    0.009    0.000 core.py:5634(isMaskedArray)
+        1    0.000    0.000    0.009    0.009 markers.py:5(<module>)
+        2    0.000    0.000    0.009    0.005 pyparsing.py:1018(parseString)
+        1    0.002    0.002    0.009    0.009 cm.py:6(<module>)
+      165    0.002    0.000    0.009    0.000 cbook.py:969(dedent)
+       12    0.001    0.000    0.009    0.001 patches.py:371(draw)
+      464    0.002    0.000    0.009    0.000 figure.py:900(get_axes)
+        1    0.002    0.002    0.009    0.009 contour.py:4(<module>)
+       64    0.001    0.000    0.009    0.000 text.py:682(get_prop_tup)
+        1    0.007    0.007    0.009    0.009 FixTk.py:1(<module>)
+      953    0.009    0.000    0.009    0.000 {method 'all' of 'numpy.ndarray' objects}
+      157    0.001    0.000    0.008    0.000 docstring.py:83(dedent)
+        1    0.003    0.003    0.008    0.008 textpath.py:3(<module>)
+    174/2    0.002    0.000    0.008    0.004 pyparsing.py:892(_parseNoCache)
+     1401    0.006    0.000    0.008    0.000 linalg.py:71(isComplexType)
+     30/2    0.000    0.000    0.008    0.004 pyparsing.py:2290(parseImpl)
+        1    0.006    0.006    0.008    0.008 polynomial.py:48(<module>)
+        2    0.000    0.000    0.008    0.004 random.py:91(__init__)
+        2    0.000    0.000    0.008    0.004 random.py:100(seed)
+      881    0.005    0.000    0.008    0.000 cbook.py:375(is_string_like)
+        2    0.008    0.004    0.008    0.004 {nt.urandom}
+      236    0.002    0.000    0.008    0.000 transforms.py:1873(__init__)
+        1    0.002    0.002    0.008    0.008 ctypeslib.py:51(<module>)
+        1    0.002    0.002    0.008    0.008 compat.py:3(<module>)
+      139    0.001    0.000    0.008    0.000 transforms.py:1953(inverted)
+       66    0.001    0.000    0.008    0.000 markers.py:537(_set_tickright)
+       66    0.001    0.000    0.008    0.000 markers.py:531(_set_tickleft)
+        1    0.004    0.004    0.008    0.008 shutil.py:5(<module>)
+     56/2    0.000    0.000    0.008    0.004 pyparsing.py:2557(parseImpl)
+       66    0.001    0.000    0.008    0.000 markers.py:544(_set_tickup)
+        2    0.000    0.000    0.007    0.004 pyparsing.py:2704(parseImpl)
+       24    0.000    0.000    0.007    0.000 axis.py:333(_get_text1)
+       66    0.001    0.000    0.007    0.000 markers.py:550(_set_tickdown)
+        1    0.002    0.002    0.007    0.007 colors.py:492(__call__)
+        1    0.000    0.000    0.007    0.007 fontconfig_pattern.py:69(__init__)
+        1    0.000    0.000    0.007    0.007 axes.py:6616(imshow)
+     20/8    0.000    0.000    0.007    0.001 pyparsing.py:2411(parseImpl)
+        1    0.001    0.001    0.007    0.007 sysconfig.py:10(<module>)
+       24    0.000    0.000    0.007    0.000 axis.py:489(_get_text2)
+      101    0.002    0.000    0.007    0.000 text.py:152(__init__)
+       86    0.001    0.000    0.007    0.000 docstring.py:100(dedent_interpd)
+     1389    0.005    0.000    0.007    0.000 artist.py:886(is_alias)
+       24    0.000    0.000    0.007    0.000 axis.py:473(_get_text1)
+     1240    0.005    0.000    0.007    0.000 artist.py:143(convert_xunits)
+      467    0.004    0.000    0.007    0.000 linalg.py:127(_to_native_byte_order)
+      467    0.007    0.000    0.007    0.000 {numpy.linalg.lapack_lite.dgesv}
+      471    0.003    0.000    0.007    0.000 figure.py:287(_get_axes)
+        1    0.001    0.001    0.007    0.007 texmanager.py:34(<module>)
+       24    0.000    0.000    0.007    0.000 axis.py:352(_get_text2)
+        2    0.000    0.000    0.007    0.003 font_manager.py:1325(findfont)
+        2    0.001    0.001    0.007    0.003 font_manager.py:1145(findfont)
+     1240    0.005    0.000    0.007    0.000 artist.py:153(convert_yunits)
+      139    0.001    0.000    0.007    0.000 axes.py:2778(format_coord)
+        1    0.006    0.006    0.007    0.007 tkFileDialog.py:43(<module>)
+      137    0.003    0.000    0.007    0.000 font_manager.py:641(__init__)
+        1    0.000    0.000    0.007    0.007 backend_tkagg.py:178(__init__)
+        1    0.006    0.006    0.007    0.007 socket.py:45(<module>)
+        1    0.005    0.005    0.007    0.007 chebyshev.py:78(<module>)
+        1    0.005    0.005    0.006    0.006 laguerre.py:50(<module>)
+        1    0.005    0.005    0.006    0.006 hermite.py:50(<module>)
+        1    0.005    0.005    0.006    0.006 legendre.py:51(<module>)
+        1    0.005    0.005    0.006    0.006 hermite_e.py:50(<module>)
+     1177    0.004    0.000    0.006    0.000 copy_reg.py:46(_reconstructor)
+        1    0.000    0.000    0.006    0.006 textwrap.py:348(fill)
+      942    0.004    0.000    0.006    0.000 Tkinter.py:1762(__getattr__)
+       33    0.003    0.000    0.006    0.000 doccer.py:69(indentcount_lines)
+        1    0.002    0.002    0.006    0.006 core.py:21(<module>)
+        1    0.001    0.001    0.006    0.006 urlparse.py:29(<module>)
+        1    0.004    0.004    0.006    0.006 Image.py:27(<module>)
+      934    0.006    0.000    0.006    0.000 {numpy.core.multiarray._fastCopyAndTranspose}
+     2272    0.006    0.000    0.006    0.000 weakref.py:261(__setitem__)
+      259    0.004    0.000    0.006    0.000 font_manager.py:766(get_size_in_points)
+        1    0.002    0.002    0.006    0.006 __init__.py:680(rc_params)
+        1    0.005    0.005    0.006    0.006 __init__.py:4(<module>)
+       64    0.000    0.000    0.006    0.000 backend_agg.py:80(draw_markers)
+     1347    0.006    0.000    0.006    0.000 {numpy.core.multiarray.zeros}
+      834    0.006    0.000    0.006    0.000 {numpy.core._dotblas.dot}
+        1    0.002    0.002    0.006    0.006 __init__.py:3(<module>)
+2389/2380    0.005    0.000    0.005    0.000 {issubclass}
+     1137    0.004    0.000    0.005    0.000 sre_parse.py:126(__len__)
+       32    0.005    0.000    0.005    0.000 {built-in method draw_text_image}
+        1    0.000    0.000    0.005    0.005 Tkinter.py:912(update_idletasks)
+      172    0.002    0.000    0.005    0.000 backend_bases.py:847(set_foreground)
+        1    0.005    0.005    0.005    0.005 mathtext.py:19(<module>)
+      934    0.004    0.000    0.005    0.000 linalg.py:84(_realType)
+       64    0.004    0.000    0.005    0.000 {built-in method draw_markers}
+      467    0.003    0.000    0.005    0.000 linalg.py:157(_assertSquareness)
+      695    0.004    0.000    0.005    0.000 cbook.py:366(iterable)
+      923    0.004    0.000    0.005    0.000 artist.py:203(pchanged)
+        1    0.003    0.003    0.005    0.005 cbook.py:4(<module>)
+        8    0.000    0.000    0.005    0.001 spines.py:261(draw)
+        2    0.000    0.000    0.005    0.002 Tkinter.py:2196(create_image)
+     1986    0.005    0.000    0.005    0.000 weakref.py:245(remove)
+      468    0.004    0.000    0.005    0.000 transforms.py:345(_get_height)
+        2    0.000    0.000    0.005    0.002 Tkinter.py:2179(_create)
+        1    0.003    0.003    0.005    0.005 case.py:1(<module>)
+       52    0.004    0.000    0.005    0.000 sre_compile.py:258(_mk_bitmap)
+     13/7    0.000    0.000    0.005    0.001 __init__.py:245(wrapper)
+        1    0.000    0.000    0.005    0.005 texmanager.py:72(TexManager)
+        1    0.002    0.002    0.005    0.005 pickle.py:25(<module>)
+       11    0.000    0.000    0.005    0.000 Tkinter.py:1959(__init__)
+        2    0.002    0.001    0.004    0.002 function_base.py:1(<module>)
+        1    0.000    0.000    0.004    0.004 version.py:27(<module>)
+      262    0.002    0.000    0.004    0.000 artist.py:648(update)
+     2364    0.004    0.000    0.004    0.000 {min}
+      467    0.003    0.000    0.004    0.000 linalg.py:151(_assertRank2)
+        3    0.000    0.000    0.004    0.001 __init__.py:447(_get_configdir)
+        1    0.002    0.002    0.004    0.004 numeric.py:1(<module>)
+        6    0.001    0.000    0.004    0.001 transforms.py:670(union)
+        1    0.000    0.000    0.004    0.004 textwrap.py:107(__init__)
+        2    0.000    0.000    0.004    0.002 axes.py:1092(apply_aspect)
+      802    0.003    0.000    0.004    0.000 sre_parse.py:138(append)
+        1    0.000    0.000    0.004    0.004 axes.py:338(Axes)
+       40    0.000    0.000    0.004    0.000 pyparsing.py:678(copy)
+     2330    0.004    0.000    0.004    0.000 {method 'get' of 'dict' objects}
+      558    0.003    0.000    0.004    0.000 string.py:158(convert)
+      138    0.001    0.000    0.004    0.000 cm.py:56(_generate_cmap)
+      472    0.003    0.000    0.004    0.000 figure.py:53(as_list)
+        1    0.001    0.001    0.004    0.004 polynomial.py:3(<module>)
+       42    0.001    0.000    0.004    0.000 copy.py:66(copy)
+        1    0.002    0.002    0.004    0.004 parser.py:7(<module>)
+        7    0.000    0.000    0.004    0.001 Tkinter.py:2025(__init__)
+      195    0.002    0.000    0.004    0.000 colors.py:317(to_rgba)
+      740    0.004    0.000    0.004    0.000 {method 'copy' of 'numpy.ndarray' objects}
+        1    0.001    0.001    0.004    0.004 numerictypes.py:88(<module>)
+        1    0.002    0.002    0.004    0.004 triangulation.py:1(<module>)
+        1    0.000    0.000    0.004    0.004 backend_tkagg.py:663(destroy)
+        6    0.000    0.000    0.004    0.001 pyparsing.py:2919(__init__)
+       70    0.001    0.000    0.004    0.000 docstring.py:112(<lambda>)
+     1798    0.004    0.000    0.004    0.000 {method 'items' of 'dict' objects}
+        1    0.002    0.002    0.004    0.004 legend.py:13(<module>)
+        1    0.000    0.000    0.004    0.004 table.py:21(<module>)
+      384    0.004    0.000    0.004    0.000 {method 'search' of '_sre.SRE_Pattern' objects}
+        1    0.002    0.002    0.003    0.003 result.py:1(<module>)
+      956    0.003    0.000    0.003    0.000 {built-in method getboolean}
+     12/6    0.000    0.000    0.003    0.001 pyparsing.py:2563(leaveWhitespace)
+       12    0.000    0.000    0.003    0.000 backend_agg.py:97(draw_path)
+        1    0.001    0.001    0.003    0.003 widgets.py:10(<module>)
+      488    0.003    0.000    0.003    0.000 {method 'flatten' of 'numpy.ndarray' objects}
+      321    0.003    0.000    0.003    0.000 {numpy.core.multiarray.concatenate}
+        1    0.003    0.003    0.003    0.003 transforms.py:30(<module>)
+        1    0.001    0.001    0.003    0.003 subprocess.py:389(<module>)
+       24    0.000    0.000    0.003    0.000 axis.py:314(_get_text1_transform)
+      592    0.003    0.000    0.003    0.000 {range}
+      470    0.003    0.000    0.003    0.000 {method 'astype' of 'numpy.ndarray' objects}
+        1    0.002    0.002    0.003    0.003 collections.py:1(<module>)
+       12    0.002    0.000    0.003    0.000 {built-in method draw_path}
+       24    0.000    0.000    0.003    0.000 axes.py:588(get_xaxis_text1_transform)
+       40    0.000    0.000    0.003    0.000 core.py:106(get_object_signature)
+      240    0.001    0.000    0.003    0.000 axis.py:257(_set_artist_props)
+        3    0.000    0.000    0.003    0.001 __init__.py:166(_is_writable_dir)
+       46    0.000    0.000    0.003    0.000 pyplot.py:1936(<lambda>)
+      198    0.001    0.000    0.003    0.000 font_manager.py:700(get_family)
+      335    0.001    0.000    0.003    0.000 artist.py:448(set_figure)
+      144    0.002    0.000    0.003    0.000 lines.py:691(set_linestyle)
+       32    0.000    0.000    0.003    0.000 transforms.py:1570(rotate_deg)
+      231    0.002    0.000    0.003    0.000 sre_compile.py:354(_simple)
+        1    0.002    0.002    0.003    0.003 cm.py:276(autoscale_None)
+      139    0.002    0.000    0.003    0.000 axes.py:2754(format_xdata)
+        3    0.000    0.000    0.003    0.001 backend_agg.py:403(get_renderer)
+        6    0.000    0.000    0.003    0.000 warnings.py:24(_show_warning)
+       32    0.001    0.000    0.003    0.000 transforms.py:1553(rotate)
+      304    0.003    0.000    0.003    0.000 artist.py:74(__init__)
+        6    0.002    0.000    0.003    0.000 patches.py:1486(_pprint_table)
+       97    0.001    0.000    0.003    0.000 transforms.py:2178(__init__)
+       64    0.001    0.000    0.003    0.000 lines.py:922(_get_rgb_face)
+       52    0.001    0.000    0.003    0.000 inspect.py:801(getargspec)
+        1    0.000    0.000    0.003    0.003 version.py:63(StrictVersion)
+        1    0.002    0.002    0.003    0.003 npyio.py:1(<module>)
+     1599    0.003    0.000    0.003    0.000 {method 'lower' of 'str' objects}
+        1    0.000    0.000    0.003    0.003 figure.py:496(set_size_inches)
+       26    0.003    0.000    0.003    0.000 {dir}
+        1    0.000    0.000    0.003    0.003 transforms.py:883(_set_p1)
+       24    0.000    0.000    0.003    0.000 axis.py:453(_get_text1_transform)
+       24    0.000    0.000    0.003    0.000 axis.py:317(_get_text2_transform)
+       32    0.001    0.000    0.003    0.000 transforms.py:641(translated)
+       55    0.001    0.000    0.003    0.000 {all}
+        2    0.000    0.000    0.003    0.001 backend_agg.py:49(__init__)
+       24    0.000    0.000    0.003    0.000 axis.py:456(_get_text2_transform)
+        2    0.000    0.000    0.003    0.001 axes.py:727(set_position)
+      117    0.001    0.000    0.003    0.000 re.py:134(match)
+     1425    0.003    0.000    0.003    0.000 {built-in method __new__ of type object at 0x1E1D4498}
+        2    0.000    0.000    0.003    0.001 transforms.py:936(set)
+        1    0.001    0.001    0.003    0.003 afm.py:35(<module>)
+        1    0.002    0.002    0.003    0.003 rrule.py:6(<module>)
+       23    0.000    0.000    0.003    0.000 core.py:5915(__init__)
+     10/6    0.000    0.000    0.003    0.000 pyparsing.py:2194(leaveWhitespace)
+       24    0.000    0.000    0.003    0.000 axes.py:659(get_yaxis_text1_transform)
+       69    0.000    0.000    0.003    0.000 cm.py:44(_reverse_cmap_spec)
+     1683    0.003    0.000    0.003    0.000 {callable}
+       24    0.000    0.000    0.003    0.000 axes.py:612(get_xaxis_text2_transform)
+       24    0.000    0.000    0.003    0.000 axes.py:683(get_yaxis_text2_transform)
+       64    0.000    0.000    0.003    0.000 lines.py:439(_transform_path)
+        1    0.001    0.001    0.003    0.003 arraysetops.py:25(<module>)
+      973    0.003    0.000    0.003    0.000 {method 'split' of 'str' objects}
+      485    0.002    0.000    0.003    0.000 urlparse.py:314(<genexpr>)
+      485    0.002    0.000    0.003    0.000 urllib.py:1181(<genexpr>)
+       23    0.000    0.000    0.003    0.000 core.py:5919(getdoc)
+        1    0.001    0.001    0.003    0.003 __init__.py:37(<module>)
+      260    0.001    0.000    0.003    0.000 artist.py:218(set_transform)
+      862    0.002    0.000    0.003    0.000 {hasattr}
+        1    0.000    0.000    0.003    0.003 artist.py:782(ArtistInspector)
+      769    0.002    0.000    0.002    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+       64    0.000    0.000    0.002    0.000 markers.py:165(get_transform)
+        2    0.002    0.001    0.002    0.001 {built-in method draw_image}
+     1398    0.002    0.000    0.002    0.000 {method 'pop' of 'list' objects}
+        1    0.002    0.002    0.002    0.002 __init__.py:84(<module>)
+        1    0.001    0.001    0.002    0.002 patches.py:2758(ArrowStyle)
+     1414    0.002    0.000    0.002    0.000 {method 'extend' of 'list' objects}
+       37    0.000    0.000    0.002    0.000 transforms.py:729(unit)
+     1509    0.002    0.000    0.002    0.000 {chr}
+       10    0.001    0.000    0.002    0.000 colors.py:692(from_list)
+        1    0.001    0.001    0.002    0.002 decorators.py:15(<module>)
+       64    0.002    0.000    0.002    0.000 cm.py:28(revcmap)
+        9    0.002    0.000    0.002    0.000 {method 'write' of 'file' objects}
+      707    0.002    0.000    0.002    0.000 {numpy.core.multiarray.empty}
+     1325    0.002    0.000    0.002    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.002    0.002 __init__.py:551(matplotlib_fname)
+       37    0.002    0.000    0.002    0.000 {nt.stat}
+      139    0.001    0.000    0.002    0.000 axes.py:2766(format_ydata)
+        1    0.001    0.001    0.002    0.002 defmatrix.py:1(<module>)
+        2    0.000    0.000    0.002    0.001 axes.py:708(_update_transScale)
+      144    0.001    0.000    0.002    0.000 lines.py:448(set_transform)
+      144    0.001    0.000    0.002    0.000 lines.py:369(set_data)
+        1    0.001    0.001    0.002    0.002 ssl.py:56(<module>)
+        1    0.000    0.000    0.002    0.002 numbers.py:6(<module>)
+       64    0.001    0.000    0.002    0.000 transforms.py:1384(frozen)
+        1    0.000    0.000    0.002    0.002 image.py:627(set_extent)
+      511    0.001    0.000    0.002    0.000 {method 'sort' of 'list' objects}
+        1    0.001    0.001    0.002    0.002 __init__.py:44(<module>)
+        2    0.002    0.001    0.002    0.001 {built-in method RendererAgg}
+      104    0.001    0.000    0.002    0.000 text.py:676(get_position)
+        1    0.000    0.000    0.002    0.002 Image.py:664(convert)
+      828    0.002    0.000    0.002    0.000 {max}
+        1    0.000    0.000    0.002    0.002 utils.py:1(<module>)
+       64    0.001    0.000    0.002    0.000 transforms.py:2210(__init__)
+        1    0.000    0.000    0.002    0.002 difflib.py:29(<module>)
+        3    0.000    0.000    0.002    0.001 tempfile.py:419(NamedTemporaryFile)
+      372    0.001    0.000    0.002    0.000 UserDict.py:17(__len__)
+      423    0.001    0.000    0.002    0.000 collections.py:277(<genexpr>)
+      942    0.002    0.000    0.002    0.000 transforms.py:1502(get_matrix)
+       40    0.001    0.000    0.002    0.000 copy.py:306(_reconstruct)
+       36    0.000    0.000    0.002    0.000 text.py:252(update_from)
+  498/497    0.001    0.000    0.002    0.000 transforms.py:988(get_points)
+        1    0.002    0.002    0.002    0.002 Tkinter.py:31(<module>)
+        1    0.001    0.001    0.002    0.002 mlab.py:142(<module>)
+        1    0.001    0.001    0.002    0.002 __init__.py:20(<module>)
+        1    0.000    0.000    0.002    0.002 textwrap.py:323(fill)
+        1    0.000    0.000    0.002    0.002 textwrap.py:308(wrap)
+       64    0.001    0.000    0.002    0.000 text.py:973(is_math_text)
+        1    0.000    0.000    0.002    0.002 threading.py:1(<module>)
+     1139    0.002    0.000    0.002    0.000 {method 'group' of '_sre.SRE_Match' objects}
+        3    0.000    0.000    0.002    0.001 tempfile.py:219(_mkstemp_inner)
+        6    0.001    0.000    0.002    0.000 susanedge.py:90(band_edge_dir)
+      288    0.001    0.000    0.002    0.000 __init__.py:224(report)
+       34    0.001    0.000    0.002    0.000 font_manager.py:1031(score_family)
+      259    0.001    0.000    0.002    0.000 font_manager.py:1009(get_default_size)
+        1    0.000    0.000    0.002    0.002 pyparsing.py:3129(oneOf)
+     1176    0.002    0.000    0.002    0.000 sre_compile.py:24(_identityfunction)
+     1154    0.002    0.000    0.002    0.000 {ord}
+       40    0.000    0.000    0.002    0.000 ticker.py:379(__call__)
+        1    0.001    0.001    0.002    0.002 colors.py:841(__call__)
+        1    0.001    0.001    0.002    0.002 tz.py:6(<module>)
+        1    0.001    0.001    0.002    0.002 dis.py:1(<module>)
+        1    0.001    0.001    0.002    0.002 textwrap.py:235(_wrap_chunks)
+       90    0.001    0.000    0.002    0.000 artist.py:699(update_from)
+        2    0.000    0.000    0.002    0.001 axis.py:1603(_update_label_position)
+        1    0.002    0.002    0.002    0.002 ImagePalette.py:19(<module>)
+      168    0.001    0.000    0.002    0.000 artist.py:44(after)
+        2    0.000    0.000    0.002    0.001 transforms.py:1289(set)
+      168    0.001    0.000    0.002    0.000 artist.py:36(before)
+       64    0.001    0.000    0.002    0.000 lines.py:582(_get_markerfacecolor)
+        1    0.000    0.000    0.002    0.002 markers.py:21(MarkerStyle)
+      814    0.002    0.000    0.002    0.000 {method 'strip' of 'str' objects}
+       36    0.000    0.000    0.002    0.000 pyparsing.py:1117(__add__)
+      934    0.002    0.000    0.002    0.000 {method '__array_prepare__' of 'numpy.ndarray' objects}
+      584    0.002    0.000    0.002    0.000 {method 'join' of 'str' objects}
+        1    0.001    0.001    0.002    0.002 BmpImagePlugin.py:27(<module>)
+        1    0.000    0.000    0.002    0.002 axes.py:802(_gen_axes_spines)
+        1    0.000    0.000    0.002    0.002 main.py:1(<module>)
+        4    0.000    0.000    0.002    0.000 spines.py:418(linear_spine)
+      140    0.001    0.000    0.002    0.000 transforms.py:1393(__array__)
+       31    0.001    0.000    0.002    0.000 _inspect.py:157(formatargspec)
+      464    0.002    0.000    0.002    0.000 backend_bases.py:1248(_update_enter_leave)
+      174    0.001    0.000    0.002    0.000 backend_bases.py:590(new_gc)
+        2    0.000    0.000    0.002    0.001 axis.py:1865(_update_label_position)
+      198    0.001    0.000    0.002    0.000 font_manager.py:718(get_style)
+       40    0.001    0.000    0.001    0.000 axis.py:414(update_position)
+        2    0.000    0.000    0.001    0.001 axis.py:1626(_update_offset_text_position)
+        5    0.001    0.000    0.001    0.000 abc.py:86(__new__)
+        1    0.000    0.000    0.001    0.001 image.py:399(set_data)
+       12    0.000    0.000    0.001    0.000 pyparsing.py:2935(postParse)
+      128    0.001    0.000    0.001    0.000 backend_agg.py:234(points_to_pixels)
+        1    0.000    0.000    0.001    0.001 cbook.py:1299(safe_masked_invalid)
+        1    0.000    0.000    0.001    0.001 version.py:228(LooseVersion)
+      697    0.001    0.000    0.001    0.000 {iter}
+      641    0.001    0.000    0.001    0.000 artist.py:229(get_transform)
+        1    0.000    0.000    0.001    0.001 dates.py:316(DateFormatter)
+        1    0.001    0.001    0.001    0.001 __init__.py:10(<module>)
+       40    0.001    0.000    0.001    0.000 axis.py:550(update_position)
+      161    0.001    0.000    0.001    0.000 {method 'min' of 'numpy.ndarray' objects}
+       40    0.000    0.000    0.001    0.000 _inspect.py:118(getargspec)
+        4    0.000    0.000    0.001    0.000 ticker.py:450(set_locs)
+      149    0.001    0.000    0.001    0.000 sre_parse.py:257(_escape)
+        1    0.001    0.001    0.001    0.001 FileDialog.py:9(<module>)
+        1    0.001    0.001    0.001    0.001 __init__.py:17(<module>)
+        4    0.000    0.000    0.001    0.000 numeric.py:65(zeros_like)
+      300    0.001    0.000    0.001    0.000 colors.py:258(to_rgb)
+        1    0.001    0.001    0.001    0.001 _pylab_helpers.py:3(<module>)
+        3    0.001    0.000    0.001    0.000 numeric.py:122(extend_all)
+      602    0.001    0.000    0.001    0.000 sre_parse.py:90(__init__)
+        1    0.000    0.000    0.001    0.001 warnings.py:45(filterwarnings)
+      394    0.001    0.000    0.001    0.000 {method 'mro' of 'type' objects}
+        1    0.001    0.001    0.001    0.001 {method 'take' of 'numpy.ndarray' objects}
+      198    0.001    0.000    0.001    0.000 font_manager.py:737(get_weight)
+       25    0.000    0.000    0.001    0.000 Tkinter.py:1040(_options)
+      198    0.001    0.000    0.001    0.000 font_manager.py:748(get_stretch)
+      198    0.001    0.000    0.001    0.000 font_manager.py:728(get_variant)
+        6    0.000    0.000    0.001    0.000 ticker.py:1188(__call__)
+        1    0.001    0.001    0.001    0.001 image.py:5(<module>)
+       52    0.001    0.000    0.001    0.000 inspect.py:741(getargs)
+        5    0.001    0.000    0.001    0.000 {method 'fill' of 'numpy.ndarray' objects}
+      278    0.001    0.000    0.001    0.000 ticker.py:405(format_data_short)
+        1    0.000    0.000    0.001    0.001 ImageFile.py:124(load)
+      467    0.001    0.000    0.001    0.000 {method 'transpose' of 'numpy.ndarray' objects}
+       32    0.001    0.000    0.001    0.000 cbook.py:1225(popall)
+        1    0.000    0.000    0.001    0.001 loader.py:1(<module>)
+        1    0.001    0.001    0.001    0.001 hashlib.py:55(<module>)
+        1    0.001    0.001    0.001    0.001 heapq.py:31(<module>)
+        1    0.000    0.000    0.001    0.001 util.py:1(<module>)
+      612    0.001    0.000    0.001    0.000 transforms.py:918(get_points)
+        1    0.001    0.001    0.001    0.001 xmlreader.py:2(<module>)
+       40    0.000    0.000    0.001    0.000 transforms.py:967(__init__)
+       36    0.000    0.000    0.001    0.000 pyparsing.py:2542(__init__)
+        1    0.000    0.000    0.001    0.001 numerictypes.py:300(_add_aliases)
+        1    0.001    0.001    0.001    0.001 _mathtext_data.py:3(<module>)
+        1    0.001    0.001    0.001    0.001 GifImagePlugin.py:28(<module>)
+      161    0.001    0.000    0.001    0.000 {method 'max' of 'numpy.ndarray' objects}
+        1    0.001    0.001    0.001    0.001 backend_agg.py:22(<module>)
+        1    0.001    0.001    0.001    0.001 utils.py:3(<module>)
+        2    0.001    0.001    0.001    0.001 {built-in method FT2Font}
+        1    0.000    0.000    0.001    0.001 backend_tkagg.py:339(key_release)
+        1    0.000    0.000    0.001    0.001 extras.py:10(<module>)
+        1    0.000    0.000    0.001    0.001 colors.py:674(_init)
+        6    0.000    0.000    0.001    0.000 patches.py:55(__init__)
+        1    0.000    0.000    0.001    0.001 patches.py:2292(ConnectionStyle)
+      201    0.001    0.000    0.001    0.000 text.py:963(set_text)
+        1    0.000    0.000    0.001    0.001 backend_bases.py:1581(key_release_event)
+        1    0.001    0.001    0.001    0.001 core.py:2200(masked_invalid)
+        4    0.000    0.000    0.001    0.000 spines.py:39(__init__)
+       14    0.000    0.000    0.001    0.000 genericpath.py:15(exists)
+        1    0.000    0.000    0.001    0.001 backend_bases.py:1388(__init__)
+        1    0.001    0.001    0.001    0.001 base64.py:3(<module>)
+      142    0.001    0.000    0.001    0.000 pyparsing.py:254(__new__)
+      394    0.001    0.000    0.001    0.000 artist.py:895(aliased_name)
+      144    0.001    0.000    0.001    0.000 lines.py:760(set_markeredgewidth)
+        1    0.000    0.000    0.001    0.001 figure.py:223(__init__)
+      172    0.001    0.000    0.001    0.000 artist.py:566(_set_gc_clip)
+      468    0.001    0.000    0.001    0.000 backend_bases.py:1117(__init__)
+        1    0.001    0.001    0.001    0.001 runner.py:1(<module>)
+       36    0.000    0.000    0.001    0.000 pyparsing.py:2279(__init__)
+      138    0.001    0.000    0.001    0.000 colors.py:621(__init__)
+        3    0.001    0.000    0.001    0.000 {nt.open}
+        3    0.001    0.000    0.001    0.000 colors.py:404(makeMappingArray)
+       32    0.001    0.000    0.001    0.000 {built-in method draw_glyphs_to_bitmap}
+       60    0.000    0.000    0.001    0.000 sre_parse.py:178(__init__)
+       40    0.001    0.000    0.001    0.000 {method '__reduce_ex__' of 'object' objects}
+      463    0.001    0.000    0.001    0.000 {method 'replace' of 'str' objects}
+        1    0.000    0.000    0.001    0.001 FixTk.py:21(convert_path)
+      133    0.001    0.000    0.001    0.000 pyparsing.py:655(__init__)
+        1    0.001    0.001    0.001    0.001 geo.py:1(<module>)
+       25    0.000    0.000    0.001    0.000 nosetester.py:138(__init__)
+       90    0.001    0.000    0.001    0.000 docstring.py:35(__call__)
+      104    0.000    0.000    0.001    0.000 artist.py:689(set_zorder)
+       96    0.000    0.000    0.001    0.000 fromnumeric.py:1836(amin)
+        4    0.001    0.000    0.001    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.001    0.001 lines.py:71(Line2D)
+        1    0.001    0.001    0.001    0.001 misc.py:4(<module>)
+       96    0.000    0.000    0.001    0.000 fromnumeric.py:1774(amax)
+    75/72    0.000    0.000    0.001    0.000 pyparsing.py:108(_ustr)
+  142/140    0.001    0.000    0.001    0.000 pyparsing.py:263(__init__)
+        1    0.001    0.001    0.001    0.001 {built-in method decode}
+       64    0.000    0.000    0.001    0.000 cbook.py:1825(is_math_text)
+        1    0.000    0.000    0.001    0.001 axes.py:2374(set_xlim)
+       15    0.000    0.000    0.001    0.000 genericpath.py:38(isdir)
+        1    0.001    0.001    0.001    0.001 linalg.py:10(<module>)
+        1    0.001    0.001    0.001    0.001 pilutil.py:7(<module>)
+       64    0.000    0.000    0.001    0.000 lines.py:568(get_markeredgecolor)
+       57    0.001    0.000    0.001    0.000 utils.py:113(__call__)
+      144    0.001    0.000    0.001    0.000 lines.py:1062(set_solid_capstyle)
+      296    0.001    0.000    0.001    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+        2    0.000    0.000    0.001    0.000 colors.py:888(autoscale_None)
+      144    0.001    0.000    0.001    0.000 lines.py:1048(set_dash_capstyle)
+        1    0.001    0.001    0.001    0.001 triangulate.py:1(<module>)
+      420    0.001    0.000    0.001    0.000 markers.py:177(_set_nothing)
+        1    0.000    0.000    0.001    0.001 axes.py:2576(set_ylim)
+      324    0.001    0.000    0.001    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.001    0.001 PngImagePlugin.py:34(<module>)
+        1    0.000    0.000    0.001    0.001 colors.py:809(process_value)
+       16    0.000    0.000    0.001    0.000 transforms.py:1849(blended_transform_factory)
+        8    0.000    0.000    0.001    0.000 __init__.py:420(_get_home)
+      526    0.001    0.000    0.001    0.000 {method 'lstrip' of 'str' objects}
+      144    0.001    0.000    0.001    0.000 lines.py:1013(set_dash_joinstyle)
+       19    0.000    0.000    0.001    0.000 pyparsing.py:2899(__init__)
+      144    0.001    0.000    0.001    0.000 cbook.py:406(is_numlike)
+        5    0.000    0.000    0.001    0.000 abc.py:105(register)
+      346    0.001    0.000    0.001    0.000 backend_bases.py:791(set_alpha)
+        9    0.000    0.000    0.001    0.000 extras.py:239(__init__)
+      225    0.001    0.000    0.001    0.000 {zip}
+        4    0.001    0.000    0.001    0.000 {numpy.core.multiarray.putmask}
+      144    0.001    0.000    0.001    0.000 lines.py:1024(set_solid_joinstyle)
+        6    0.000    0.000    0.001    0.000 ticker.py:1162(bin_boundaries)
+        4    0.000    0.000    0.001    0.000 ticker.py:500(_set_format)
+        1    0.000    0.000    0.001    0.001 opcode.py:5(<module>)
+       44    0.000    0.000    0.001    0.000 ticker.py:374(fix_minus)
+      174    0.001    0.000    0.001    0.000 backend_bases.py:660(__init__)
+        1    0.000    0.000    0.001    0.001 glob.py:1(<module>)
+      252    0.001    0.000    0.001    0.000 {method 'expandtabs' of 'str' objects}
+       34    0.001    0.000    0.001    0.000 font_manager.py:1085(score_stretch)
+        9    0.000    0.000    0.001    0.000 extras.py:243(getdoc)
+       96    0.001    0.000    0.001    0.000 backend_agg.py:72(_get_hinting_flag)
+        1    0.001    0.001    0.001    0.001 arrayprint.py:4(<module>)
+       37    0.000    0.000    0.001    0.000 ntpath.py:63(join)
+       90    0.000    0.000    0.001    0.000 sre_parse.py:225(_class_escape)
+       15    0.000    0.000    0.001    0.000 Tkinter.py:946(bind)
+     20/2    0.000    0.000    0.001    0.000 pyparsing.py:2225(streamline)
+        1    0.001    0.001    0.001    0.001 fftpack.py:32(<module>)
+      288    0.001    0.000    0.001    0.000 __init__.py:256(ge)
+        1    0.001    0.001    0.001    0.001 offsetbox.py:15(<module>)
+      118    0.001    0.000    0.001    0.000 sre_compile.py:474(isstring)
+        1    0.000    0.000    0.001    0.001 precision.py:6(<module>)
+        1    0.001    0.001    0.001    0.001 {built-in method convert}
+      101    0.001    0.000    0.001    0.000 font_manager.py:861(set_size)
+        1    0.001    0.001    0.001    0.001 errors.py:9(<module>)
+      9/5    0.000    0.000    0.001    0.000 abc.py:148(__subclasscheck__)
+        1    0.000    0.000    0.001    0.001 core.py:2441(__call__)
+        1    0.001    0.001    0.001    0.001 functions.py:3(<module>)
+       15    0.000    0.000    0.001    0.000 Tkinter.py:929(_bind)
+        1    0.001    0.001    0.001    0.001 tkagg.py:1(<module>)
+      249    0.001    0.000    0.001    0.000 {method 'splitlines' of 'str' objects}
+        6    0.000    0.000    0.001    0.000 pyparsing.py:696(setResultsName)
+       43    0.000    0.000    0.001    0.000 pyparsing.py:2176(__init__)
+       32    0.000    0.000    0.001    0.000 axis.py:240(set_label1)
+       54    0.000    0.000    0.001    0.000 pyparsing.py:1405(__init__)
+       40    0.001    0.000    0.001    0.000 ticker.py:514(pprint_val)
+      101    0.000    0.000    0.001    0.000 sre_parse.py:72(opengroup)
+      135    0.000    0.000    0.001    0.000 markers.py:632(<lambda>)
+       14    0.000    0.000    0.001    0.000 rcsetup.py:36(__init__)
+        1    0.000    0.000    0.001    0.001 axes.py:510(set_figure)
+      278    0.001    0.000    0.001    0.000 axis.py:1175(get_major_formatter)
+       37    0.000    0.000    0.001    0.000 Tkinter.py:74(_cnfmerge)
+       23    0.000    0.000    0.001    0.000 Tkinter.py:1083(_register)
+     22/3    0.000    0.000    0.001    0.000 pyparsing.py:2582(streamline)
+       23    0.000    0.000    0.001    0.000 pyparsing.py:1444(__init__)
+        8    0.000    0.000    0.001    0.000 core.py:2770(__array_finalize__)
+        1    0.000    0.000    0.001    0.001 doccer.py:94(filldoc)
+       31    0.000    0.000    0.001    0.000 _inspect.py:59(getargs)
+        1    0.000    0.000    0.001    0.001 doccer.py:119(unindent_dict)
+        1    0.000    0.000    0.001    0.001 transforms.py:888(_set_intervalx)
+      336    0.001    0.000    0.001    0.000 artist.py:593(get_agg_filter)
+        1    0.001    0.001    0.001    0.001 measurements.py:31(<module>)
+       36    0.000    0.000    0.001    0.000 font_manager.py:899(copy)
+        4    0.000    0.000    0.001    0.000 {filter}
+       10    0.000    0.000    0.001    0.000 Tkinter.py:1788(pack_configure)
+        1    0.000    0.000    0.001    0.001 transforms.py:893(_set_intervaly)
+      214    0.000    0.000    0.001    0.000 transforms.py:1832(get_matrix)
+       76    0.000    0.000    0.001    0.000 artist.py:408(get_snap)
+        6    0.000    0.000    0.001    0.000 warnings.py:36(formatwarning)
+      336    0.001    0.000    0.001    0.000 artist.py:576(get_rasterized)
+        9    0.000    0.000    0.001    0.000 doccer.py:127(unindent_string)
+      224    0.001    0.000    0.001    0.000 lines.py:800(set_xdata)
+        9    0.000    0.000    0.001    0.000 core.py:2745(_update_from)
+        2    0.000    0.000    0.001    0.000 patches.py:508(__init__)
+       27    0.000    0.000    0.001    0.000 ntpath.py:203(dirname)
+      101    0.000    0.000    0.001    0.000 text.py:773(set_color)
+      101    0.000    0.000    0.001    0.000 sre_parse.py:83(closegroup)
+        1    0.000    0.000    0.001    0.001 polar.py:1(<module>)
+       34    0.000    0.000    0.001    0.000 font_manager.py:1103(score_weight)
+        4    0.000    0.000    0.001    0.000 axis.py:676(set_scale)
+       19    0.000    0.000    0.001    0.000 patches.py:237(set_facecolor)
+        1    0.000    0.000    0.001    0.001 parser.py:292(__init__)
+       23    0.000    0.000    0.001    0.000 sre_parse.py:216(isname)
+       57    0.000    0.000    0.001    0.000 utils.py:157(deprecate)
+        1    0.000    0.000    0.001    0.001 {method 'decode' of 'str' objects}
+        1    0.000    0.000    0.001    0.001 parser.py:200(__init__)
+      368    0.001    0.000    0.001    0.000 {method 'isalnum' of 'str' objects}
+        8    0.000    0.000    0.001    0.000 core.py:7119(__init__)
+       20    0.000    0.000    0.001    0.000 ticker.py:1503(__init__)
+        1    0.000    0.000    0.001    0.001 optparse.py:1190(__init__)
+        1    0.000    0.000    0.001    0.001 axes.py:8396(update_params)
+        1    0.000    0.000    0.001    0.001 __init__.py:71(search_function)
+      224    0.001    0.000    0.001    0.000 lines.py:809(set_ydata)
+        1    0.000    0.000    0.001    0.001 tzwin.py:2(<module>)
+      259    0.001    0.000    0.001    0.000 {numpy.lib._compiled_base.add_docstring}
+       64    0.000    0.000    0.001    0.000 transforms.py:2265(get_affine)
+        1    0.000    0.000    0.001    0.001 gridspec.py:446(get_position)
+       26    0.000    0.000    0.001    0.000 numerictypes.py:232(bitname)
+        7    0.000    0.000    0.001    0.000 parser.py:215(_convert)
+       29    0.000    0.000    0.000    0.000 ntpath.py:164(split)
+        6    0.000    0.000    0.000    0.000 linecache.py:13(getline)
+        1    0.000    0.000    0.000    0.000 {built-in method frombyte}
+      169    0.000    0.000    0.000    0.000 pyparsing.py:1379(__getattr__)
+       36    0.000    0.000    0.000    0.000 cbook.py:1130(__setitem__)
+       20    0.000    0.000    0.000    0.000 ticker.py:334(__init__)
+        6    0.000    0.000    0.000    0.000 pyparsing.py:3213(<lambda>)
+      139    0.000    0.000    0.000    0.000 axes.py:2804(get_navigate)
+      138    0.000    0.000    0.000    0.000 colors.py:474(__init__)
+        4    0.000    0.000    0.000    0.000 core.py:2620(__new__)
+      194    0.000    0.000    0.000    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+       36    0.000    0.000    0.000    0.000 axis.py:865(_set_artist_props)
+       64    0.000    0.000    0.000    0.000 transforms.py:2190(get_matrix)
+       64    0.000    0.000    0.000    0.000 text.py:230(get_rotation)
+        8    0.000    0.000    0.000    0.000 core.py:7124(getdoc)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1733(readprofile)
+        4    0.000    0.000    0.000    0.000 scale.py:63(set_default_locators_and_formatters)
+        7    0.000    0.000    0.000    0.000 transforms.py:235(frozen)
+        1    0.000    0.000    0.000    0.000 core.py:5873(min)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:25(<module>)
+        1    0.000    0.000    0.000    0.000 core.py:5022(min)
+        7    0.000    0.000    0.000    0.000 genericpath.py:26(isfile)
+       72    0.000    0.000    0.000    0.000 transforms.py:1771(get_affine)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3203(__del__)
+        6    0.000    0.000    0.000    0.000 linecache.py:33(getlines)
+      191    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+       47    0.000    0.000    0.000    0.000 docstring.py:78(__call__)
+        1    0.000    0.000    0.000    0.000 _exceptions.py:1(<module>)
+       88    0.000    0.000    0.000    0.000 __init__.py:178(<lambda>)
+      128    0.000    0.000    0.000    0.000 {method 'count' of 'unicode' objects}
+       32    0.000    0.000    0.000    0.000 pyparsing.py:1633(parseImpl)
+      231    0.000    0.000    0.000    0.000 sre_parse.py:134(__setitem__)
+        1    0.000    0.000    0.000    0.000 numerictypes.py:284(_add_types)
+       32    0.000    0.000    0.000    0.000 axis.py:249(set_label2)
+       26    0.000    0.000    0.000    0.000 core.py:816(__init__)
+        1    0.000    0.000    0.000    0.000 linecache.py:68(updatecache)
+        1    0.000    0.000    0.000    0.000 calendar.py:6(<module>)
+       96    0.000    0.000    0.000    0.000 {built-in method set_size}
+        2    0.000    0.000    0.000    0.000 transforms.py:496(anchored)
+       20    0.000    0.000    0.000    0.000 ticker.py:1093(__init__)
+       96    0.000    0.000    0.000    0.000 {built-in method clear}
+      224    0.000    0.000    0.000    0.000 artist.py:527(get_visible)
+        4    0.000    0.000    0.000    0.000 fromnumeric.py:1322(clip)
+        1    0.000    0.000    0.000    0.000 core.py:5882(max)
+       13    0.000    0.000    0.000    0.000 patches.py:224(set_edgecolor)
+        1    0.000    0.000    0.000    0.000 core.py:5121(max)
+        1    0.000    0.000    0.000    0.000 gridspec.py:74(get_grid_positions)
+        1    0.000    0.000    0.000    0.000 dviread.py:20(<module>)
+        6    0.000    0.000    0.000    0.000 transforms.py:1801(__init__)
+       98    0.000    0.000    0.000    0.000 rcsetup.py:40(func)
+        4    0.000    0.000    0.000    0.000 {method 'clip' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 axes.py:527(_set_lim_and_transforms)
+        8    0.000    0.000    0.000    0.000 spines.py:266(_calc_offset_transform)
+       36    0.000    0.000    0.000    0.000 pyparsing.py:403(__iadd__)
+        1    0.000    0.000    0.000    0.000 figure.py:200(Figure)
+       12    0.000    0.000    0.000    0.000 pyparsing.py:459(copy)
+       72    0.000    0.000    0.000    0.000 pyparsing.py:873(preParse)
+      158    0.000    0.000    0.000    0.000 axis.py:673(get_scale)
+       74    0.000    0.000    0.000    0.000 numerictypes.py:130(english_lower)
+       46    0.000    0.000    0.000    0.000 abc.py:89(<genexpr>)
+       12    0.000    0.000    0.000    0.000 pyparsing.py:321(__delitem__)
+        4    0.000    0.000    0.000    0.000 axis.py:670(get_transform)
+       18    0.000    0.000    0.000    0.000 pyparsing.py:134(_str2dict)
+        1    0.000    0.000    0.000    0.000 signals.py:1(<module>)
+       64    0.000    0.000    0.000    0.000 markers.py:123(__nonzero__)
+        1    0.000    0.000    0.000    0.000 axis.py:1550(_get_label)
+        4    0.000    0.000    0.000    0.000 scale.py:73(get_transform)
+        1    0.000    0.000    0.000    0.000 _iotools.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 core.py:2568(MaskedArray)
+        1    0.000    0.000    0.000    0.000 axes.py:1543(update_datalim)
+        4    0.000    0.000    0.000    0.000 ticker.py:461(_set_offset)
+        6    0.000    0.000    0.000    0.000 {method 'any' of 'numpy.ndarray' objects}
+        9    0.000    0.000    0.000    0.000 function_base.py:6(linspace)
+      174    0.000    0.000    0.000    0.000 backend_bases.py:826(set_clip_path)
+       31    0.000    0.000    0.000    0.000 transforms.py:324(_get_intervalx)
+       15    0.000    0.000    0.000    0.000 pyparsing.py:1746(__str__)
+        1    0.000    0.000    0.000    0.000 _import_tools.py:1(<module>)
+      144    0.000    0.000    0.000    0.000 {repr}
+        1    0.000    0.000    0.000    0.000 polyutils.py:33(<module>)
+        1    0.000    0.000    0.000    0.000 scale.py:96(LogScale)
+        3    0.000    0.000    0.000    0.000 tempfile.py:127(next)
+       46    0.000    0.000    0.000    0.000 pyplot.py:1931(autogen_docstring)
+        1    0.000    0.000    0.000    0.000 numerictypes.py:456(_set_array_types)
+        6    0.000    0.000    0.000    0.000 ntpath.py:398(normpath)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2104(__init__)
+        1    0.000    0.000    0.000    0.000 polar.py:20(PolarAxes)
+       47    0.000    0.000    0.000    0.000 ntpath.py:55(isabs)
+        1    0.000    0.000    0.000    0.000 path.py:3(<module>)
+      175    0.000    0.000    0.000    0.000 {method 'end' of '_sre.SRE_Match' objects}
+        2    0.000    0.000    0.000    0.000 Tkinter.py:2439(__init__)
+        1    0.000    0.000    0.000    0.000 font_manager.py:697(__str__)
+      174    0.000    0.000    0.000    0.000 {method 'ljust' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 precision.py:21(_fill_table)
+        1    0.000    0.000    0.000    0.000 font_manager.py:781(get_fontconfig_pattern)
+       72    0.000    0.000    0.000    0.000 transforms.py:2301(interval_contains)
+      144    0.000    0.000    0.000    0.000 lines.py:314(set_markevery)
+      170    0.000    0.000    0.000    0.000 text.py:698(get_text)
+        6    0.000    0.000    0.000    0.000 ticker.py:1063(scale_range)
+       13    0.000    0.000    0.000    0.000 pyparsing.py:820(setParseAction)
+        1    0.000    0.000    0.000    0.000 fontconfig_pattern.py:165(generate_fontconfig_pattern)
+        1    0.000    0.000    0.000    0.000 quiver.py:15(<module>)
+      148    0.000    0.000    0.000    0.000 transforms.py:1900(_get_is_affine)
+      166    0.000    0.000    0.000    0.000 font_manager.py:775(get_file)
+       23    0.000    0.000    0.000    0.000 cbook.py:210(__init__)
+        4    0.000    0.000    0.000    0.000 ntpath.py:466(abspath)
+        5    0.000    0.000    0.000    0.000 precision.py:15(_get_precisions)
+        9    0.000    0.000    0.000    0.000 pyparsing.py:3121(_escapeRegexRangeChars)
+       52    0.000    0.000    0.000    0.000 <string>:8(__new__)
+        1    0.000    0.000    0.000    0.000 axis.py:1811(_get_label)
+       30    0.000    0.000    0.000    0.000 transforms.py:331(_get_intervaly)
+        8    0.000    0.000    0.000    0.000 transforms.py:2269(nonsingular)
+        1    0.000    0.000    0.000    0.000 optparse.py:1257(_populate_option_list)
+        2    0.000    0.000    0.000    0.000 gettext.py:565(gettext)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:3036(delimitedList)
+       10    0.000    0.000    0.000    0.000 transforms.py:1701(__init__)
+       52    0.000    0.000    0.000    0.000 inspect.py:67(ismethod)
+      144    0.000    0.000    0.000    0.000 lines.py:671(set_drawstyle)
+      174    0.000    0.000    0.000    0.000 backend_bases.py:692(restore)
+      144    0.000    0.000    0.000    0.000 lines.py:781(set_markerfacecoloralt)
+       16    0.000    0.000    0.000    0.000 axis.py:441(get_view_interval)
+        1    0.000    0.000    0.000    0.000 optparse.py:1247(_add_help_option)
+       16    0.000    0.000    0.000    0.000 axis.py:577(get_view_interval)
+       45    0.000    0.000    0.000    0.000 docstring.py:39(update)
+       64    0.000    0.000    0.000    0.000 {built-in method get_width_height}
+        3    0.000    0.000    0.000    0.000 {open}
+        3    0.000    0.000    0.000    0.000 decimal.py:3754(__init__)
+        1    0.000    0.000    0.000    0.000 _inspect.py:6(<module>)
+        7    0.000    0.000    0.000    0.000 pyparsing.py:2749(__init__)
+      144    0.000    0.000    0.000    0.000 lines.py:770(set_markerfacecolor)
+        2    0.000    0.000    0.000    0.000 optparse.py:1007(add_option)
+       18    0.000    0.000    0.000    0.000 core.py:900(__init__)
+        6    0.000    0.000    0.000    0.000 Image.py:503(__getattr__)
+        2    0.000    0.000    0.000    0.000 gettext.py:527(dgettext)
+        2    0.000    0.000    0.000    0.000 transforms.py:540(shrunk_to_aspect)
+       14    0.000    0.000    0.000    0.000 _weakrefset.py:58(__iter__)
+       11    0.000    0.000    0.000    0.000 pyparsing.py:1678(__str__)
+        1    0.000    0.000    0.000    0.000 axes.py:788(_gen_axes_patch)
+        1    0.000    0.000    0.000    0.000 core.py:3209(shrink_mask)
+        1    0.000    0.000    0.000    0.000 axis.py:1569(_get_offset_text)
+        1    0.000    0.000    0.000    0.000 _datasource.py:33(<module>)
+        1    0.000    0.000    0.000    0.000 records.py:36(<module>)
+        1    0.000    0.000    0.000    0.000 ImageFile.py:72(__init__)
+      144    0.000    0.000    0.000    0.000 lines.py:750(set_markeredgecolor)
+      163    0.000    0.000    0.000    0.000 {method 'start' of '_sre.SRE_Match' objects}
+        1    0.000    0.000    0.000    0.000 axis.py:1831(_get_offset_text)
+        1    0.000    0.000    0.000    0.000 transforms.py:834(update_from_data_xy)
+        8    0.000    0.000    0.000    0.000 ntpath.py:275(expanduser)
+      144    0.000    0.000    0.000    0.000 lines.py:683(set_linewidth)
+      101    0.000    0.000    0.000    0.000 font_manager.py:809(set_style)
+        2    0.000    0.000    0.000    0.000 core.py:6865(asarray)
+       52    0.000    0.000    0.000    0.000 inspect.py:142(isfunction)
+       11    0.000    0.000    0.000    0.000 Tkinter.py:1934(_setup)
+      144    0.000    0.000    0.000    0.000 lines.py:655(set_antialiased)
+      144    0.000    0.000    0.000    0.000 lines.py:663(set_color)
+        2    0.000    0.000    0.000    0.000 core.py:5720(array)
+       52    0.000    0.000    0.000    0.000 inspect.py:209(iscode)
+       16    0.000    0.000    0.000    0.000 axis.py:1357(set_label_text)
+       59    0.000    0.000    0.000    0.000 {_sre.compile}
+      140    0.000    0.000    0.000    0.000 backend_bases.py:915(set_snap)
+      145    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+      144    0.000    0.000    0.000    0.000 lines.py:792(set_markersize)
+      140    0.000    0.000    0.000    0.000 backend_bases.py:881(set_linewidth)
+       16    0.000    0.000    0.000    0.000 axis.py:1333(set_units)
+      148    0.000    0.000    0.000    0.000 backend_bases.py:138(open_group)
+        1    0.000    0.000    0.000    0.000 numerictypes.py:785(_construct_lookups)
+        5    0.000    0.000    0.000    0.000 transforms.py:338(_get_width)
+        1    0.000    0.000    0.000    0.000 Image.py:522(tostring)
+        2    0.000    0.000    0.000    0.000 gettext.py:461(translation)
+        1    0.000    0.000    0.000    0.000 GifImagePlugin.py:67(_open)
+        7    0.000    0.000    0.000    0.000 pyparsing.py:1215(__or__)
+        2    0.000    0.000    0.000    0.000 optparse.py:560(__init__)
+        4    0.000    0.000    0.000    0.000 patches.py:527(get_path)
+        2    0.000    0.000    0.000    0.000 {_ctypes.POINTER}
+      148    0.000    0.000    0.000    0.000 backend_bases.py:146(close_group)
+       12    0.000    0.000    0.000    0.000 Tkinter.py:343(destroy)
+       43    0.000    0.000    0.000    0.000 _inspect.py:161(<lambda>)
+        2    0.000    0.000    0.000    0.000 figure.py:149(update)
+        1    0.000    0.000    0.000    0.000 _cm.py:5(<module>)
+       40    0.000    0.000    0.000    0.000 _inspect.py:13(ismethod)
+       40    0.000    0.000    0.000    0.000 copy_reg.py:92(__newobj__)
+        2    0.000    0.000    0.000    0.000 gettext.py:421(find)
+        3    0.000    0.000    0.000    0.000 {method 'view' of 'numpy.ndarray' objects}
+      142    0.000    0.000    0.000    0.000 {id}
+      110    0.000    0.000    0.000    0.000 backend_bases.py:722(get_clip_path)
+      134    0.000    0.000    0.000    0.000 sre_parse.py:210(isident)
+       74    0.000    0.000    0.000    0.000 _inspect.py:150(strseq)
+        1    0.000    0.000    0.000    0.000 patches.py:863(Arrow)
+       17    0.000    0.000    0.000    0.000 pyparsing.py:688(setName)
+       12    0.000    0.000    0.000    0.000 pyparsing.py:1409(setName)
+      110    0.000    0.000    0.000    0.000 backend_bases.py:940(get_hatch_path)
+        7    0.000    0.000    0.000    0.000 cbook.py:219(connect)
+       24    0.000    0.000    0.000    0.000 axis.py:459(apply_tickdir)
+      135    0.000    0.000    0.000    0.000 {cmp}
+      119    0.000    0.000    0.000    0.000 opcode.py:27(def_op)
+      102    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 textwrap.py:155(_split)
+      101    0.000    0.000    0.000    0.000 font_manager.py:795(set_family)
+        1    0.000    0.000    0.000    0.000 legend.py:86(Legend)
+        7    0.000    0.000    0.000    0.000 {method 'read' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 backend_bases.py:949(TimerBase)
+       20    0.000    0.000    0.000    0.000 axis.py:1401(set_minor_locator)
+       64    0.000    0.000    0.000    0.000 {built-in method get_descent}
+        4    0.000    0.000    0.000    0.000 path.py:380(unit_rectangle)
+       32    0.000    0.000    0.000    0.000 pyparsing.py:1464(parseImpl)
+       24    0.000    0.000    0.000    0.000 axis.py:320(apply_tickdir)
+       64    0.000    0.000    0.000    0.000 text.py:43(get_rotation)
+       82    0.000    0.000    0.000    0.000 ntpath.py:122(splitdrive)
+        1    0.000    0.000    0.000    0.000 transforms.py:697(Bbox)
+      101    0.000    0.000    0.000    0.000 font_manager.py:819(set_variant)
+      118    0.000    0.000    0.000    0.000 markers.py:138(get_marker)
+       40    0.000    0.000    0.000    0.000 ticker.py:1133(set_params)
+       29    0.000    0.000    0.000    0.000 pyparsing.py:1345(__str__)
+        1    0.000    0.000    0.000    0.000 csv.py:4(<module>)
+       40    0.000    0.000    0.000    0.000 _inspect.py:24(isfunction)
+        5    0.000    0.000    0.000    0.000 backend_bases.py:2055(mpl_connect)
+      6/5    0.000    0.000    0.000    0.000 units.py:117(get_converter)
+      123    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+      108    0.000    0.000    0.000    0.000 artist.py:394(get_gid)
+        1    0.000    0.000    0.000    0.000 numpytest.py:1(<module>)
+      101    0.000    0.000    0.000    0.000 font_manager.py:827(set_weight)
+       14    0.000    0.000    0.000    0.000 __init__.py:147(_check_size)
+        1    0.000    0.000    0.000    0.000 {method 'split' of '_sre.SRE_Pattern' objects}
+      115    0.000    0.000    0.000    0.000 {abs}
+      101    0.000    0.000    0.000    0.000 text.py:415(set_path_effects)
+        1    0.000    0.000    0.000    0.000 gridspec.py:247(get_subplot_params)
+        6    0.000    0.000    0.000    0.000 patches.py:311(set_fill)
+      101    0.000    0.000    0.000    0.000 text.py:234(set_rotation_mode)
+       40    0.000    0.000    0.000    0.000 numerictypes.py:157(english_upper)
+        1    0.000    0.000    0.000    0.000 polytemplate.py:11(<module>)
+      110    0.000    0.000    0.000    0.000 backend_bases.py:778(get_snap)
+       13    0.000    0.000    0.000    0.000 functions.py:60(zeros)
+        1    0.000    0.000    0.000    0.000 arrayterator.py:9(<module>)
+        8    0.000    0.000    0.000    0.000 spines.py:126(get_patch_transform)
+        1    0.000    0.000    0.000    0.000 scale.py:448(get_scale_docs)
+      116    0.000    0.000    0.000    0.000 {method 'translate' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 patches.py:744(Polygon)
+        6    0.000    0.000    0.000    0.000 pyparsing.py:2665(__init__)
+        6    0.000    0.000    0.000    0.000 decimal.py:515(__new__)
+       12    0.000    0.000    0.000    0.000 pyparsing.py:3207(<lambda>)
+        1    0.000    0.000    0.000    0.000 sysconfig.py:45(_python_build)
+        1    0.000    0.000    0.000    0.000 blocking_input.py:18(<module>)
+        3    0.000    0.000    0.000    0.000 __init__.py:78(CFUNCTYPE)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:18(<module>)
+        3    0.000    0.000    0.000    0.000 backend_tkagg.py:789(update)
+        1    0.000    0.000    0.000    0.000 transforms.py:798(update_from_path)
+        2    0.000    0.000    0.000    0.000 {method 'view' of 'numpy.generic' objects}
+       18    0.000    0.000    0.000    0.000 random.py:272(choice)
+        1    0.000    0.000    0.000    0.000 _internal.py:239(_getintp_ctype)
+        8    0.000    0.000    0.000    0.000 spines.py:179(_adjust_location)
+        1    0.000    0.000    0.000    0.000 mathtext.py:2055(Parser)
+      101    0.000    0.000    0.000    0.000 font_manager.py:844(set_stretch)
+        1    0.000    0.000    0.000    0.000 FileDialog.py:21(FileDialog)
+       31    0.000    0.000    0.000    0.000 _inspect.py:37(iscode)
+      105    0.000    0.000    0.000    0.000 {unichr}
+        1    0.000    0.000    0.000    0.000 threading.py:764(__init__)
+        1    0.000    0.000    0.000    0.000 helper.py:3(<module>)
+       12    0.000    0.000    0.000    0.000 pyparsing.py:434(_asStringList)
+        4    0.000    0.000    0.000    0.000 axis.py:1321(convert_units)
+      101    0.000    0.000    0.000    0.000 font_manager.py:875(set_file)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1693(_loadtk)
+        4    0.000    0.000    0.000    0.000 os.py:419(__setitem__)
+        2    0.000    0.000    0.000    0.000 {nt.listdir}
+       30    0.000    0.000    0.000    0.000 numerictypes.py:448(_add_array_type)
+        1    0.000    0.000    0.000    0.000 gridspec.py:15(<module>)
+       57    0.000    0.000    0.000    0.000 utils.py:108(__init__)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1546(resize_event)
+        1    0.000    0.000    0.000    0.000 format.py:136(<module>)
+        1    0.000    0.000    0.000    0.000 _endian.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 spines.py:1(<module>)
+       71    0.000    0.000    0.000    0.000 docstring.py:90(do_copy)
+        1    0.000    0.000    0.000    0.000 container.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 optparse.py:1276(set_usage)
+       64    0.000    0.000    0.000    0.000 {method 'replace' of 'unicode' objects}
+       20    0.000    0.000    0.000    0.000 axis.py:1390(set_major_locator)
+        2    0.000    0.000    0.000    0.000 axes.py:1062(get_data_ratio)
+       75    0.000    0.000    0.000    0.000 pyparsing.py:1301(setWhitespaceChars)
+        1    0.000    0.000    0.000    0.000 patches.py:2072(FancyBboxPatch)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1459(Wm)
+        1    0.000    0.000    0.000    0.000 numerictypes.py:341(_add_integer_aliases)
+       30    0.000    0.000    0.000    0.000 pyparsing.py:347(__bool__)
+        2    0.000    0.000    0.000    0.000 axes.py:719(get_position)
+       10    0.000    0.000    0.000    0.000 Image.py:2114(register_extension)
+        7    0.000    0.000    0.000    0.000 pyparsing.py:2400(__init__)
+        1    0.000    0.000    0.000    0.000 text.py:1671(Annotation)
+       13    0.000    0.000    0.000    0.000 pyparsing.py:726(_normalizeParseActionArgs)
+       76    0.000    0.000    0.000    0.000 backend_bases.py:811(set_capstyle)
+        1    0.000    0.000    0.000    0.000 result.py:26(TestResult)
+        1    0.000    0.000    0.000    0.000 JpegImagePlugin.py:35(<module>)
+       82    0.000    0.000    0.000    0.000 figure.py:292(_get_dpi)
+       59    0.000    0.000    0.000    0.000 sre_parse.py:67(__init__)
+        1    0.000    0.000    0.000    0.000 image.py:517(__init__)
+        1    0.000    0.000    0.000    0.000 common.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1156(__init__)
+        1    0.000    0.000    0.000    0.000 figure.py:122(__init__)
+       86    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+       68    0.000    0.000    0.000    0.000 pyparsing.py:1351(streamline)
+       20    0.000    0.000    0.000    0.000 axis.py:1368(set_major_formatter)
+        8    0.000    0.000    0.000    0.000 patches.py:172(get_patch_transform)
+        1    0.000    0.000    0.000    0.000 colorbar.py:20(<module>)
+       82    0.000    0.000    0.000    0.000 transforms.py:1656(get_matrix)
+        1    0.000    0.000    0.000    0.000 numerictypes.py:433(_construct_char_code_lookup)
+       12    0.000    0.000    0.000    0.000 figure.py:191(_update_this)
+        1    0.000    0.000    0.000    0.000 py3k.py:4(<module>)
+       11    0.000    0.000    0.000    0.000 copy_reg.py:95(_slotnames)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2457(__init__)
+        1    0.000    0.000    0.000    0.000 suite.py:1(<module>)
+       23    0.000    0.000    0.000    0.000 sre_compile.py:51(fixup)
+        1    0.000    0.000    0.000    0.000 tkCommonDialog.py:11(<module>)
+       23    0.000    0.000    0.000    0.000 os.py:442(__contains__)
+       76    0.000    0.000    0.000    0.000 backend_bases.py:802(set_antialiased)
+        1    0.000    0.000    0.000    0.000 _ni_support.py:31(<module>)
+       80    0.000    0.000    0.000    0.000 ticker.py:158(set_axis)
+       70    0.000    0.000    0.000    0.000 {method 'iteritems' of 'dict' objects}
+       64    0.000    0.000    0.000    0.000 lines.py:1090(is_dashed)
+        6    0.000    0.000    0.000    0.000 pyparsing.py:2004(__init__)
+        1    0.000    0.000    0.000    0.000 image.py:62(__init__)
+        1    0.000    0.000    0.000    0.000 doccer.py:2(<module>)
+        1    0.000    0.000    0.000    0.000 __init__.py:180(Verbose)
+       12    0.000    0.000    0.000    0.000 backend_bases.py:887(set_linestyle)
+        3    0.000    0.000    0.000    0.000 result.py:14(failfast)
+        1    0.000    0.000    0.000    0.000 shape_base.py:177(vstack)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1423(__init__)
+        3    0.000    0.000    0.000    0.000 textpath.py:25(__init__)
+       73    0.000    0.000    0.000    0.000 {setattr}
+        1    0.000    0.000    0.000    0.000 {built-in method update_path_extents}
+        2    0.000    0.000    0.000    0.000 axis.py:1890(_update_offset_text_position)
+        4    0.000    0.000    0.000    0.000 __init__.py:363(__getattr__)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1752(get_width_height)
+        8    0.000    0.000    0.000    0.000 fromnumeric.py:2299(mean)
+        1    0.000    0.000    0.000    0.000 tzwin.py:16(_settzkeyname)
+        7    0.000    0.000    0.000    0.000 axis.py:1719(get_view_interval)
+        4    0.000    0.000    0.000    0.000 {nt.putenv}
+       22    0.000    0.000    0.000    0.000 pyparsing.py:299(__getitem__)
+        1    0.000    0.000    0.000    0.000 re.py:270(_subx)
+        1    0.000    0.000    0.000    0.000 <string>:6(Polynomial)
+       71    0.000    0.000    0.000    0.000 docstring.py:88(copy)
+        1    0.000    0.000    0.000    0.000 defchararray.py:17(<module>)
+        1    0.000    0.000    0.000    0.000 figure.py:1055(sca)
+       20    0.000    0.000    0.000    0.000 axis.py:1379(set_minor_formatter)
+       70    0.000    0.000    0.000    0.000 docstring.py:105(copy_dedent)
+        2    0.000    0.000    0.000    0.000 __init__.py:518(_get_data_path_cached)
+       72    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+       64    0.000    0.000    0.000    0.000 backend_bases.py:872(set_joinstyle)
+        2    0.000    0.000    0.000    0.000 figure.py:566(set_facecolor)
+       14    0.000    0.000    0.000    0.000 numerictypes.py:184(english_capitalize)
+        1    0.000    0.000    0.000    0.000 re.py:250(_compile_repl)
+        1    0.000    0.000    0.000    0.000 optparse.py:1367(parse_args)
+       10    0.000    0.000    0.000    0.000 core.py:532(filled)
+       25    0.000    0.000    0.000    0.000 {built-in method createcommand}
+       13    0.000    0.000    0.000    0.000 os.py:444(get)
+        3    0.000    0.000    0.000    0.000 __init__.py:483(PYFUNCTYPE)
+       12    0.000    0.000    0.000    0.000 scale.py:418(get_scale_names)
+       26    0.000    0.000    0.000    0.000 artist.py:28(allow_rasterization)
+       55    0.000    0.000    0.000    0.000 {_sre.getlower}
+        2    0.000    0.000    0.000    0.000 backend_bases.py:133(__init__)
+        4    0.000    0.000    0.000    0.000 ticker.py:422(get_offset)
+        4    0.000    0.000    0.000    0.000 axes.py:2459(get_xscale)
+        3    0.000    0.000    0.000    0.000 transforms.py:2156(get_matrix)
+       64    0.000    0.000    0.000    0.000 text.py:418(get_path_effects)
+       64    0.000    0.000    0.000    0.000 markers.py:168(get_alt_path)
+       78    0.000    0.000    0.000    0.000 {globals}
+        2    0.000    0.000    0.000    0.000 __init__.py:337(__init__)
+       64    0.000    0.000    0.000    0.000 markers.py:162(get_path)
+        1    0.000    0.000    0.000    0.000 __init__.py:479(_get_data_path)
+       64    0.000    0.000    0.000    0.000 markers.py:126(is_filled)
+       64    0.000    0.000    0.000    0.000 markers.py:174(get_snap_threshold)
+        1    0.000    0.000    0.000    0.000 PpmImagePlugin.py:18(<module>)
+       33    0.000    0.000    0.000    0.000 cm.py:23(_reverser)
+       64    0.000    0.000    0.000    0.000 lines.py:335(get_markevery)
+        1    0.000    0.000    0.000    0.000 os.py:35(_get_exports_list)
+       23    0.000    0.000    0.000    0.000 string.py:229(upper)
+       21    0.000    0.000    0.000    0.000 numerictypes.py:219(_evalname)
+        2    0.000    0.000    0.000    0.000 gettext.py:130(_expand_lang)
+        1    0.000    0.000    0.000    0.000 bezier.py:3(<module>)
+        1    0.000    0.000    0.000    0.000 nosetester.py:6(<module>)
+       12    0.000    0.000    0.000    0.000 ctypeslib.py:306(prep_simple)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:645(ParserElement)
+        7    0.000    0.000    0.000    0.000 axis.py:1985(get_view_interval)
+       55    0.000    0.000    0.000    0.000 collections.py:294(<genexpr>)
+       70    0.000    0.000    0.000    0.000 pyparsing.py:888(postParse)
+       32    0.000    0.000    0.000    0.000 {method 'split' of 'unicode' objects}
+       64    0.000    0.000    0.000    0.000 transforms.py:1648(frozen)
+       25    0.000    0.000    0.000    0.000 {built-in method deletecommand}
+       57    0.000    0.000    0.000    0.000 utils.py:93(_set_function_name)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:691(parse_template)
+        1    0.000    0.000    0.000    0.000 interpolate.py:1(<module>)
+        3    0.000    0.000    0.000    0.000 pyparsing.py:2947(__init__)
+        3    0.000    0.000    0.000    0.000 functools.py:17(update_wrapper)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1618(wm_protocol)
+        1    0.000    0.000    0.000    0.000 __init__.py:625(RcParams)
+       48    0.000    0.000    0.000    0.000 text.py:919(set_x)
+        9    0.000    0.000    0.000    0.000 core.py:2424(__init__)
+        1    0.000    0.000    0.000    0.000 <string>:2(<module>)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 mbcs.py:9(<module>)
+       15    0.000    0.000    0.000    0.000 {numpy.core.multiarray.arange}
+        3    0.000    0.000    0.000    0.000 shape_base.py:58(atleast_2d)
+        1    0.000    0.000    0.000    0.000 GifImagePlugin.py:99(seek)
+        1    0.000    0.000    0.000    0.000 threading.py:436(__init__)
+        3    0.000    0.000    0.000    0.000 fromnumeric.py:490(sort)
+       19    0.000    0.000    0.000    0.000 tokenize.py:44(group)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:1256(AnnotationBbox)
+        1    0.000    0.000    0.000    0.000 relativedelta.py:6(<module>)
+        3    0.000    0.000    0.000    0.000 tempfile.py:205(_get_candidate_names)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2257(setResultsName)
+        5    0.000    0.000    0.000    0.000 mathtext.py:2929(__init__)
+       47    0.000    0.000    0.000    0.000 docstring.py:74(__init__)
+        1    0.000    0.000    0.000    0.000 collections.py:26(Collection)
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:26(__exit__)
+        1    0.000    0.000    0.000    0.000 patches.py:3592(FancyArrowPatch)
+       48    0.000    0.000    0.000    0.000 text.py:928(set_y)
+        6    0.000    0.000    0.000    0.000 core.py:1047(__init__)
+       54    0.000    0.000    0.000    0.000 markers.py:129(get_fillstyle)
+        2    0.000    0.000    0.000    0.000 fromnumeric.py:1044(ravel)
+        4    0.000    0.000    0.000    0.000 axes.py:2662(get_yscale)
+        1    0.000    0.000    0.000    0.000 {method 'readlines' of 'file' objects}
+       55    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        6    0.000    0.000    0.000    0.000 tempfile.py:371(__getattr__)
+        8    0.000    0.000    0.000    0.000 {method 'mean' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 transforms.py:1255(__init__)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:688(set_cursor)
+        1    0.000    0.000    0.000    0.000 patches.py:3940(ConnectionPatch)
+       11    0.000    0.000    0.000    0.000 opcode.py:31(name_op)
+        8    0.000    0.000    0.000    0.000 text.py:910(set_position)
+        1    0.000    0.000    0.000    0.000 docstring.py:1(<module>)
+        2    0.000    0.000    0.000    0.000 optparse.py:609(_set_attrs)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:1275(__invert__)
+        8    0.000    0.000    0.000    0.000 transforms.py:1388(_get_is_separable)
+       15    0.000    0.000    0.000    0.000 stat.py:40(S_ISDIR)
+       21    0.000    0.000    0.000    0.000 _weakrefset.py:36(__init__)
+        1    0.000    0.000    0.000    0.000 geo.py:245(AitoffAxes)
+       36    0.000    0.000    0.000    0.000 {sys._getframe}
+        1    0.000    0.000    0.000    0.000 axes.py:1574(_process_unit_info)
+       19    0.000    0.000    0.000    0.000 {divmod}
+        1    0.000    0.000    0.000    0.000 string.py:308(join)
+        1    0.000    0.000    0.000    0.000 collections.py:719(RegularPolyCollection)
+        1    0.000    0.000    0.000    0.000 parser.py:700(_tzparser)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1195(configure)
+        4    0.000    0.000    0.000    0.000 ticker.py:480(_set_orderOfMagnitude)
+       55    0.000    0.000    0.000    0.000 {method 'isdigit' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {built-in method encode}
+        1    0.000    0.000    0.000    0.000 mathtext.py:1025(StandardPsFonts)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:2632(__init__)
+        1    0.000    0.000    0.000    0.000 axes.py:2050(grid)
+        1    0.000    0.000    0.000    0.000 spines.py:17(Spine)
+        6    0.000    0.000    0.000    0.000 hashlib.py:94(__get_openssl_constructor)
+       14    0.000    0.000    0.000    0.000 _weakrefset.py:81(add)
+        1    0.000    0.000    0.000    0.000 __init__.py:283(create_unicode_buffer)
+        1    0.000    0.000    0.000    0.000 pyplot.py:219(sci)
+        1    0.000    0.000    0.000    0.000 units.py:44(<module>)
+       44    0.000    0.000    0.000    0.000 backend_bases.py:909(set_url)
+        1    0.000    0.000    0.000    0.000 token.py:3(<module>)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1177(_configure)
+        4    0.000    0.000    0.000    0.000 pyparsing.py:308(__setitem__)
+        1    0.000    0.000    0.000    0.000 geo.py:416(MollweideAxes)
+        2    0.000    0.000    0.000    0.000 figure.py:558(set_edgecolor)
+        1    0.000    0.000    0.000    0.000 collections.py:581(PathCollection)
+        4    0.000    0.000    0.000    0.000 transforms.py:1276(_set)
+        1    0.000    0.000    0.000    0.000 collections.py:987(EllipseCollection)
+        1    0.000    0.000    0.000    0.000 geo.py:330(HammerAxes)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2267(And)
+        6    0.000    0.000    0.000    0.000 axis.py:1206(get_minor_ticks)
+        1    0.000    0.000    0.000    0.000 tempfile.py:119(__init__)
+        1    0.000    0.000    0.000    0.000 collections.py:616(PolyCollection)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:2768(__str__)
+        1    0.000    0.000    0.000    0.000 geo.py:514(LambertAxes)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:400(notify_axes_change)
+        1    0.000    0.000    0.000    0.000 colors.py:608(is_gray)
+        3    0.000    0.000    0.000    0.000 {nt.fdopen}
+        1    0.000    0.000    0.000    0.000 path.py:18(Path)
+       13    0.000    0.000    0.000    0.000 pyparsing.py:1687(charsAsStr)
+        5    0.000    0.000    0.000    0.000 Image.py:2082(register_open)
+        1    0.000    0.000    0.000    0.000 numbers.py:34(Complex)
+        1    0.000    0.000    0.000    0.000 scimath.py:17(<module>)
+        1    0.000    0.000    0.000    0.000 tkFileDialog.py:54(_fixresult)
+       40    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 Dialog.py:3(<module>)
+        1    0.000    0.000    0.000    0.000 scale.py:302(SymmetricalLogScale)
+       46    0.000    0.000    0.000    0.000 {_ctypes.sizeof}
+        1    0.000    0.000    0.000    0.000 __init__.py:420(__getattr__)
+        2    0.000    0.000    0.000    0.000 core.py:218(_recursive_extremum_fill_value)
+       37    0.000    0.000    0.000    0.000 abc.py:15(abstractmethod)
+        1    0.000    0.000    0.000    0.000 patches.py:1221(Arc)
+       32    0.000    0.000    0.000    0.000 backend_agg.py:206(get_canvas_width_height)
+       27    0.000    0.000    0.000    0.000 {_tkinter._flatten}
+        1    0.000    0.000    0.000    0.000 bezier.py:155(BezierSegment)
+        1    0.000    0.000    0.000    0.000 pyplot.py:189(rc)
+        7    0.000    0.000    0.000    0.000 numeric.py:237(asanyarray)
+        4    0.000    0.000    0.000    0.000 __init__.py:370(__getitem__)
+        1    0.000    0.000    0.000    0.000 typeconv.py:1(<module>)
+       35    0.000    0.000    0.000    0.000 font_manager.py:758(get_size)
+        5    0.000    0.000    0.000    0.000 __init__.py:936(is_interactive)
+        1    0.000    0.000    0.000    0.000 patches.py:986(YAArrow)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:2060(__init__)
+       32    0.000    0.000    0.000    0.000 {built-in method get_image}
+        1    0.000    0.000    0.000    0.000 socket.py:179(_socketobject)
+       14    0.000    0.000    0.000    0.000 cbook.py:1126(__init__)
+       34    0.000    0.000    0.000    0.000 font_manager.py:1057(score_style)
+        1    0.000    0.000    0.000    0.000 nosetester.py:109(NoseTester)
+        1    0.000    0.000    0.000    0.000 patches.py:639(RegularPolygon)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:2219(__init__)
+        1    0.000    0.000    0.000    0.000 figure.py:611(_make_key)
+       32    0.000    0.000    0.000    0.000 text.py:247(get_rotation_mode)
+        1    0.000    0.000    0.000    0.000 getlimits.py:2(<module>)
+       32    0.000    0.000    0.000    0.000 text.py:596(get_color)
+        1    0.000    0.000    0.000    0.000 axis.py:1266(update_units)
+        2    0.000    0.000    0.000    0.000 ntpath.py:189(splitext)
+        1    0.000    0.000    0.000    0.000 figure.py:81(add)
+        1    0.000    0.000    0.000    0.000 patches.py:902(FancyArrow)
+       13    0.000    0.000    0.000    0.000 typeconv.py:22(convtypecode)
+        1    0.000    0.000    0.000    0.000 ImageFile.py:227(load_prepare)
+        1    0.000    0.000    0.000    0.000 memmap.py:1(<module>)
+        3    0.000    0.000    0.000    0.000 axes.py:2368(get_xlim)
+        9    0.000    0.000    0.000    0.000 core.py:2430(getdoc)
+        1    0.000    0.000    0.000    0.000 collections.py:955(CircleCollection)
+       34    0.000    0.000    0.000    0.000 font_manager.py:1121(score_size)
+        1    0.000    0.000    0.000    0.000 text.py:141(Text)
+        4    0.000    0.000    0.000    0.000 __init__.py:639(__setitem__)
+       32    0.000    0.000    0.000    0.000 axis.py:215(get_loc)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:2754(parseImpl)
+        1    0.000    0.000    0.000    0.000 __future__.py:48(<module>)
+        1    0.000    0.000    0.000    0.000 numbers.py:295(Integral)
+       32    0.000    0.000    0.000    0.000 backend_bases.py:568(flipy)
+       23    0.000    0.000    0.000    0.000 precision.py:31(_lookup)
+       34    0.000    0.000    0.000    0.000 font_manager.py:1074(score_variant)
+       32    0.000    0.000    0.000    0.000 artist.py:520(get_alpha)
+        1    0.000    0.000    0.000    0.000 patches.py:1115(Ellipse)
+        2    0.000    0.000    0.000    0.000 axes.py:780(_set_artist_props)
+        1    0.000    0.000    0.000    0.000 __init__.py:793(rc)
+        1    0.000    0.000    0.000    0.000 {_winreg.OpenKey}
+        2    0.000    0.000    0.000    0.000 numerictypes.py:778(__getitem__)
+        4    0.000    0.000    0.000    0.000 legend_handler.py:159(__init__)
+        1    0.000    0.000    0.000    0.000 patches.py:804(Wedge)
+       27    0.000    0.000    0.000    0.000 decimal.py:3781(<genexpr>)
+        1    0.000    0.000    0.000    0.000 collections.py:677(BrokenBarHCollection)
+        1    0.000    0.000    0.000    0.000 core.py:229(minimum_fill_value)
+        1    0.000    0.000    0.000    0.000 cm.py:162(__init__)
+        7    0.000    0.000    0.000    0.000 legend_handler.py:128(__init__)
+        3    0.000    0.000    0.000    0.000 legend_handler.py:293(__init__)
+        1    0.000    0.000    0.000    0.000 image.py:30(_AxesImageBase)
+       12    0.000    0.000    0.000    0.000 backend_tkagg.py:211(filter_destroy)
+        2    0.000    0.000    0.000    0.000 axes.py:8435(subplot_class_factory)
+        3    0.000    0.000    0.000    0.000 fromnumeric.py:1474(sometrue)
+       20    0.000    0.000    0.000    0.000 ticker.py:353(set_useOffset)
+        1    0.000    0.000    0.000    0.000 patches.py:1180(Circle)
+       13    0.000    0.000    0.000    0.000 {locals}
+        1    0.000    0.000    0.000    0.000 patches.py:436(Shadow)
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:20(__enter__)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:839(winfo_toplevel)
+        1    0.000    0.000    0.000    0.000 patches.py:1087(CirclePolygon)
+        4    0.000    0.000    0.000    0.000 Image.py:606(load)
+        1    0.000    0.000    0.000    0.000 patches.py:717(PathPatch)
+        2    0.000    0.000    0.000    0.000 axes.py:2330(get_xbound)
+        1    0.000    0.000    0.000    0.000 optparse.py:1419(_process_args)
+        6    0.000    0.000    0.000    0.000 opcode.py:39(jabs_op)
+        1    0.000    0.000    0.000    0.000 <string>:6(Laguerre)
+       27    0.000    0.000    0.000    0.000 decimal.py:3788(<genexpr>)
+        1    0.000    0.000    0.000    0.000 <string>:6(Chebyshev)
+        1    0.000    0.000    0.000    0.000 <string>:6(Hermite)
+        3    0.000    0.000    0.000    0.000 backend_bases.py:2832(update)
+       23    0.000    0.000    0.000    0.000 Tkinter.py:1400(__init__)
+        6    0.000    0.000    0.000    0.000 GifImagePlugin.py:37(i16)
+        1    0.000    0.000    0.000    0.000 <string>:6(Legendre)
+        1    0.000    0.000    0.000    0.000 <string>:6(HermiteE)
+        3    0.000    0.000    0.000    0.000 nosetester.py:82(_docmethod)
+        1    0.000    0.000    0.000    0.000 ImageFile.py:30(<module>)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:336(Misc)
+        1    0.000    0.000    0.000    0.000 transforms.py:1641(IdentityTransform)
+        1    0.000    0.000    0.000    0.000 machar.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 optparse.py:1318(get_default_values)
+        9    0.000    0.000    0.000    0.000 os.py:422(__getitem__)
+        1    0.000    0.000    0.000    0.000 threading.py:364(Event)
+        1    0.000    0.000    0.000    0.000 figure.py:782(clf)
+        2    0.000    0.000    0.000    0.000 genericpath.py:85(_splitext)
+       10    0.000    0.000    0.000    0.000 pyparsing.py:3147(<lambda>)
+        1    0.000    0.000    0.000    0.000 figure.py:623(fixlist)
+        8    0.000    0.000    0.000    0.000 transforms.py:1720(_get_is_affine)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:2104(__init__)
+        6    0.000    0.000    0.000    0.000 opcode.py:35(jrel_op)
+        3    0.000    0.000    0.000    0.000 axes.py:2570(get_ylim)
+       18    0.000    0.000    0.000    0.000 {math.log10}
+        2    0.000    0.000    0.000    0.000 threading.py:181(Condition)
+       10    0.000    0.000    0.000    0.000 string.py:220(lower)
+        4    0.000    0.000    0.000    0.000 scale.py:423(scale_factory)
+        3    0.000    0.000    0.000    0.000 backend_tkagg.py:61(draw_if_interactive)
+        6    0.000    0.000    0.000    0.000 pyparsing.py:1376(getException)
+        2    0.000    0.000    0.000    0.000 backend_bases.py:1536(draw_event)
+        2    0.000    0.000    0.000    0.000 optparse.py:588(_set_opt_strings)
+        1    0.000    0.000    0.000    0.000 parser.py:702(_result)
+        8    0.000    0.000    0.000    0.000 {round}
+        2    0.000    0.000    0.000    0.000 backend_agg.py:86(_update_methods)
+       18    0.000    0.000    0.000    0.000 {_struct.calcsize}
+        3    0.000    0.000    0.000    0.000 fromnumeric.py:757(searchsorted)
+        1    0.000    0.000    0.000    0.000 parser.py:290(parser)
+        1    0.000    0.000    0.000    0.000 case.py:132(TestCase)
+        2    0.000    0.000    0.000    0.000 shape_base.py:1(<module>)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:1418(__init__)
+        1    0.000    0.000    0.000    0.000 decimal.py:506(Decimal)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2439(__str__)
+       17    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {_winreg.ConnectRegistry}
+        2    0.000    0.000    0.000    0.000 transforms.py:366(_get_extents)
+        2    0.000    0.000    0.000    0.000 locale.py:334(normalize)
+        5    0.000    0.000    0.000    0.000 Image.py:2104(register_save)
+        1    0.000    0.000    0.000    0.000 figure.py:78(bubble)
+        1    0.000    0.000    0.000    0.000 threading.py:371(__init__)
+        1    0.000    0.000    0.000    0.000 cbook.py:108(CallbackRegistry)
+        2    0.000    0.000    0.000    0.000 transforms.py:352(_get_size)
+        1    0.000    0.000    0.000    0.000 ImagePalette.py:93(raw)
+        2    0.000    0.000    0.000    0.000 numerictypes.py:608(obj2sctype)
+        5    0.000    0.000    0.000    0.000 re.py:206(escape)
+        1    0.000    0.000    0.000    0.000 stride_tricks.py:7(<module>)
+        1    0.000    0.000    0.000    0.000 calendar.py:47(_localized_month)
+        6    0.000    0.000    0.000    0.000 {sorted}
+        2    0.000    0.000    0.000    0.000 axes.py:2538(get_ybound)
+        4    0.000    0.000    0.000    0.000 {nt._getfullpathname}
+        1    0.000    0.000    0.000    0.000 tkMessageBox.py:25(<module>)
+        6    0.000    0.000    0.000    0.000 transforms.py:256(_get_y0)
+        1    0.000    0.000    0.000    0.000 optparse.py:1516(_process_short_opts)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:241(__init__)
+        1    0.000    0.000    0.000    0.000 axis.py:588(Axis)
+        1    0.000    0.000    0.000    0.000 numbers.py:169(Real)
+        7    0.000    0.000    0.000    0.000 cbook.py:159(__init__)
+        2    0.000    0.000    0.000    0.000 axis.py:685(limit_range_for_scale)
+        1    0.000    0.000    0.000    0.000 threading.py:385(set)
+        3    0.000    0.000    0.000    0.000 legend_handler.py:179(__init__)
+        1    0.000    0.000    0.000    0.000 windowing.py:8(<module>)
+        2    0.000    0.000    0.000    0.000 axis.py:1230(grid)
+        2    0.000    0.000    0.000    0.000 axes.py:169(__init__)
+        6    0.000    0.000    0.000    0.000 ticker.py:809(raise_if_exceeds)
+        1    0.000    0.000    0.000    0.000 handler.py:10(<module>)
+        1    0.000    0.000    0.000    0.000 ufuncs.py:1(<module>)
+        2    0.000    0.000    0.000    0.000 {function seed at 0x020540B0}
+        1    0.000    0.000    0.000    0.000 transforms.py:206(BboxBase)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2959(__init__)
+        1    0.000    0.000    0.000    0.000 tricontour.py:1(<module>)
+        4    0.000    0.000    0.000    0.000 {numpy.core.multiarray.empty_like}
+        2    0.000    0.000    0.000    0.000 fromnumeric.py:1508(any)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2221(delete)
+        2    0.000    0.000    0.000    0.000 cbook.py:1173(push)
+        6    0.000    0.000    0.000    0.000 pyparsing.py:351(keys)
+        2    0.000    0.000    0.000    0.000 threading.py:186(__init__)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:168(__init__)
+        1    0.000    0.000    0.000    0.000 font_manager.py:582(FontProperties)
+        1    0.000    0.000    0.000    0.000 new.py:5(<module>)
+        1    0.000    0.000    0.000    0.000 patches.py:498(Rectangle)
+       16    0.000    0.000    0.000    0.000 stat.py:24(S_IFMT)
+        5    0.000    0.000    0.000    0.000 windowing.py:22(__init__)
+        1    0.000    0.000    0.000    0.000 Image.py:371(_getdecoder)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2035(__init__)
+        1    0.000    0.000    0.000    0.000 core.py:292(maximum_fill_value)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2086(__init__)
+        3    0.000    0.000    0.000    0.000 cm.py:127(get_cmap)
+       18    0.000    0.000    0.000    0.000 pyparsing.py:1293(leaveWhitespace)
+       14    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        5    0.000    0.000    0.000    0.000 windowing.py:25(__del__)
+       18    0.000    0.000    0.000    0.000 {method 'random' of '_random.Random' objects}
+        1    0.000    0.000    0.000    0.000 mathtext.py:680(BakomaFonts)
+        2    0.000    0.000    0.000    0.000 fromnumeric.py:1492(alltrue)
+        1    0.000    0.000    0.000    0.000 ImagePalette.py:28(__init__)
+        2    0.000    0.000    0.000    0.000 cbook.py:1535(get_siblings)
+        1    0.000    0.000    0.000    0.000 figure.py:1025(_set_artist_props)
+        1    0.000    0.000    0.000    0.000 axes.py:2944(set_cursor_props)
+       12    0.000    0.000    0.000    0.000 _weakrefset.py:68(__contains__)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:2102(mpl_disconnect)
+        1    0.000    0.000    0.000    0.000 pickle.py:827(Unpickler)
+        1    0.000    0.000    0.000    0.000 quiver.py:367(Quiver)
+        3    0.000    0.000    0.000    0.000 ntpath.py:42(normcase)
+        1    0.000    0.000    0.000    0.000 fromnumeric.py:2(<module>)
+        2    0.000    0.000    0.000    0.000 transforms.py:306(_get_ymax)
+        2    0.000    0.000    0.000    0.000 weakref.py:47(__init__)
+        1    0.000    0.000    0.000    0.000 defchararray.py:1695(chararray)
+       16    0.000    0.000    0.000    0.000 axis.py:1288(_update_axisinfo)
+        1    0.000    0.000    0.000    0.000 copy.py:123(_copy_inst)
+        3    0.000    0.000    0.000    0.000 {method 'searchsorted' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1394(FigureCanvasBase)
+        1    0.000    0.000    0.000    0.000 cbook.py:1197(bubble)
+        1    0.000    0.000    0.000    0.000 numerictypes.py:382(_set_up_aliases)
+        1    0.000    0.000    0.000    0.000 pyplot.py:57(_backend_selection)
+        1    0.000    0.000    0.000    0.000 optparse.py:932(__init__)
+        4    0.000    0.000    0.000    0.000 transforms.py:249(_get_x0)
+        1    0.000    0.000    0.000    0.000 ImageColor.py:20(<module>)
+        2    0.000    0.000    0.000    0.000 figure.py:531(get_size_inches)
+       10    0.000    0.000    0.000    0.000 legend_handler.py:55(__init__)
+       16    0.000    0.000    0.000    0.000 pyparsing.py:2990(postParse)
+       16    0.000    0.000    0.000    0.000 pyparsing.py:242(__getitem__)
+        1    0.000    0.000    0.000    0.000 tkCommonDialog.py:17(__init__)
+        8    0.000    0.000    0.000    0.000 mathtext.py:1717(__init__)
+        1    0.000    0.000    0.000    0.000 gridspec.py:130(__getitem__)
+        1    0.000    0.000    0.000    0.000 transforms.py:2143(__init__)
+       11    0.000    0.000    0.000    0.000 {method 'get' of 'dictproxy' objects}
+        6    0.000    0.000    0.000    0.000 {thread.allocate_lock}
+        2    0.000    0.000    0.000    0.000 axes.py:174(set_color_cycle)
+        1    0.000    0.000    0.000    0.000 bisect.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 triplot.py:1(<module>)
+        7    0.000    0.000    0.000    0.000 weakref.py:293(__contains__)
+        1    0.000    0.000    0.000    0.000 _iotools.py:451(StringConverter)
+       12    0.000    0.000    0.000    0.000 {method 'indices' of 'slice' objects}
+        1    0.000    0.000    0.000    0.000 pprint.py:35(<module>)
+        1    0.000    0.000    0.000    0.000 threading.py:424(Thread)
+        4    0.000    0.000    0.000    0.000 transforms.py:239(__array__)
+       14    0.000    0.000    0.000    0.000 artist.py:531(get_animated)
+        1    0.000    0.000    0.000    0.000 gridspec.py:189(__init__)
+        1    0.000    0.000    0.000    0.000 optparse.py:365(__init__)
+        2    0.000    0.000    0.000    0.000 getlimits.py:234(__init__)
+        3    0.000    0.000    0.000    0.000 Image.py:2094(register_mime)
+        1    0.000    0.000    0.000    0.000 core.py:5696(__new__)
+       11    0.000    0.000    0.000    0.000 patches.py:285(set_linewidth)
+        1    0.000    0.000    0.000    0.000 axes.py:44(_string_to_bool)
+        1    0.000    0.000    0.000    0.000 compat.py:106(Unpickler)
+       11    0.000    0.000    0.000    0.000 cbook.py:1192(clear)
+       15    0.000    0.000    0.000    0.000 {method 'reverse' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:192(__del__)
+        1    0.000    0.000    0.000    0.000 __init__.py:49(normalize_encoding)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:509(__init__)
+       12    0.000    0.000    0.000    0.000 backend_bases.py:834(set_dashes)
+        4    0.000    0.000    0.000    0.000 cbook.py:1468(clean)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:126(FigureCanvasTkAgg)
+        3    0.000    0.000    0.000    0.000 {apply}
+        1    0.000    0.000    0.000    0.000 cbook.py:233(disconnect)
+        1    0.000    0.000    0.000    0.000 morphology.py:31(<module>)
+        3    0.000    0.000    0.000    0.000 cbook.py:1147(__init__)
+        1    0.000    0.000    0.000    0.000 tripcolor.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 artist.py:66(Artist)
+        1    0.000    0.000    0.000    0.000 twodim_base.py:3(<module>)
+       12    0.000    0.000    0.000    0.000 Tkinter.py:3202(__str__)
+       12    0.000    0.000    0.000    0.000 patches.py:368(get_path_effects)
+        1    0.000    0.000    0.000    0.000 threading.py:295(notifyAll)
+        4    0.000    0.000    0.000    0.000 figure.py:109(__call__)
+        1    0.000    0.000    0.000    0.000 ntpath.py:196(basename)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1556(close_event)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:992(resetCache)
+        1    0.000    0.000    0.000    0.000 patches.py:44(Patch)
+        1    0.000    0.000    0.000    0.000 axis.py:22(Tick)
+        2    0.000    0.000    0.000    0.000 __config__.py:3(<module>)
+        3    0.000    0.000    0.000    0.000 __init__.py:235(wrap)
+        1    0.000    0.000    0.000    0.000 quiver.py:791(Barbs)
+        3    0.000    0.000    0.000    0.000 {method 'sort' of 'numpy.ndarray' objects}
+       12    0.000    0.000    0.000    0.000 {math.floor}
+        4    0.000    0.000    0.000    0.000 core.py:89(doc_note)
+        1    0.000    0.000    0.000    0.000 geo.py:18(GeoAxes)
+        1    0.000    0.000    0.000    0.000 defmatrix.py:195(matrix)
+        1    0.000    0.000    0.000    0.000 colors.py:593(_set_extremes)
+        1    0.000    0.000    0.000    0.000 StringIO.py:30(<module>)
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:52(_commit_removals)
+        1    0.000    0.000    0.000    0.000 numeric.py:1791(ones)
+        1    0.000    0.000    0.000    0.000 mbcs.py:38(getregentry)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:647(GraphicsContextBase)
+        2    0.000    0.000    0.000    0.000 __init__.py:48(get_projection_class)
+        1    0.000    0.000    0.000    0.000 ticker.py:138(TickHelper)
+        2    0.000    0.000    0.000    0.000 core.py:3335(filled)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:394(__init__)
+        1    0.000    0.000    0.000    0.000 Image.py:444(Image)
+        1    0.000    0.000    0.000    0.000 Image.py:387(_getencoder)
+        3    0.000    0.000    0.000    0.000 _pylab_helpers.py:109(get_active)
+        1    0.000    0.000    0.000    0.000 image.py:126(changed)
+        1    0.000    0.000    0.000    0.000 table.py:145(Table)
+        1    0.000    0.000    0.000    0.000 image.py:116(set_alpha)
+        1    0.000    0.000    0.000    0.000 extras.py:1497(__init__)
+        5    0.000    0.000    0.000    0.000 core.py:3242(_get_data)
+        9    0.000    0.000    0.000    0.000 _weakrefset.py:16(__init__)
+        1    0.000    0.000    0.000    0.000 random.py:72(Random)
+        1    0.000    0.000    0.000    0.000 tight_bbox.py:3(<module>)
+        2    0.000    0.000    0.000    0.000 backend_bases.py:1139(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:80(get_projection_names)
+        1    0.000    0.000    0.000    0.000 decimal.py:3735(Context)
+        1    0.000    0.000    0.000    0.000 atexit.py:6(<module>)
+        1    0.000    0.000    0.000    0.000 optparse.py:200(__init__)
+        2    0.000    0.000    0.000    0.000 {nt.getcwd}
+        1    0.000    0.000    0.000    0.000 pickle.py:171(Pickler)
+        1    0.000    0.000    0.000    0.000 figure.py:1061(_gci)
+        2    0.000    0.000    0.000    0.000 numeric.py:1381(set_string_function)
+        7    0.000    0.000    0.000    0.000 patches.py:211(set_antialiased)
+        1    0.000    0.000    0.000    0.000 textwrap.py:138(_munge_whitespace)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2102(Canvas)
+        2    0.000    0.000    0.000    0.000 figure.py:61(get)
+        2    0.000    0.000    0.000    0.000 mlab.py:2383(__init__)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1866(_get_print_method)
+        1    0.000    0.000    0.000    0.000 csv.py:73(DictReader)
+        1    0.000    0.000    0.000    0.000 interpolation.py:31(<module>)
+        2    0.000    0.000    0.000    0.000 getlimits.py:259(max)
+        1    0.000    0.000    0.000    0.000 figure.py:49(__init__)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:105(validate_backend)
+        1    0.000    0.000    0.000    0.000 Image.py:460(_new)
+       10    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1516(wm_deiconify)
+        1    0.000    0.000    0.000    0.000 core.py:5690(MaskedConstant)
+        3    0.000    0.000    0.000    0.000 image.py:647(get_extent)
+        2    0.000    0.000    0.000    0.000 tokenize.py:46(maybe)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2802(Text)
+        1    0.000    0.000    0.000    0.000 numeric.py:2411(_setdef)
+        2    0.000    0.000    0.000    0.000 transforms.py:284(_get_p1)
+        1    0.000    0.000    0.000    0.000 tempfile.py:486(SpooledTemporaryFile)
+        2    0.000    0.000    0.000    0.000 image.py:615(_check_unsampled_image)
+        6    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 _cm.py:49(cubehelix)
+        2    0.000    0.000    0.000    0.000 __init__.py:924(get_backend)
+        2    0.000    0.000    0.000    0.000 {method 'accumulate' of 'numpy.ufunc' objects}
+        6    0.000    0.000    0.000    0.000 pyparsing.py:156(__init__)
+        2    0.000    0.000    0.000    0.000 Image.py:83(isStringType)
+        1    0.000    0.000    0.000    0.000 {built-in method utcfromtimestamp}
+        1    0.000    0.000    0.000    0.000 {PIL._imaging.new}
+       10    0.000    0.000    0.000    0.000 pyparsing.py:3146(<lambda>)
+        9    0.000    0.000    0.000    0.000 {method '__subclasses__' of 'type' objects}
+        2    0.000    0.000    0.000    0.000 pyparsing.py:387(__getattr__)
+        1    0.000    0.000    0.000    0.000 textpath.py:397(TextPath)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:116(RendererBase)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2571(Menu)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:247(ParseResults)
+        7    0.000    0.000    0.000    0.000 rrule.py:53(__init__)
+        3    0.000    0.000    0.000    0.000 index_tricks.py:228(__init__)
+        1    0.000    0.000    0.000    0.000 threading.py:277(notify)
+        1    0.000    0.000    0.000    0.000 {built-in method globalunsetvar}
+        1    0.000    0.000    0.000    0.000 main.py:63(TestProgram)
+        6    0.000    0.000    0.000    0.000 patches.py:298(set_linestyle)
+        8    0.000    0.000    0.000    0.000 spines.py:133(get_path)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:448(destroy)
+        9    0.000    0.000    0.000    0.000 {method 'remove' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1598(wm_minsize)
+        1    0.000    0.000    0.000    0.000 <string>:1(Attribute)
+        1    0.000    0.000    0.000    0.000 optparse.py:778(process)
+        2    0.000    0.000    0.000    0.000 {binascii.hexlify}
+        1    0.000    0.000    0.000    0.000 colorbar.py:170(ColorbarBase)
+        3    0.000    0.000    0.000    0.000 tempfile.py:365(__init__)
+        1    0.000    0.000    0.000    0.000 ticker.py:323(ScalarFormatter)
+        3    0.000    0.000    0.000    0.000 {method 'seek' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 calendar.py:66(_localized_day)
+        1    0.000    0.000    0.000    0.000 <string>:1(SplitResult)
+        7    0.000    0.000    0.000    0.000 rcsetup.py:318(__init__)
+        1    0.000    0.000    0.000    0.000 quiver.py:219(QuiverKey)
+        6    0.000    0.000    0.000    0.000 {method 'acquire' of 'thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 <string>:1(ParseResult)
+        1    0.000    0.000    0.000    0.000 tz.py:83(tzlocal)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:997(enablePackrat)
+        9    0.000    0.000    0.000    0.000 {method '__subclasshook__' of 'object' objects}
+        1    0.000    0.000    0.000    0.000 extras.py:1427(__init__)
+        1    0.000    0.000    0.000    0.000 fourier.py:31(<module>)
+        2    0.000    0.000    0.000    0.000 legend_handler.py:225(__init__)
+        1    0.000    0.000    0.000    0.000 collections.py:25(OrderedDict)
+        7    0.000    0.000    0.000    0.000 relativedelta.py:18(__init__)
+        1    0.000    0.000    0.000    0.000 gridspec.py:32(__init__)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1654(wm_withdraw)
+        1    0.000    0.000    0.000    0.000 <string>:1(Traceback)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2372(Entry)
+        7    0.000    0.000    0.000    0.000 __future__.py:75(__init__)
+        1    0.000    0.000    0.000    0.000 keyword.py:11(<module>)
+        1    0.000    0.000    0.000    0.000 table.py:35(Cell)
+        2    0.000    0.000    0.000    0.000 {_csv.register_dialect}
+        1    0.000    0.000    0.000    0.000 {math.exp}
+        2    0.000    0.000    0.000    0.000 UserDict.py:4(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:26(get_projection_names)
+        1    0.000    0.000    0.000    0.000 patches.py:2333(_Base)
+        1    0.000    0.000    0.000    0.000 cbook.py:259(Scheduler)
+        1    0.000    0.000    0.000    0.000 rrule.py:824(rruleset)
+        1    0.000    0.000    0.000    0.000 image.py:446(set_interpolation)
+        1    0.000    0.000    0.000    0.000 <string>:1(ModuleInfo)
+        1    0.000    0.000    0.000    0.000 ImageMode.py:17(<module>)
+        2    0.000    0.000    0.000    0.000 optparse.py:832(isbasestring)
+        1    0.000    0.000    0.000    0.000 <string>:1(ArgSpec)
+        1    0.000    0.000    0.000    0.000 <string>:1(Mismatch)
+        1    0.000    0.000    0.000    0.000 image.py:906(FigureImage)
+        6    0.000    0.000    0.000    0.000 ticker.py:916(__call__)
+        1    0.000    0.000    0.000    0.000 pyplot.py:373(get_fignums)
+        1    0.000    0.000    0.000    0.000 _iotools.py:231(NameValidator)
+        1    0.000    0.000    0.000    0.000 <string>:1(DecimalTuple)
+        1    0.000    0.000    0.000    0.000 collections.py:1133(QuadMesh)
+        7    0.000    0.000    0.000    0.000 case.py:603(_deprecate)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:424(focus_set)
+        1    0.000    0.000    0.000    0.000 transforms.py:1863(CompositeGenericTransform)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:2349(NavigationToolbar2)
+        1    0.000    0.000    0.000    0.000 mathtext.py:795(UnicodeFonts)
+        1    0.000    0.000    0.000    0.000 warnings.py:74(simplefilter)
+        1    0.000    0.000    0.000    0.000 <string>:1(ArgInfo)
+        6    0.000    0.000    0.000    0.000 patches.py:329(set_hatch)
+        6    0.000    0.000    0.000    0.000 patches.py:361(set_path_effects)
+        1    0.000    0.000    0.000    0.000 _internal.py:267(_ctypes)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:349(__iter__)
+        1    0.000    0.000    0.000    0.000 financial.py:8(<module>)
+        6    0.000    0.000    0.000    0.000 pyparsing.py:2951(postParse)
+        2    0.000    0.000    0.000    0.000 optparse.py:579(_check_opt_strings)
+        1    0.000    0.000    0.000    0.000 mbcs.py:20(decode)
+        1    0.000    0.000    0.000    0.000 mlab.py:804(PCA)
+        4    0.000    0.000    0.000    0.000 cbook.py:1465(__contains__)
+        1    0.000    0.000    0.000    0.000 axis.py:1521(XAxis)
+        1    0.000    0.000    0.000    0.000 image.py:781(PcolorImage)
+        1    0.000    0.000    0.000    0.000 <string>:1(Arguments)
+        1    0.000    0.000    0.000    0.000 codecs.py:77(__new__)
+        1    0.000    0.000    0.000    0.000 mathtext.py:562(TruetypeFonts)
+        1    0.000    0.000    0.000    0.000 {_ctypes.LoadLibrary}
+        1    0.000    0.000    0.000    0.000 text.py:1013(TextWithDash)
+        4    0.000    0.000    0.000    0.000 {math.log}
+        1    0.000    0.000    0.000    0.000 index_tricks.py:431(__init__)
+        2    0.000    0.000    0.000    0.000 Image.py:92(isTupleType)
+        1    0.000    0.000    0.000    0.000 artist.py:608(set_alpha)
+        1    0.000    0.000    0.000    0.000 figure.py:115(__contains__)
+        2    0.000    0.000    0.000    0.000 {built-in method getvar}
+        1    0.000    0.000    0.000    0.000 figure.py:538(get_facecolor)
+        1    0.000    0.000    0.000    0.000 artist.py:672(set_label)
+        1    0.000    0.000    0.000    0.000 array_printer.py:2(<module>)
+        1    0.000    0.000    0.000    0.000 triangulation.py:5(Triangulation)
+        1    0.000    0.000    0.000    0.000 transforms.py:1359(Affine2DBase)
+        1    0.000    0.000    0.000    0.000 rrule.py:893(_rrulestr)
+        2    0.000    0.000    0.000    0.000 {method 'Close' of 'PyHKEY' objects}
+        2    0.000    0.000    0.000    0.000 {method 'tell' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 image.py:1021(BboxImage)
+        1    0.000    0.000    0.000    0.000 {numpy.core.umath.seterrobj}
+        1    0.000    0.000    0.000    0.000 Tkconstants.py:4(<module>)
+        4    0.000    0.000    0.000    0.000 docstring.py:31(__init__)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1250(Box)
+        1    0.000    0.000    0.000    0.000 ssl.py:94(SSLSocket)
+        1    0.000    0.000    0.000    0.000 _pylab_helpers.py:118(set_active)
+        1    0.000    0.000    0.000    0.000 index_tricks.py:453(__init__)
+        1    0.000    0.000    0.000    0.000 {time.localtime}
+        1    0.000    0.000    0.000    0.000 <string>:1(Match)
+        1    0.000    0.000    0.000    0.000 __init__.py:159(is_string_like)
+        1    0.000    0.000    0.000    0.000 saxutils.py:171(XMLFilterBase)
+        1    0.000    0.000    0.000    0.000 ufunclike.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2477(Listbox)
+        5    0.000    0.000    0.000    0.000 windowing.py:16(GetForegroundWindow)
+        1    0.000    0.000    0.000    0.000 axes.py:1363(_sci)
+        1    0.000    0.000    0.000    0.000 backend_agg.py:43(RendererAgg)
+        1    0.000    0.000    0.000    0.000 transforms.py:1688(BlendedGenericTransform)
+        1    0.000    0.000    0.000    0.000 dviread.py:31(Dvi)
+        1    0.000    0.000    0.000    0.000 tokenize.py:45(any)
+        4    0.000    0.000    0.000    0.000 {math.fabs}
+        1    0.000    0.000    0.000    0.000 polynomial.py:899(poly1d)
+        1    0.000    0.000    0.000    0.000 optparse.py:837(__init__)
+        5    0.000    0.000    0.000    0.000 core.py:2437(__get__)
+        1    0.000    0.000    0.000    0.000 textpath.py:17(TextToPath)
+        1    0.000    0.000    0.000    0.000 parser.py:165(parserinfo)
+        1    0.000    0.000    0.000    0.000 subprocess.py:618(Popen)
+        1    0.000    0.000    0.000    0.000 geo.py:248(AitoffTransform)
+        3    0.000    0.000    0.000    0.000 functools.py:39(wraps)
+        1    0.000    0.000    0.000    0.000 _datasource.py:482(Repository)
+        2    0.000    0.000    0.000    0.000 {numpy.core.multiarray.set_string_function}
+        1    0.000    0.000    0.000    0.000 cm.py:304(changed)
+        2    0.000    0.000    0.000    0.000 optparse.py:678(_check_dest)
+        6    0.000    0.000    0.000    0.000 core.py:763(__init__)
+        1    0.000    0.000    0.000    0.000 urllib.py:113(URLopener)
+        3    0.000    0.000    0.000    0.000 {method 'setter' of 'property' objects}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1645(wm_title)
+        4    0.000    0.000    0.000    0.000 threading.py:58(__init__)
+        1    0.000    0.000    0.000    0.000 afm.py:297(AFM)
+        4    0.000    0.000    0.000    0.000 ticker.py:198(set_locs)
+        5    0.000    0.000    0.000    0.000 sre_parse.py:205(tell)
+        1    0.000    0.000    0.000    0.000 artist.py:458(set_clip_box)
+        1    0.000    0.000    0.000    0.000 io.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 axis.py:1779(YAxis)
+        1    0.000    0.000    0.000    0.000 _pylab_helpers.py:102(get_num_fig_managers)
+        1    0.000    0.000    0.000    0.000 cbook.py:894(RingBuffer)
+        1    0.000    0.000    0.000    0.000 socket.py:235(_fileobject)
+        5    0.000    0.000    0.000    0.000 windowing.py:18(SetForegroundWindow)
+        1    0.000    0.000    0.000    0.000 cbook.py:354(__init__)
+        1    0.000    0.000    0.000    0.000 contour.py:49(ContourLabeler)
+        2    0.000    0.000    0.000    0.000 cbook.py:1460(__init__)
+        5    0.000    0.000    0.000    0.000 {method 'release' of 'thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 axes.py:1037(set_anchor)
+        4    0.000    0.000    0.000    0.000 pyparsing.py:240(__init__)
+        1    0.000    0.000    0.000    0.000 optparse.py:1242(_create_option_list)
+        1    0.000    0.000    0.000    0.000 _pylab_helpers.py:14(Gcf)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1166(__init__)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:2343(Cursors)
+        1    0.000    0.000    0.000    0.000 blocking_input.py:110(BlockingMouseInput)
+        1    0.000    0.000    0.000    0.000 fontconfig_pattern.py:34(FontconfigPatternParser)
+        1    0.000    0.000    0.000    0.000 transforms.py:1454(Affine2D)
+        3    0.000    0.000    0.000    0.000 {method 'rfind' of 'unicode' objects}
+        1    0.000    0.000    0.000    0.000 _pylab_helpers.py:95(get_all_fig_managers)
+        1    0.000    0.000    0.000    0.000 colors.py:465(Colormap)
+        1    0.000    0.000    0.000    0.000 axis.py:2010(get_minpos)
+        1    0.000    0.000    0.000    0.000 urlparse.py:67(ResultMixin)
+        1    0.000    0.000    0.000    0.000 calendar.py:126(Calendar)
+        1    0.000    0.000    0.000    0.000 polar.py:28(PolarTransform)
+        1    0.000    0.000    0.000    0.000 transforms.py:1238(TransformWrapper)
+        1    0.000    0.000    0.000    0.000 contour.py:598(ContourSet)
+        4    0.000    0.000    0.000    0.000 __init__.py:417(__init__)
+        1    0.000    0.000    0.000    0.000 calendar.py:132(__init__)
+        1    0.000    0.000    0.000    0.000 colors.py:236(ColorConverter)
+        4    0.000    0.000    0.000    0.000 scale.py:60(__init__)
+        4    0.000    0.000    0.000    0.000 gridspec.py:45(get_geometry)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1879(Grid)
+        2    0.000    0.000    0.000    0.000 Image.py:449(__init__)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3489(PanedWindow)
+        1    0.000    0.000    0.000    0.000 ticker.py:1083(MaxNLocator)
+        4    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 mathtext.py:241(MathtextBackendBitmapRender)
+        1    0.000    0.000    0.000    0.000 __init__.py:196(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method set_bg}
+        1    0.000    0.000    0.000    0.000 axis.py:1744(get_minpos)
+        3    0.000    0.000    0.000    0.000 patches.py:189(get_facecolor)
+        1    0.000    0.000    0.000    0.000 transforms.py:1314(AffineBase)
+        1    0.000    0.000    0.000    0.000 arrayterator.py:21(Arrayterator)
+        1    0.000    0.000    0.000    0.000 transforms.py:1004(Transform)
+        1    0.000    0.000    0.000    0.000 gridspec.py:417(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method apply_translation}
+        1    0.000    0.000    0.000    0.000 fnmatch.py:11(<module>)
+        3    0.000    0.000    0.000    0.000 __init__.py:104(CFunctionType)
+        1    0.000    0.000    0.000    0.000 image.py:662(NonUniformImage)
+        1    0.000    0.000    0.000    0.000 gridspec.py:26(GridSpecBase)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:204(DETAIL)
+        1    0.000    0.000    0.000    0.000 core.py:5500(mvoid)
+        1    0.000    0.000    0.000    0.000 image.py:467(set_resample)
+        4    0.000    0.000    0.000    0.000 backend_bases.py:2867(set_history_buttons)
+        1    0.000    0.000    0.000    0.000 geo.py:419(MollweideTransform)
+        1    0.000    0.000    0.000    0.000 axes.py:8320(SubplotBase)
+        1    0.000    0.000    0.000    0.000 mathtext.py:905(StixFonts)
+        3    0.000    0.000    0.000    0.000 core.py:731(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'toordinal' of 'datetime.date' objects}
+        1    0.000    0.000    0.000    0.000 copy.py:113(_copy_with_constructor)
+        3    0.000    0.000    0.000    0.000 _cm.py:88(get_color_function)
+        3    0.000    0.000    0.000    0.000 {built-in method pixel_access}
+        1    0.000    0.000    0.000    0.000 transforms.py:54(TransformNode)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:576(__init__)
+        3    0.000    0.000    0.000    0.000 artist.py:543(get_clip_path)
+        2    0.000    0.000    0.000    0.000 {built-in method apply_scaling}
+        2    0.000    0.000    0.000    0.000 axes.py:964(set_aspect)
+        1    0.000    0.000    0.000    0.000 mathtext.py:2908(MathTextParser)
+        1    0.000    0.000    0.000    0.000 xmlreader.py:276(AttributesImpl)
+        2    0.000    0.000    0.000    0.000 version.py:3(<module>)
+        2    0.000    0.000    0.000    0.000 {built-in method reset_matrix}
+        1    0.000    0.000    0.000    0.000 cm.py:156(ScalarMappable)
+        1    0.000    0.000    0.000    0.000 figure.py:534(get_edgecolor)
+        4    0.000    0.000    0.000    0.000 transforms.py:1350(transform_path_non_affine)
+        1    0.000    0.000    0.000    0.000 axes.py:156(_process_plot_var_args)
+        3    0.000    0.000    0.000    0.000 __init__.py:484(CFunctionType)
+        1    0.000    0.000    0.000    0.000 stat.py:49(S_ISREG)
+        1    0.000    0.000    0.000    0.000 saxutils.py:84(XMLGenerator)
+        1    0.000    0.000    0.000    0.000 geo.py:333(HammerTransform)
+        1    0.000    0.000    0.000    0.000 text.py:1415(_AnnotationBase)
+        3    0.000    0.000    0.000    0.000 artist.py:161(set_axes)
+        1    0.000    0.000    0.000    0.000 rrule.py:629(_iterinfo)
+        4    0.000    0.000    0.000    0.000 transforms.py:1354(get_affine)
+        1    0.000    0.000    0.000    0.000 axis.py:446(YTick)
+        1    0.000    0.000    0.000    0.000 __init__.py:12(register)
+        2    0.000    0.000    0.000    0.000 __init__.py:20(get_projection_class)
+        2    0.000    0.000    0.000    0.000 optparse.py:980(_check_conflict)
+        1    0.000    0.000    0.000    0.000 patches.py:220(set_aa)
+        1    0.000    0.000    0.000    0.000 handler.py:47(ContentHandler)
+        1    0.000    0.000    0.000    0.000 tz.py:475(tzrange)
+        1    0.000    0.000    0.000    0.000 {_codecs.mbcs_decode}
+        3    0.000    0.000    0.000    0.000 tempfile.py:44(_set_cloexec)
+        1    0.000    0.000    0.000    0.000 geo.py:517(LambertTransform)
+        2    0.000    0.000    0.000    0.000 artist.py:379(get_url)
+        1    0.000    0.000    0.000    0.000 getlimits.py:184(iinfo)
+        1    0.000    0.000    0.000    0.000 figure.py:1072(add_axobserver)
+        1    0.000    0.000    0.000    0.000 colors.py:785(Normalize)
+        1    0.000    0.000    0.000    0.000 urllib.py:607(FancyURLopener)
+        1    0.000    0.000    0.000    0.000 numbers.py:270(Rational)
+        2    0.000    0.000    0.000    0.000 {method 'clear' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 mathtext.py:94(MathtextBackend)
+        1    0.000    0.000    0.000    0.000 figure.py:41(AxesStack)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:45(__call__)
+        2    0.000    0.000    0.000    0.000 {built-in method set_interpolation}
+        1    0.000    0.000    0.000    0.000 blocking_input.py:24(BlockingInput)
+        1    0.000    0.000    0.000    0.000 loader.py:38(TestLoader)
+        2    0.000    0.000    0.000    0.000 {built-in method set_resample}
+        1    0.000    0.000    0.000    0.000 _import_tools.py:6(PackageLoader)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3309(Spinbox)
+        1    0.000    0.000    0.000    0.000 difflib.py:1672(HtmlDiff)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1784(Pack)
+        1    0.000    0.000    0.000    0.000 threading.py:531(_set_ident)
+        1    0.000    0.000    0.000    0.000 ctypeslib.py:153(_ndptr)
+        1    0.000    0.000    0.000    0.000 _pylab_helpers.py:35(get_fig_manager)
+        1    0.000    0.000    0.000    0.000 mathtext.py:2365(State)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:698(literal)
+        1    0.000    0.000    0.000    0.000 collections.py:355(Counter)
+        3    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 font_manager.py:940(FontManager)
+        1    0.000    0.000    0.000    0.000 threading.py:226(_is_owned)
+        1    0.000    0.000    0.000    0.000 colors.py:614(LinearSegmentedColormap)
+        2    0.000    0.000    0.000    0.000 __init__.py:200(set_level)
+        1    0.000    0.000    0.000    0.000 collections.py:798(LineCollection)
+        1    0.000    0.000    0.000    0.000 widgets.py:1087(RectangleSelector)
+        1    0.000    0.000    0.000    0.000 optparse.py:790(take_action)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2601(__str__)
+        1    0.000    0.000    0.000    0.000 axis.py:307(XTick)
+        1    0.000    0.000    0.000    0.000 records.py:284(recarray)
+        1    0.000    0.000    0.000    0.000 units.py:68(ConversionInterface)
+        1    0.000    0.000    0.000    0.000 runner.py:28(TextTestResult)
+        1    0.000    0.000    0.000    0.000 StringIO.py:42(StringIO)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2174(ParseExpression)
+        2    0.000    0.000    0.000    0.000 {built-in method get_size}
+        1    0.000    0.000    0.000    0.000 info.py:83(<module>)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:524(NavigationToolbar)
+        1    0.000    0.000    0.000    0.000 urllib.py:849(ftpwrapper)
+        1    0.000    0.000    0.000    0.000 random.py:653(WichmannHill)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:134(OffsetBox)
+        1    0.000    0.000    0.000    0.000 backend_agg.py:376(FigureCanvasAgg)
+        3    0.000    0.000    0.000    0.000 core.py:778(__init__)
+        1    0.000    0.000    0.000    0.000 relativedelta.py:45(relativedelta)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:57(validate_bool)
+        1    0.000    0.000    0.000    0.000 container.py:3(Container)
+        1    0.000    0.000    0.000    0.000 polar.py:126(InvertedPolarTransform)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1475(Keyword)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:649(NavigationToolbar2TkAgg)
+        1    0.000    0.000    0.000    0.000 tzwin.py:28(tzwinbase)
+        1    0.000    0.000    0.000    0.000 core.py:5863(__init__)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:596(TextArea)
+        1    0.000    0.000    0.000    0.000 _datasource.py:148(DataSource)
+        1    0.000    0.000    0.000    0.000 {method 'encode' of 'unicode' objects}
+        2    0.000    0.000    0.000    0.000 figure.py:400(set_canvas)
+        1    0.000    0.000    0.000    0.000 transforms.py:961(TransformedBbox)
+        2    0.000    0.000    0.000    0.000 optparse.py:629(_check_action)
+        3    0.000    0.000    0.000    0.000 _inspect.py:159(<lambda>)
+        1    0.000    0.000    0.000    0.000 calendar.py:255(TextCalendar)
+        1    0.000    0.000    0.000    0.000 utils.py:979(SafeEval)
+        1    0.000    0.000    0.000    0.000 atexit.py:37(register)
+        2    0.000    0.000    0.000    0.000 axes.py:961(get_aspect)
+        1    0.000    0.000    0.000    0.000 figure.py:71(_entry_from_axes)
+        1    0.000    0.000    0.000    0.000 triangulate.py:22(Triangulation)
+        1    0.000    0.000    0.000    0.000 dates.py:553(RRuleLocator)
+        1    0.000    0.000    0.000    0.000 ticker.py:703(EngFormatter)
+        1    0.000    0.000    0.000    0.000 dates.py:512(DateLocator)
+        2    0.000    0.000    0.000    0.000 axis.py:1171(get_minor_locator)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:881(AnchoredOffsetbox)
+        1    0.000    0.000    0.000    0.000 tz.py:31(tzutc)
+        1    0.000    0.000    0.000    0.000 dates.py:668(AutoDateLocator)
+        1    0.000    0.000    0.000    0.000 csv.py:26(Dialect)
+        2    0.000    0.000    0.000    0.000 optparse.py:635(_check_type)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:151(ParseBaseException)
+        2    0.000    0.000    0.000    0.000 optparse.py:693(_check_const)
+        1    0.000    0.000    0.000    0.000 ticker.py:552(LogFormatter)
+        1    0.000    0.000    0.000    0.000 tkCommonDialog.py:13(Dialog)
+        2    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 mlab.py:1204(FIFOBuffer)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:162(Variable)
+        1    0.000    0.000    0.000    0.000 polar.py:96(PolarAffine)
+        1    0.000    0.000    0.000    0.000 core.py:5851(__init__)
+        2    0.000    0.000    0.000    0.000 artist.py:683(get_zorder)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:262(validate_ps_distiller)
+        1    0.000    0.000    0.000    0.000 arrayprint.py:499(LongFloatFormat)
+        1    0.000    0.000    0.000    0.000 docstring.py:3(Substitution)
+        1    0.000    0.000    0.000    0.000 suite.py:16(BaseTestSuite)
+        2    0.000    0.000    0.000    0.000 {thread.get_ident}
+        1    0.000    0.000    0.000    0.000 tempfile.py:107(_RandomNameSequence)
+        1    0.000    0.000    0.000    0.000 calendar.py:372(HTMLCalendar)
+        1    0.000    0.000    0.000    0.000 mathtext.py:406(Fonts)
+        1    0.000    0.000    0.000    0.000 ticker.py:176(Formatter)
+        1    0.000    0.000    0.000    0.000 xmlreader.py:11(XMLReader)
+        1    0.000    0.000    0.000    0.000 _iotools.py:145(LineSplitter)
+        2    0.000    0.000    0.000    0.000 axes.py:1034(get_anchor)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:1144(OffsetImage)
+        1    0.000    0.000    0.000    0.000 patches.py:1558(_Style)
+        1    0.000    0.000    0.000    0.000 ticker.py:789(Locator)
+        1    0.000    0.000    0.000    0.000 widgets.py:897(SpanSelector)
+        1    0.000    0.000    0.000    0.000 mathtext.py:293(MathtextBackendPdf)
+        1    0.000    0.000    0.000    0.000 cbook.py:1140(Stack)
+        1    0.000    0.000    0.000    0.000 geo.py:302(InvertedAitoffTransform)
+        2    0.000    0.000    0.000    0.000 optparse.py:665(_check_choice)
+        1    0.000    0.000    0.000    0.000 ticker.py:140(DummyAxis)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3237(PhotoImage)
+        1    0.000    0.000    0.000    0.000 geo.py:381(InvertedHammerTransform)
+        1    0.000    0.000    0.000    0.000 patches.py:2800(_Base)
+        1    0.000    0.000    0.000    0.000 rrule.py:82(rrulebase)
+        1    0.000    0.000    0.000    0.000 contour.py:1080(QuadContourSet)
+        1    0.000    0.000    0.000    0.000 interpolate.py:36(LinearInterpolator)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1661(Tk)
+        2    0.000    0.000    0.000    0.000 artist.py:441(get_figure)
+        2    0.000    0.000    0.000    0.000 optparse.py:708(_check_callback)
+        1    0.000    0.000    0.000    0.000 transforms.py:2027(BboxTransform)
+        1    0.000    0.000    0.000    0.000 tkFileDialog.py:47(_fixoptions)
+        1    0.000    0.000    0.000    0.000 geo.py:486(InvertedMollweideTransform)
+        1    0.000    0.000    0.000    0.000 ImageFile.py:254(StubImageFile)
+        1    0.000    0.000    0.000    0.000 tz.py:191(tzfile)
+        2    0.000    0.000    0.000    0.000 backend_agg.py:261(option_image_nocomposite)
+        2    0.000    0.000    0.000    0.000 backend_bases.py:820(set_clip_rectangle)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:462(AxisMenu)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1569(Vlist)
+        2    0.000    0.000    0.000    0.000 axes.py:774(get_axes_locator)
+        1    0.000    0.000    0.000    0.000 dates.py:1112(DateConverter)
+        1    0.000    0.000    0.000    0.000 widgets.py:181(Slider)
+        1    0.000    0.000    0.000    0.000 parser.py:39(_timelex)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1829(Place)
+        1    0.000    0.000    0.000    0.000 transforms.py:1958(CompositeAffine2D)
+        1    0.000    0.000    0.000    0.000 {math.sqrt}
+        1    0.000    0.000    0.000    0.000 npyio.py:123(NpzFile)
+        1    0.000    0.000    0.000    0.000 transforms.py:1791(BlendedAffine2D)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2540(ParseElementEnhance)
+        1    0.000    0.000    0.000    0.000 geo.py:578(InvertedLambertTransform)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3177(Image)
+        1    0.000    0.000    0.000    0.000 info.py:84(<module>)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:370(FigureManagerTkAgg)
+        1    0.000    0.000    0.000    0.000 image.py:109(get_size)
+        2    0.000    0.000    0.000    0.000 __init__.py:347(_FuncPtr)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:492(DrawingArea)
+        1    0.000    0.000    0.000    0.000 {matplotlib.backends._tkagg.tkinit}
+        1    0.000    0.000    0.000    0.000 offsetbox.py:342(HPacker)
+        1    0.000    0.000    0.000    0.000 index_tricks.py:210(AxisConcatenator)
+        1    0.000    0.000    0.000    0.000 image.py:513(AxesImage)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:324(_get_key)
+        1    0.000    0.000    0.000    0.000 text.py:1375(OffsetFrom)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2945(Group)
+        1    0.000    0.000    0.000    0.000 case.py:1012(FunctionTestCase)
+        1    0.000    0.000    0.000    0.000 ImagePalette.py:25(ImagePalette)
+        1    0.000    0.000    0.000    0.000 tz.py:54(tzoffset)
+        1    0.000    0.000    0.000    0.000 units.py:113(__init__)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha1}
+        1    0.000    0.000    0.000    0.000 offsetbox.py:1469(DraggableBase)
+        1    0.000    0.000    0.000    0.000 random.py:803(SystemRandom)
+        2    0.000    0.000    0.000    0.000 core.py:3123(_get_mask)
+        1    0.000    0.000    0.000    0.000 gridspec.py:182(GridSpec)
+        2    0.000    0.000    0.000    0.000 pyparsing.py:406(<lambda>)
+        1    0.000    0.000    0.000    0.000 difflib.py:46(SequenceMatcher)
+        1    0.000    0.000    0.000    0.000 widgets.py:68(Button)
+        1    0.000    0.000    0.000    0.000 scale.py:13(ScaleBase)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2023(Button)
+        1    0.000    0.000    0.000    0.000 core.py:881(_MaskedBinaryOperation)
+        1    0.000    0.000    0.000    0.000 blocking_input.py:286(BlockingContourLabeler)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2334(Or)
+        1    0.000    0.000    0.000    0.000 pprint.py:81(PrettyPrinter)
+        2    0.000    0.000    0.000    0.000 index_tricks.py:142(__init__)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:2207(FigureManagerBase)
+        1    0.000    0.000    0.000    0.000 {built-in method buffer_rgba}
+        1    0.000    0.000    0.000    0.000 legend_handler.py:39(HandlerBase)
+        1    0.000    0.000    0.000    0.000 cbook.py:832(Null)
+        1    0.000    0.000    0.000    0.000 mathtext.py:146(MathtextBackendBbox)
+        1    0.000    0.000    0.000    0.000 widgets.py:19(LockDraw)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:88(TimerTk)
+        1    0.000    0.000    0.000    0.000 threading.py:104(_RLock)
+        2    0.000    0.000    0.000    0.000 optparse.py:699(_check_nargs)
+        1    0.000    0.000    0.000    0.000 legend.py:35(DraggableLegend)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:289(HandlerRegularPolyCollection)
+        1    0.000    0.000    0.000    0.000 transforms.py:2071(BboxTransformTo)
+        1    0.000    0.000    0.000    0.000 ticker.py:1556(OldAutoLocator)
+        1    0.000    0.000    0.000    0.000 _exceptions.py:9(SAXException)
+        2    0.000    0.000    0.000    0.000 {method 'title' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2762(Scrollbar)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2729(Scale)
+        1    0.000    0.000    0.000    0.000 PngImagePlugin.py:75(ChunkStream)
+        1    0.000    0.000    0.000    0.000 figure.py:118(SubplotParams)
+        1    0.000    0.000    0.000    0.000 transforms.py:2173(ScaledTranslation)
+        1    0.000    0.000    0.000    0.000 ticker.py:1243(LogLocator)
+        1    0.000    0.000    0.000    0.000 ticker.py:991(Base)
+        1    0.000    0.000    0.000    0.000 image.py:496(set_filterrad)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_md5}
+        1    0.000    0.000    0.000    0.000 ticker.py:243(FixedFormatter)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2822(Forward)
+        1    0.000    0.000    0.000    0.000 index_tricks.py:82(nd_grid)
+        2    0.000    0.000    0.000    0.000 {method 'itervalues' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:320(CDLL)
+        1    0.000    0.000    0.000    0.000 {_ctypes.set_conversion_mode}
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2395(MatchFirst)
+        2    0.000    0.000    0.000    0.000 scale.py:43(limit_range_for_scale)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1713(GlueSpec)
+        1    0.000    0.000    0.000    0.000 transforms.py:2136(BboxTransformFrom)
+        2    0.000    0.000    0.000    0.000 axis.py:1167(get_major_locator)
+        1    0.000    0.000    0.000    0.000 scale.py:186(InvertedNaturalLogTransform)
+        1    0.000    0.000    0.000    0.000 memmap.py:20(memmap)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2454(Each)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1278(MouseEvent)
+        1    0.000    0.000    0.000    0.000 polar.py:188(RadialLocator)
+        2    0.000    0.000    0.000    0.000 image.py:436(get_interpolation)
+        1    0.000    0.000    0.000    0.000 gridspec.py:412(SubplotSpec)
+        1    0.000    0.000    0.000    0.000 __init__.py:5(ProjectionRegistry)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1945(White)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:768(AuxTransformBox)
+        1    0.000    0.000    0.000    0.000 core.py:2246(_MaskedPrintOption)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:410(PaddedBox)
+        1    0.000    0.000    0.000    0.000 socket.py:167(_closedsocket)
+        1    0.000    0.000    0.000    0.000 xmlreader.py:187(InputSource)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1169(LocationEvent)
+        1    0.000    0.000    0.000    0.000 threading.py:184(_Condition)
+        1    0.000    0.000    0.000    0.000 colors.py:1109(LightSource)
+        2    0.000    0.000    0.000    0.000 core.py:790(__init__)
+        1    0.000    0.000    0.000    0.000 mathtext.py:195(MathtextBackendAggRender)
+        1    0.000    0.000    0.000    0.000 cbook.py:1426(Grouper)
+        1    0.000    0.000    0.000    0.000 tz.py:639(_tzicalvtz)
+        1    0.000    0.000    0.000    0.000 dviread.py:627(PsfontsMap)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2663(ZeroOrMore)
+        2    0.000    0.000    0.000    0.000 core.py:1686(_check_mask_axis)
+        1    0.000    0.000    0.000    0.000 scale.py:53(LinearScale)
+        1    0.000    0.000    0.000    0.000 BmpImagePlugin.py:61(BmpImageFile)
+        1    0.000    0.000    0.000    0.000 tz.py:152(_ttinfo)
+        1    0.000    0.000    0.000    0.000 ImageFile.py:330(Parser)
+        1    0.000    0.000    0.000    0.000 __init__.py:209(set_fileo)
+        1    0.000    0.000    0.000    0.000 suite.py:252(_ErrorHolder)
+        1    0.000    0.000    0.000    0.000 rrule.py:50(weekday)
+        1    0.000    0.000    0.000    0.000 colors.py:899(LogNorm)
+        2    0.000    0.000    0.000    0.000 calendar.py:52(__init__)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1932(BaseWidget)
+        1    0.000    0.000    0.000    0.000 runner.py:119(TextTestRunner)
+        1    0.000    0.000    0.000    0.000 PngImagePlugin.py:169(PngStream)
+        1    0.000    0.000    0.000    0.000 threading.py:367(_Event)
+        1    0.000    0.000    0.000    0.000 cbook.py:1308(MemoryMonitor)
+        1    0.000    0.000    0.000    0.000 tempfile.py:357(_TemporaryFileWrapper)
+        2    0.000    0.000    0.000    0.000 calendar.py:71(__init__)
+        1    0.000    0.000    0.000    0.000 relativedelta.py:15(weekday)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1891(Ship)
+        1    0.000    0.000    0.000    0.000 suite.py:78(TestSuite)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1217(Node)
+        1    0.000    0.000    0.000    0.000 index_tricks.py:505(ndindex)
+        1    0.000    0.000    0.000    0.000 tz.py:701(tzical)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1290(Char)
+        1    0.000    0.000    0.000    0.000 records.py:83(format_parser)
+        1    0.000    0.000    0.000    0.000 csv.py:123(DictWriter)
+        1    0.000    0.000    0.000    0.000 patches.py:2429(Arc3)
+        1    0.000    0.000    0.000    0.000 widgets.py:601(SubplotTool)
+        1    0.000    0.000    0.000    0.000 transforms.py:2111(BboxTransformToMaxOnly)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1794(Kern)
+        1    0.000    0.000    0.000    0.000 machar.py:15(MachAr)
+        1    0.000    0.000    0.000    0.000 _datasource.py:47(_FileOpeners)
+        1    0.000    0.000    0.000    0.000 _exceptions.py:46(SAXParseException)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2697(Message)
+        1    0.000    0.000    0.000    0.000 Image.py:219(_conv_type_shape)
+        1    0.000    0.000    0.000    0.000 cbook.py:146(BoundMethodProxy)
+        1    0.000    0.000    0.000    0.000 ImageFile.py:283(_ParserFile)
+        1    0.000    0.000    0.000    0.000 collections.py:791(AsteriskPolygonCollection)
+        2    0.000    0.000    0.000    0.000 backend_bases.py:387(get_image_magnification)
+        1    0.000    0.000    0.000    0.000 records.py:214(record)
+        1    0.000    0.000    0.000    0.000 collections.py:1070(PatchCollection)
+        1    0.000    0.000    0.000    0.000 dviread.py:384(DviFont)
+        1    0.000    0.000    0.000    0.000 JpegImagePlugin.py:267(JpegImageFile)
+        1    0.000    0.000    0.000    0.000 GifImagePlugin.py:54(GifImageFile)
+        1    0.000    0.000    0.000    0.000 colorbar.py:705(Colorbar)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1573(Word)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1559(CaselessKeyword)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1758(QuotedString)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1701(Regex)
+        1    0.000    0.000    0.000    0.000 threading.py:733(_Timer)
+        1    0.000    0.000    0.000    0.000 interpolate.py:88(NNInterpolator)
+        2    0.000    0.000    0.000    0.000 mlab.py:2372(__init__)
+        1    0.000    0.000    0.000    0.000 font_manager.py:344(FontEntry)
+        1    0.000    0.000    0.000    0.000 scale.py:174(NaturalLogTransform)
+        1    0.000    0.000    0.000    0.000 {built-in method flipud_in}
+        1    0.000    0.000    0.000    0.000 csv.py:162(Sniffer)
+        2    0.000    0.000    0.000    0.000 index_tricks.py:643(__init__)
+        1    0.000    0.000    0.000    0.000 scale.py:220(InvertedLogTransform)
+        1    0.000    0.000    0.000    0.000 ticker.py:920(LinearLocator)
+        1    0.000    0.000    0.000    0.000 widgets.py:822(MultiCursor)
+        1    0.000    0.000    0.000    0.000 core.py:2395(_arraymethod)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2702(Radiobutton)
+        1    0.000    0.000    0.000    0.000 scale.py:162(InvertedLog2Transform)
+        1    0.000    0.000    0.000    0.000 scale.py:138(InvertedLog10Transform)
+        1    0.000    0.000    0.000    0.000 tricontour.py:7(TriContourSet)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:63(ShowBase)
+        1    0.000    0.000    0.000    0.000 patches.py:2890(_Curve)
+        1    0.000    0.000    0.000    0.000 PngImagePlugin.py:308(PngImageFile)
+        1    0.000    0.000    0.000    0.000 widgets.py:353(CheckButtons)
+        1    0.000    0.000    0.000    0.000 transforms.py:2203(TransformedPath)
+        1    0.000    0.000    0.000    0.000 lines.py:1094(VertexSelector)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2343(Checkbutton)
+        1    0.000    0.000    0.000    0.000 cbook.py:720(Sorter)
+        1    0.000    0.000    0.000    0.000 difflib.py:766(Differ)
+        1    0.000    0.000    0.000    0.000 xmlreader.py:91(IncrementalParser)
+        2    0.000    0.000    0.000    0.000 artist.py:211(is_transform_set)
+        1    0.000    0.000    0.000    0.000 ImageFile.py:69(ImageFile)
+        1    0.000    0.000    0.000    0.000 scale.py:338(InvertedSymmetricalLogTransform)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:35(ValidateInStrings)
+        1    0.000    0.000    0.000    0.000 threading.py:304(_Semaphore)
+        1    0.000    0.000    0.000    0.000 csv.py:57(excel)
+        1    0.000    0.000    0.000    0.000 nturl2path.py:1(<module>)
+        1    0.000    0.000    0.000    0.000 widgets.py:736(Cursor)
+        1    0.000    0.000    0.000    0.000 getlimits.py:22(finfo)
+        1    0.000    0.000    0.000    0.000 __future__.py:74(_Feature)
+        1    0.000    0.000    0.000    0.000 _datasource.py:70(__init__)
+        1    0.000    0.000    0.000    0.000 info.py:34(<module>)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:260(IntVar)
+        1    0.000    0.000    0.000    0.000 ticker.py:1357(SymmetricalLogLocator)
+        1    0.000    0.000    0.000    0.000 dviread.py:463(Vf)
+        1    0.000    0.000    0.000    0.000 tokenize.py:178(Untokenizer)
+        1    0.000    0.000    0.000    0.000 axis.py:1318(have_units)
+        1    0.000    0.000    0.000    0.000 dviread.py:758(Encoding)
+        1    0.000    0.000    0.000    0.000 geo.py:22(ThetaFormatter)
+        1    0.000    0.000    0.000    0.000 core.py:5794(_extrema_operation)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1368(Accent)
+        1    0.000    0.000    0.000    0.000 cbook.py:44(converter)
+        1    0.000    0.000    0.000    0.000 extras.py:222(_fromnxfunction)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1874(CharsNotIn)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1417(XView)
+        1    0.000    0.000    0.000    0.000 calendar.py:484(TimeEncoding)
+        1    0.000    0.000    0.000    0.000 rrule.py:228(rrule)
+        1    0.000    0.000    0.000    0.000 xmlreader.py:163(Locator)
+        1    0.000    0.000    0.000    0.000 calendar.py:496(LocaleTextCalendar)
+        1    0.000    0.000    0.000    0.000 info.py:171(<module>)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1397(List)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1458(Hlist)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2612(FollowedBy)
+        1    0.000    0.000    0.000    0.000 version.py:32(Version)
+        1    0.000    0.000    0.000    0.000 Dialog.py:12(Dialog)
+        1    0.000    0.000    0.000    0.000 scale.py:198(LogTransform)
+        1    0.000    0.000    0.000    0.000 utils.py:97(_Deprecate)
+        1    0.000    0.000    0.000    0.000 mathtext.py:378(MathtextBackendCairo)
+        1    0.000    0.000    0.000    0.000 docstring.py:55(Appender)
+        1    0.000    0.000    0.000    0.000 core.py:5905(_frommethod)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1537(CaselessLiteral)
+        1    0.000    0.000    0.000    0.000 scale.py:113(LogTransformBase)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:304(BooleanVar)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:254(HandlerLineCollection)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1425(NoMatch)
+        1    0.000    0.000    0.000    0.000 core.py:799(_MaskedUnaryOperation)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2997(OnlyOnce)
+        1    0.000    0.000    0.000    0.000 patches.py:3535(Wedge)
+        1    0.000    0.000    0.000    0.000 ticker.py:1030(MultipleLocator)
+        1    0.000    0.000    0.000    0.000 urllib.py:981(addinfourl)
+        1    0.000    0.000    0.000    0.000 widgets.py:481(RadioButtons)
+        1    0.000    0.000    0.000    0.000 runner.py:12(_WritelnDecorator)
+        1    0.000    0.000    0.000    0.000 tkFileDialog.py:45(_Dialog)
+        1    0.000    0.000    0.000    0.000 units.py:109(Registry)
+        1    0.000    0.000    0.000    0.000 npyio.py:80(BagObj)
+        1    0.000    0.000    0.000    0.000 utils.py:1383(WarningManager)
+        1    0.000    0.000    0.000    0.000 string.py:131(__init__)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:1603(DraggableAnnotation)
+        1    0.000    0.000    0.000    0.000 gridspec.py:348(GridSpecFromSubplotSpec)
+        1    0.000    0.000    0.000    0.000 Image.py:407(_E)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2914(Combine)
+        1    0.000    0.000    0.000    0.000 warnings.py:14(warnpy3k)
+        1    0.000    0.000    0.000    0.000 decimal.py:5390(_WorkRep)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:1575(DraggableOffsetBox)
+        1    0.000    0.000    0.000    0.000 mathtext.py:350(MathtextBackendPath)
+        1    0.000    0.000    0.000    0.000 mathtext.py:252(MathtextBackendPs)
+        1    0.000    0.000    0.000    0.000 __init__.py:9(__init__)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha384}
+        1    0.000    0.000    0.000    0.000 patches.py:2668(Bar)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2702(OneOrMore)
+        1    0.000    0.000    0.000    0.000 mlab.py:2343(FormatObj)
+        1    0.000    0.000    0.000    0.000 patches.py:2467(Angle3)
+        1    0.000    0.000    0.000    0.000 colors.py:722(ListedColormap)
+        1    0.000    0.000    0.000    0.000 optparse.py:1361(_get_args)
+        1    0.000    0.000    0.000    0.000 PpmImagePlugin.py:46(PpmImageFile)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1442(Literal)
+        1    0.000    0.000    0.000    0.000 blocking_input.py:380(BlockingKeyMouseInput)
+        1    0.000    0.000    0.000    0.000 __init__.py:376(PyDLL)
+        1    0.000    0.000    0.000    0.000 contour.py:34(ClabelText)
+        1    0.000    0.000    0.000    0.000 mlab.py:2434(FormatDate)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1680(Glue)
+        1    0.000    0.000    0.000    0.000 tz.py:554(tzstr)
+        1    0.000    0.000    0.000    0.000 arrayprint.py:387(FloatFormat)
+        1    0.000    0.000    0.000    0.000 patches.py:2039(Roundtooth)
+        1    0.000    0.000    0.000    0.000 utils.py:1353(WarningMessage)
+        1    0.000    0.000    0.000    0.000 calendar.py:531(LocaleHTMLCalendar)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3140(OptionMenu)
+        1    0.000    0.000    0.000    0.000 colors.py:789(__init__)
+        1    0.000    0.000    0.000    0.000 subprocess.py:420(STARTUPINFO)
+        1    0.000    0.000    0.000    0.000 core.py:2465(MaskedIterator)
+        1    0.000    0.000    0.000    0.000 patches.py:3166(_Bracket)
+        1    0.000    0.000    0.000    0.000 core.py:7107(_convert2ma)
+        1    0.000    0.000    0.000    0.000 optparse.py:943(_create_option_mappings)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2033(LineStart)
+        1    0.000    0.000    0.000    0.000 core.py:125(MAError)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:390(HandlerErrorbar)
+        1    0.000    0.000    0.000    0.000 scale.py:314(SymmetricalLogTransform)
+        1    0.000    0.000    0.000    0.000 case.py:97(_AssertRaisesContext)
+        2    0.000    0.000    0.000    0.000 sre_parse.py:213(isdigit)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2744(Optional)
+        1    0.000    0.000    0.000    0.000 patches.py:2573(Arc)
+        1    0.000    0.000    0.000    0.000 axes.py:2810(set_navigate)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2148(WordEnd)
+        1    0.000    0.000    0.000    0.000 extras.py:1415(MAxisConcatenator)
+        1    0.000    0.000    0.000    0.000 xmlreader.py:341(AttributesNSImpl)
+        1    0.000    0.000    0.000    0.000 __init__.py:243(c_char_p)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:285(DoubleVar)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:314(ValidateInterval)
+        1    0.000    0.000    0.000    0.000 colors.py:970(BoundaryNorm)
+        1    0.000    0.000    0.000    0.000 units.py:48(AxisInfo)
+        1    0.000    0.000    0.000    0.000 dates.py:140(_UTC)
+        1    0.000    0.000    0.000    0.000 scale.py:126(Log10Transform)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2778(SkipTo)
+        1    0.000    0.000    0.000    0.000 {method 'lower' of 'unicode' objects}
+        1    0.000    0.000    0.000    0.000 collections.py:784(StarPolygonCollection)
+        1    0.000    0.000    0.000    0.000 tkMessageBox.py:57(Message)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2126(WordStart)
+        1    0.000    0.000    0.000    0.000 numbers.py:13(Number)
+        1    0.000    0.000    0.000    0.000 patches.py:3035(CurveA)
+        1    0.000    0.000    0.000    0.000 dates.py:845(YearLocator)
+        1    0.000    0.000    0.000    0.000 decimal.py:225(ConversionSyntax)
+        1    0.000    0.000    0.000    0.000 info.py:147(<module>)
+        1    0.000    0.000    0.000    0.000 __init__.py:9(<module>)
+        1    0.000    0.000    0.000    0.000 case.py:33(_ExpectedFailure)
+        1    0.000    0.000    0.000    0.000 extras.py:1481(mr_class)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1761(NegFil)
+        1    0.000    0.000    0.000    0.000 mlab.py:2424(FormatThousands)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:158(HandlerNpointsYoffsets)
+        1    0.000    0.000    0.000    0.000 ticker.py:276(FormatStrFormatter)
+        1    0.000    0.000    0.000    0.000 mlab.py:2382(FormatFloat)
+        1    0.000    0.000    0.000    0.000 PngImagePlugin.py:453(_idat)
+        1    0.000    0.000    0.000    0.000 container.py:87(BarContainer)
+        1    0.000    0.000    0.000    0.000 numpytest.py:10(IgnoreException)
+        1    0.000    0.000    0.000    0.000 index_tricks.py:337(RClass)
+        1    0.000    0.000    0.000    0.000 cbook.py:869(GetRealpathAndStat)
+        1    0.000    0.000    0.000    0.000 patches.py:3431(Fancy)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:57(BuiltinFilter)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:90(MedianFilter)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2003(_PositionToken)
+        1    0.000    0.000    0.000    0.000 case.py:24(SkipTest)
+        1    0.000    0.000    0.000    0.000 scale.py:150(Log2Transform)
+        1    0.000    0.000    0.000    0.000 cbook.py:78(todate)
+        1    0.000    0.000    0.000    0.000 parser.py:707(_attr)
+        1    0.000    0.000    0.000    0.000 decimal.py:161(DecimalException)
+        1    0.000    0.000    0.000    0.000 index_tricks.py:600(IndexExpression)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1865(AutoWidthChar)
+        1    0.000    0.000    0.000    0.000 patches.py:3055(CurveB)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1323(PickEvent)
+        1    0.000    0.000    0.000    0.000 patches.py:3144(CurveFilledAB)
+        1    0.000    0.000    0.000    0.000 container.py:95(ErrorbarContainer)
+        1    0.000    0.000    0.000    0.000 FileDialog.py:234(SaveFileDialog)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:505(HandlerStem)
+        1    0.000    0.000    0.000    0.000 parser.py:337(_result)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:175(HandlerLine2D)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1021(_getints)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1660(Hrule)
+        1    0.000    0.000    0.000    0.000 dates.py:496(rrulewrapper)
+        1    0.000    0.000    0.000    0.000 patches.py:1802(RArrow)
+        1    0.000    0.000    0.000    0.000 core.py:788(_DomainGreaterEqual)
+        1    0.000    0.000    0.000    0.000 _pylab_helpers.py:88(has_fignum)
+        1    0.000    0.000    0.000    0.000 numeric.py:2337(errstate)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:238(StringVar)
+        1    0.000    0.000    0.000    0.000 patches.py:1824(Round)
+        1    0.000    0.000    0.000    0.000 decimal.py:311(Subnormal)
+        1    0.000    0.000    0.000    0.000 typeconv.py:51(_oldtypecodes)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1363(KeyEvent)
+        1    0.000    0.000    0.000    0.000 tzwin.py:77(tzwin)
+        1    0.000    0.000    0.000    0.000 ticker.py:1506(AutoMinorLocator)
+        1    0.000    0.000    0.000    0.000 function_base.py:1753(vectorize)
+        1    0.000    0.000    0.000    0.000 axes.py:765(set_axes_locator)
+        1    0.000    0.000    0.000    0.000 artist.py:385(set_url)
+        1    0.000    0.000    0.000    0.000 core.py:1027(_DomainedBinaryOperation)
+        1    0.000    0.000    0.000    0.000 patches.py:2346(SimpleEvent)
+        1    0.000    0.000    0.000    0.000 tzwin.py:117(tzwinlocal)
+        1    0.000    0.000    0.000    0.000 mathtext.py:321(MathtextBackendSvg)
+        1    0.000    0.000    0.000    0.000 gridspec.py:67(set_height_ratios)
+        1    0.000    0.000    0.000    0.000 optparse.py:1312(_get_all_options)
+        1    0.000    0.000    0.000    0.000 core.py:5849(_minimum_operation)
+        1    0.000    0.000    0.000    0.000 cbook.py:341(Bunch)
+        1    0.000    0.000    0.000    0.000 __init__.py:416(LibraryLoader)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2954(Dict)
+        1    0.000    0.000    0.000    0.000 polar.py:171(ThetaFormatter)
+        1    0.000    0.000    0.000    0.000 mlab.py:2411(FormatBool)
+        1    0.000    0.000    0.000    0.000 optparse.py:959(set_conflict_handler)
+        1    0.000    0.000    0.000    0.000 core.py:745(_DomainTan)
+        1    0.000    0.000    0.000    0.000 subprocess.py:402(CalledProcessError)
+        1    0.000    0.000    0.000    0.000 patches.py:1890(Round4)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:1117(AnchoredText)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:127(HandlerNpoints)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2736(_NullToken)
+        1    0.000    0.000    0.000    0.000 tkFileDialog.py:74(Open)
+        1    0.000    0.000    0.000    0.000 signals.py:9(_InterruptHandler)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2102(StringEnd)
+        1    0.000    0.000    0.000    0.000 {numpy.core.multiarray.can_cast}
+        1    0.000    0.000    0.000    0.000 offsetbox.py:275(VPacker)
+        1    0.000    0.000    0.000    0.000 cbook.py:1120(maxdict)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2692(Menubutton)
+        1    0.000    0.000    0.000    0.000 dates.py:958(HourLocator)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3297(BitmapImage)
+        1    0.000    0.000    0.000    0.000 inspect.py:630(BlockFinder)
+        1    0.000    0.000    0.000    0.000 axes.py:928(ishold)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1757(Filll)
+        1    0.000    0.000    0.000    0.000 core.py:776(_DomainGreater)
+        1    0.000    0.000    0.000    0.000 cbook.py:297(Idle)
+        1    0.000    0.000    0.000    0.000 patches.py:2509(Angle)
+        1    0.000    0.000    0.000    0.000 windowing.py:21(FocusManager)
+        1    0.000    0.000    0.000    0.000 cbook.py:771(Xlator)
+        1    0.000    0.000    0.000    0.000 decimal.py:196(InvalidOperation)
+        1    0.000    0.000    0.000    0.000 decimal.py:5623(_Log10Memoize)
+        1    0.000    0.000    0.000    0.000 PngImagePlugin.py:151(PngInfo)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2058(LineEnd)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1995(Toplevel)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2988(Suppress)
+        1    0.000    0.000    0.000    0.000 decimal.py:262(DivisionUndefined)
+        1    0.000    0.000    0.000    0.000 widgets.py:58(Widget)
+        1    0.000    0.000    0.000    0.000 calendar.py:21(IllegalMonthError)
+        1    0.000    0.000    0.000    0.000 _import_tools.py:334(PackageLoaderDebug)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:129(validate_nseq_float)
+        1    0.000    0.000    0.000    0.000 mbcs.py:23(IncrementalEncoder)
+        1    0.000    0.000    0.000    0.000 optparse.py:752(takes_value)
+        1    0.000    0.000    0.000    0.000 threading.py:762(_MainThread)
+        1    0.000    0.000    0.000    0.000 suite.py:299(_DebugResult)
+        1    0.000    0.000    0.000    0.000 offsetbox.py:245(PackerBase)
+        1    0.000    0.000    0.000    0.000 patches.py:1716(Square)
+        1    0.000    0.000    0.000    0.000 polyutils.py:48(RankWarning)
+        1    0.000    0.000    0.000    0.000 colors.py:1037(NoNorm)
+        1    0.000    0.000    0.000    0.000 {numpy.core.multiarray.set_typeDict}
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:140(ModeFilter)
+        1    0.000    0.000    0.000    0.000 core.py:723(_DomainCheckInterval)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2084(StringStart)
+        1    0.000    0.000    0.000    0.000 ticker.py:218(IndexFormatter)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2626(NotAny)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:221(HandlerPatch)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2010(GoToColumn)
+        1    0.000    0.000    0.000    0.000 axis.py:582(Ticker)
+        1    0.000    0.000    0.000    0.000 patches.py:3077(CurveAB)
+        1    0.000    0.000    0.000    0.000 cbook.py:89(tofloat)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1100(Event)
+        1    0.000    0.000    0.000    0.000 axes.py:932(hold)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:167(UnsharpMask)
+        1    0.000    0.000    0.000    0.000 threading.py:56(_Verbose)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:231(RecursiveGrammarException)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1403(Token)
+        1    0.000    0.000    0.000    0.000 cbook.py:64(todatetime)
+        1    0.000    0.000    0.000    0.000 __init__.py:159(py_object)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1643(Rule)
+        1    0.000    0.000    0.000    0.000 stride_tricks.py:12(DummyArray)
+        1    0.000    0.000    0.000    0.000 handler.py:208(DTDHandler)
+        1    0.000    0.000    0.000    0.000 mlab.py:2400(FormatInt)
+        1    0.000    0.000    0.000    0.000 ticker.py:860(IndexLocator)
+        1    0.000    0.000    0.000    0.000 dates.py:425(AutoDateFormatter)
+        1    0.000    0.000    0.000    0.000 ticker.py:879(FixedLocator)
+        1    0.000    0.000    0.000    0.000 FileDialog.py:220(LoadFileDialog)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3467(LabelFrame)
+        1    0.000    0.000    0.000    0.000 BmpImagePlugin.py:55(_accept)
+        1    0.000    0.000    0.000    0.000 patches.py:3022(Curve)
+        1    0.000    0.000    0.000    0.000 core.py:761(_DomainSafeDivide)
+        1    0.000    0.000    0.000    0.000 linalg.py:37(LinAlgError)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:180(BLUR)
+        1    0.000    0.000    0.000    0.000 mlab.py:2450(FormatDatetime)
+        1    0.000    0.000    0.000    0.000 polyutils.py:56(PolyDomainError)
+        1    0.000    0.000    0.000    0.000 BmpImagePlugin.py:173(DibImageFile)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1283(Hbox)
+        1    0.000    0.000    0.000    0.000 compat.py:113(Pickler)
+        1    0.000    0.000    0.000    0.000 rrule.py:826(_genitem)
+        1    0.000    0.000    0.000    0.000 cbook.py:318(silent_list)
+        1    0.000    0.000    0.000    0.000 decimal.py:235(DivisionByZero)
+        1    0.000    0.000    0.000    0.000 parser.py:147(_resultbase)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1777(HCentered)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:1416(Empty)
+        1    0.000    0.000    0.000    0.000 figure.py:614(fixitems)
+        1    0.000    0.000    0.000    0.000 dates.py:400(IndexDateFormatter)
+        1    0.000    0.000    0.000    0.000 patches.py:3247(BracketAB)
+        1    0.000    0.000    0.000    0.000 patches.py:1654(_Base)
+        1    0.000    0.000    0.000    0.000 cbook.py:870(__init__)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2893(_ForwardNoRecurse)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2455(Label)
+        1    0.000    0.000    0.000    0.000 widgets.py:29(__init__)
+        1    0.000    0.000    0.000    0.000 dates.py:976(MinuteLocator)
+        1    0.000    0.000    0.000    0.000 patches.py:3305(BracketB)
+        1    0.000    0.000    0.000    0.000 patches.py:3363(Simple)
+        1    0.000    0.000    0.000    0.000 widgets.py:1349(Lasso)
+        1    0.000    0.000    0.000    0.000 mlab.py:2371(FormatFormatStr)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:24(Kernel)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3129(_setit)
+        1    0.000    0.000    0.000    0.000 _endian.py:22(_swapped_meta)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1855(get_supported_filetypes)
+        1    0.000    0.000    0.000    0.000 dates.py:901(MonthLocator)
+        1    0.000    0.000    0.000    0.000 decimal.py:273(Inexact)
+        1    0.000    0.000    0.000    0.000 errors.py:59(DistutilsInternalError)
+        1    0.000    0.000    0.000    0.000 calendar.py:28(IllegalWeekdayError)
+        1    0.000    0.000    0.000    0.000 inspect.py:628(EndOfBlock)
+        1    0.000    0.000    0.000    0.000 dates.py:219(strpdate2num)
+        1    0.000    0.000    0.000    0.000 decimal.py:285(InvalidContext)
+        1    0.000    0.000    0.000    0.000 patches.py:3328(BarAB)
+        1    0.000    0.000    0.000    0.000 transforms.py:910(_get_minposx)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:239(_ParseResultsWithOffset)
+        1    0.000    0.000    0.000    0.000 container.py:104(StemContainer)
+        1    0.000    0.000    0.000    0.000 handler.py:22(ErrorHandler)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:156(GaussianBlur)
+        1    0.000    0.000    0.000    0.000 core.py:5861(_maximum_operation)
+        1    0.000    0.000    0.000    0.000 {built-in method interpaddr}
+        1    0.000    0.000    0.000    0.000 ImageMode.py:22(ModeDescriptor)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:122(MaxFilter)
+        1    0.000    0.000    0.000    0.000 cbook.py:279(Timeout)
+        1    0.000    0.000    0.000    0.000 index_tricks.py:436(CClass)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:211(ParseSyntaxException)
+        1    0.000    0.000    0.000    0.000 ticker.py:264(FuncFormatter)
+        1    0.000    0.000    0.000    0.000 pickle.py:62(PicklingError)
+        1    0.000    0.000    0.000    0.000 index_tricks.py:458(ndenumerate)
+        1    0.000    0.000    0.000    0.000 tz.py:629(_tzicalvtzcomp)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1438(YView)
+        1    0.000    0.000    0.000    0.000 patches.py:1948(Sawtooth)
+        1    0.000    0.000    0.000    0.000 Image.py:34(_imaging_not_installed)
+        1    0.000    0.000    0.000    0.000 decimal.py:3720(_ContextManager)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:64(RankFilter)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha512}
+        1    0.000    0.000    0.000    0.000 optparse.py:964(set_description)
+        1    0.000    0.000    0.000    0.000 _internal.py:260(_missing_ctypes)
+        1    0.000    0.000    0.000    0.000 image.py:480(set_filternorm)
+        1    0.000    0.000    0.000    0.000 optparse.py:771(convert_value)
+        1    0.000    0.000    0.000    0.000 urlparse.py:112(SplitResult)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:206(ParseFatalException)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:365(HandlerPathCollection)
+        1    0.000    0.000    0.000    0.000 shutil.py:30(Error)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1671(Vrule)
+        1    0.000    0.000    0.000    0.000 __init__.py:275(c_wchar_p)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1122(IdleEvent)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1397(CallWrapper)
+        1    0.000    0.000    0.000    0.000 mbcs.py:27(IncrementalDecoder)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:259(SMOOTH)
+        1    0.000    0.000    0.000    0.000 ImagePalette.py:37(getdata)
+        1    0.000    0.000    0.000    0.000 axes.py:2824(set_navigate_mode)
+        1    0.000    0.000    0.000    0.000 shutil.py:33(SpecialFileError)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:138(_Constants)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:195(__str__)
+        1    0.000    0.000    0.000    0.000 core.py:128(MaskError)
+        1    0.000    0.000    0.000    0.000 triangulate.py:17(DuplicatePointWarning)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1160(CloseEvent)
+        1    0.000    0.000    0.000    0.000 GifImagePlugin.py:47(_accept)
+        1    0.000    0.000    0.000    0.000 ticker.py:237(NullFormatter)
+        1    0.000    0.000    0.000    0.000 mlab.py:2429(FormatMillions)
+        1    0.000    0.000    0.000    0.000 subprocess.py:426(pywintypes)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:270(SMOOTH_MORE)
+        1    0.000    0.000    0.000    0.000 calendar.py:138(setfirstweekday)
+        1    0.000    0.000    0.000    0.000 pickle.py:58(PickleError)
+        1    0.000    0.000    0.000    0.000 errors.py:29(DistutilsArgError)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1765(NegFill)
+        1    0.000    0.000    0.000    0.000 __init__.py:260(c_bool)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:94(Event)
+        1    0.000    0.000    0.000    0.000 patches.py:3100(CurveFilledA)
+        1    0.000    0.000    0.000    0.000 __init__.py:255(c_void_p)
+        1    0.000    0.000    0.000    0.000 __init__.py:201(c_double)
+        1    0.000    0.000    0.000    0.000 handler.py:223(EntityResolver)
+        1    0.000    0.000    0.000    0.000 __init__.py:205(c_longdouble)
+        1    0.000    0.000    0.000    0.000 errors.py:38(DistutilsOptionError)
+        1    0.000    0.000    0.000    0.000 dates.py:940(DayLocator)
+        1    0.000    0.000    0.000    0.000 numerictypes.py:770(_typedict)
+        1    0.000    0.000    0.000    0.000 __init__.py:197(c_float)
+        1    0.000    0.000    0.000    0.000 _iotools.py:430(ConverterLockError)
+        1    0.000    0.000    0.000    0.000 precision.py:28(PrecisionError)
+        1    0.000    0.000    0.000    0.000 gridspec.py:61(set_width_ratios)
+        1    0.000    0.000    0.000    0.000 optparse.py:1267(_init_parsing_state)
+        1    0.000    0.000    0.000    0.000 shutil.py:37(ExecError)
+        1    0.000    0.000    0.000    0.000 patches.py:1760(LArrow)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1129(DrawEvent)
+        1    0.000    0.000    0.000    0.000 ticker.py:631(LogFormatterExponent)
+        1    0.000    0.000    0.000    0.000 numeric.py:2333(_unspecified)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:215(EDGE_ENHANCE)
+        1    0.000    0.000    0.000    0.000 errors.py:33(DistutilsFileError)
+        1    0.000    0.000    0.000    0.000 __init__.py:394(HRESULT)
+        1    0.000    0.000    0.000    0.000 tokenize.py:145(TokenError)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1823(SubSuperCluster)
+        1    0.000    0.000    0.000    0.000 urllib.py:107(ContentTooShortError)
+        1    0.000    0.000    0.000    0.000 errors.py:13(DistutilsError)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha224}
+        1    0.000    0.000    0.000    0.000 __init__.py:226(c_ubyte)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1837(AutoHeightChar)
+        1    0.000    0.000    0.000    0.000 __init__.py:219(c_ulonglong)
+        1    0.000    0.000    0.000    0.000 _inspect.py:160(<lambda>)
+        1    0.000    0.000    0.000    0.000 ticker.py:287(OldScalarFormatter)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1753(Fill)
+        1    0.000    0.000    0.000    0.000 Image.py:1683(_ImageCrop)
+        1    0.000    0.000    0.000    0.000 dates.py:919(WeekdayLocator)
+        1    0.000    0.000    0.000    0.000 _iotools.py:423(ConverterError)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2273(_ErrorStop)
+        1    0.000    0.000    0.000    0.000 core.py:5699(__array_finalize__)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:197(ParseException)
+        1    0.000    0.000    0.000    0.000 arrayprint.py:529(LongComplexFormat)
+        1    0.000    0.000    0.000    0.000 mbcs.py:33(StreamReader)
+        1    0.000    0.000    0.000    0.000 __init__.py:168(c_short)
+        1    0.000    0.000    0.000    0.000 __init__.py:379(checkdep_usetex)
+        1    0.000    0.000    0.000    0.000 tkFileDialog.py:94(SaveAs)
+        1    0.000    0.000    0.000    0.000 cbook.py:900(__Full)
+        1    0.000    0.000    0.000    0.000 dates.py:994(SecondLocator)
+        1    0.000    0.000    0.000    0.000 {built-in method setimage}
+        1    0.000    0.000    0.000    0.000 mlab.py:2360(FormatString)
+        1    0.000    0.000    0.000    0.000 threading.py:802(_DummyThread)
+        1    0.000    0.000    0.000    0.000 errors.py:55(DistutilsExecError)
+        1    0.000    0.000    0.000    0.000 numeric.py:36(ComplexWarning)
+        1    0.000    0.000    0.000    0.000 _exceptions.py:105(SAXNotRecognizedException)
+        1    0.000    0.000    0.000    0.000 ticker.py:911(NullLocator)
+        1    0.000    0.000    0.000    0.000 _endian.py:45(BigEndianStructure)
+        1    0.000    0.000    0.000    0.000 mlab.py:2420(FormatPercent)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1769(NegFilll)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:18(Filter)
+        1    0.000    0.000    0.000    0.000 sre_parse.py:207(seek)
+        1    0.000    0.000    0.000    0.000 decimal.py:360(Underflow)
+        1    0.000    0.000    0.000    0.000 polyutils.py:52(PolyError)
+        1    0.000    0.000    0.000    0.000 decimal.py:184(Clamped)
+        1    0.000    0.000    0.000    0.000 urllib.py:956(addclosehook)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:1988(Widget)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:2437(Frame)
+        1    0.000    0.000    0.000    0.000 __init__.py:385(WinDLL)
+        1    0.000    0.000    0.000    0.000 errors.py:87(UnknownFileError)
+        1    0.000    0.000    0.000    0.000 backend_tkagg.py:67(Show)
+        1    0.000    0.000    0.000    0.000 __init__.py:407(OleDLL)
+        1    0.000    0.000    0.000    0.000 arrayprint.py:540(ComplexFormat)
+        1    0.000    0.000    0.000    0.000 errors.py:66(DistutilsByteCompileError)
+        1    0.000    0.000    0.000    0.000 __init__.py:343(checkdep_ps_distiller)
+        1    0.000    0.000    0.000    0.000 __init__.py:172(c_ushort)
+        1    0.000    0.000    0.000    0.000 decimal.py:299(Rounded)
+        1    0.000    0.000    0.000    0.000 urllib.py:927(addbase)
+        1    0.000    0.000    0.000    0.000 decimal.py:251(DivisionImpossible)
+        1    0.000    0.000    0.000    0.000 mbcs.py:30(StreamWriter)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:237(EMBOSS)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2903(Upcase)
+        1    0.000    0.000    0.000    0.000 {_hashlib.openssl_sha256}
+        1    0.000    0.000    0.000    0.000 patches.py:182(get_edgecolor)
+        1    0.000    0.000    0.000    0.000 errors.py:83(LinkError)
+        1    0.000    0.000    0.000    0.000 decimal.py:322(Overflow)
+        1    0.000    0.000    0.000    0.000 Image.py:1718(ImagePointHandler)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1276(Vbox)
+        1    0.000    0.000    0.000    0.000 errors.py:76(CompileError)
+        1    0.000    0.000    0.000    0.000 threading.py:63(_note)
+        1    0.000    0.000    0.000    0.000 threading.py:352(_BoundedSemaphore)
+        1    0.000    0.000    0.000    0.000 _exceptions.py:115(SAXNotSupportedException)
+        1    0.000    0.000    0.000    0.000 case.py:44(_UnexpectedSuccess)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1018(StixSansFonts)
+        1    0.000    0.000    0.000    0.000 _exceptions.py:125(SAXReaderNotAvailable)
+        1    0.000    0.000    0.000    0.000 __init__.py:238(c_char)
+        1    0.000    0.000    0.000    0.000 __init__.py:180(c_ulong)
+        1    0.000    0.000    0.000    0.000 pyparsing.py:2897(TokenConverter)
+        1    0.000    0.000    0.000    0.000 patches.py:3282(BracketA)
+        1    0.000    0.000    0.000    0.000 pickle.py:69(UnpicklingError)
+        1    0.000    0.000    0.000    0.000 errors.py:46(DistutilsSetupError)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1773(SsGlue)
+        1    0.000    0.000    0.000    0.000 backend_bases.py:1143(ResizeEvent)
+        1    0.000    0.000    0.000    0.000 {method 'has_key' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 tkFileDialog.py:101(Directory)
+        1    0.000    0.000    0.000    0.000 backend_agg.py:430(get_default_filetype)
+        1    0.000    0.000    0.000    0.000 tokenize.py:147(StopTokenizing)
+        1    0.000    0.000    0.000    0.000 errors.py:73(PreprocessError)
+        1    0.000    0.000    0.000    0.000 pickle.py:1261(_EmptyClass)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:572(HandlerTuple)
+        1    0.000    0.000    0.000    0.000 dviread.py:567(Tfm)
+        1    0.000    0.000    0.000    0.000 cbook.py:99(toint)
+        1    0.000    0.000    0.000    0.000 legend_handler.py:378(HandlerCircleCollection)
+        1    0.000    0.000    0.000    0.000 errors.py:20(DistutilsClassError)
+        1    0.000    0.000    0.000    0.000 errors.py:70(CCompilerError)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3694(Tributton)
+        1    0.000    0.000    0.000    0.000 cbook.py:59(tostr)
+        1    0.000    0.000    0.000    0.000 errors.py:63(DistutilsTemplateError)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:148(validate_nseq_int)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:149(__init__)
+        1    0.000    0.000    0.000    0.000 core.py:2251(__init__)
+        1    0.000    0.000    0.000    0.000 urlparse.py:120(ParseResult)
+        1    0.000    0.000    0.000    0.000 csv.py:67(excel_tab)
+        1    0.000    0.000    0.000    0.000 decimal.py:5627(__init__)
+        1    0.000    0.000    0.000    0.000 transforms.py:914(_get_minposy)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1749(Fil)
+        1    0.000    0.000    0.000    0.000 Tkinter.py:3686(Studbutton)
+        1    0.000    0.000    0.000    0.000 widgets.py:1080(HorizontalSpanSelector)
+        1    0.000    0.000    0.000    0.000 errors.py:26(DistutilsGetoptError)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:226(EDGE_ENHANCE_MORE)
+        1    0.000    0.000    0.000    0.000 polynomial.py:19(RankWarning)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:283(SHARPEN)
+        1    0.000    0.000    0.000    0.000 ticker.py:663(LogFormatterMathtext)
+        1    0.000    0.000    0.000    0.000 ticker.py:1502(AutoLocator)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:193(CONTOUR)
+        1    0.000    0.000    0.000    0.000 urllib.py:971(addinfo)
+        1    0.000    0.000    0.000    0.000 __init__.py:278(c_wchar)
+        1    0.000    0.000    0.000    0.000 _iotools.py:437(ConversionWarning)
+        1    0.000    0.000    0.000    0.000 mathtext.py:567(CachedFont)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:106(MinFilter)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1786(VCentered)
+        1    0.000    0.000    0.000    0.000 axes.py:8388(get_subplotspec)
+        1    0.000    0.000    0.000    0.000 errors.py:16(DistutilsModuleError)
+        1    0.000    0.000    0.000    0.000 optparse.py:224(set_parser)
+        1    0.000    0.000    0.000    0.000 patches.py:3122(CurveFilledB)
+        1    0.000    0.000    0.000    0.000 pickle.py:82(_Stop)
+        1    0.000    0.000    0.000    0.000 optparse.py:1406(check_values)
+        1    0.000    0.000    0.000    0.000 __init__.py:215(c_longlong)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 Image.py:1722(ImageTransformHandler)
+        1    0.000    0.000    0.000    0.000 threading.py:771(_set_daemon)
+        1    0.000    0.000    0.000    0.000 __init__.py:233(c_byte)
+        1    0.000    0.000    0.000    0.000 core.py:751(__init__)
+        1    0.000    0.000    0.000    0.000 mathtext.py:1214(MathTextWarning)
+        1    0.000    0.000    0.000    0.000 rcsetup.py:130(__init__)
+        1    0.000    0.000    0.000    0.000 errors.py:50(DistutilsPlatformError)
+        1    0.000    0.000    0.000    0.000 errors.py:79(LibError)
+        1    0.000    0.000    0.000    0.000 ImageFilter.py:248(FIND_EDGES)
+        1    0.000    0.000    0.000    0.000 ImageFile.py:236(load_end)
+        1    0.000    0.000    0.000    0.000 polyutils.py:69(PolyBase)
+        1    0.000    0.000    0.000    0.000 __init__.py:176(c_long)
+        1    0.000    0.000    0.000    0.000 gridspec.py:433(get_gridspec)
+
+
