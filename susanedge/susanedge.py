@@ -243,10 +243,10 @@ def run_prog():
     
 
     #area_img = simple_susan(img, thresh=10.0)
-    #area_img, directions_x, directions_y, angles = smooth_susan_circle(img, thresh=27.0)
+    area_img, directions_x, directions_y, angles = smooth_susan_circle(img, thresh=27.0)
     if not options.no_nomax:
         area_img = nonmax_supress(area_img, angles)
-    area_img = smooth_susan(img, thresh=10.0)
+    #area_img = smooth_susan(img, thresh=10.0)
     #return None 
     #angles_n =  (angles + angles.min()) * (255.0/angles.max())
     plt.set_cmap(plt.cm.gray)
